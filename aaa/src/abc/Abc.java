@@ -1,16 +1,10 @@
-package sec01.ex01;
+package abc;
 
 import java.io.IOException;
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-@WebServlet("/login")
-public class LoginServlet extends HttpServlet{
-
+@WebServlet("/input")
+public class Abc extends HttpServlet{
+	
 	@Override
 	public void init() throws ServletException {
 		System.out.println("init 메서드 호출");
@@ -23,11 +17,14 @@ public class LoginServlet extends HttpServlet{
 		String user_pw = request.getParameter("user_pw");
 		System.out.println("아이디:"+user_id);
 		System.out.println("비밀번호:"+user_pw);
+		String[] subject = request.getParameterValues("subject");
+		for(String str:subject) {			//배열 포문
+			System.out.println("선택한 과목:"+str);
+		}
 	}
 
 	@Override
 	public void destroy() {
 		System.out.println("destroy 메서드 호출");
 	}
-
 }

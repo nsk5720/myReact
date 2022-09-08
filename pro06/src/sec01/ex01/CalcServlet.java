@@ -21,6 +21,7 @@ public class CalcServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html; charset=utf-8");
+		//=toString(); 메서드를 재정의 하는 불편함을 없애기 위해서 쓴다.
 		PrintWriter pw = response.getWriter();
 		// 수행할 요청을 받아 온다.
 		String command = request.getParameter("command");
@@ -32,8 +33,9 @@ public class CalcServlet extends HttpServlet{
 		if(command != null && command.equals("calculate")) {
 			String result = calculate(Float.parseFloat(won), operator);
 			pw.print("<html><font size=10>변환결과</font><br>");
-			pw.print("<html><font size=10>" + result + "</font><br>");
+			pw.print("<font size=10>" + result + "</font><br>");
 			pw.print("<a href='/pro06/calc'>환율 계산기</a>");
+			pw.print("<html>");
 			return;
 		}
 		
