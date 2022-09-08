@@ -1,4 +1,4 @@
-package sex03.ex01;
+package sec03.ex01;
 
 import java.io.IOException;
 
