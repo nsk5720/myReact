@@ -1,0 +1,87 @@
+﻿/* body{background: red;}  */   
+html{overflow-y: scroll;}
+*{margin:0; padding: 0;}
+img{border: 0;}
+body table input label{font-family:'돋움', sans-serif;}
+/* body{background: url(../images/login.png) no-repeat center top;} */
+a{text-decoration: none; }
+
+.hidden{display: none;}
+
+
+section{width: 100%; height: 1228px; /* background: rgb(255,0,0,0.1); */ margin: 0 auto;}
+	#section{width: 1420px; height: 1228px; /* background: rgb(255,100,200,0.3); */ margin: 0 auto; clear:both;}  
+		#contents{width: 1420px; height: 1228px; /* background: rgb(0,255,255,0.1);  */ margin: 0 auto; float: left; }
+			#high{width: 1420px; height: 530px; /* background: rgb(255,0,0,0.1); */}
+			#low{width: 1420px; height: 596px; /* background: rgb(0,0,0,0.1); */ margin: 0 0 0 0;}
+
+
+.fl{float: left;}
+.cf:after{content: ''; display: block; clear: both;}
+
+
+/* contents>high */
+#high{margin: 0px 0 0 0;}
+#high>ul{list-style: none; margin: 102px 0 0 0;}
+#high>ul>li{list-style: none; float: left; width:470px; height: 66px;}
+#high>ul>li>a{display: block; text-align: center; line-height: 66px; font-size: 24px;}
+.certificateLogin{border: 1px solid #d8dee2; border-bottom: 1px solid #046fd9;}
+.certificateLogin>a{color: #333333;}
+.smartLogin{border: 1px solid #d8dee2; border-bottom: 1px solid #046fd9;}
+.smartLogin>a{color: #333333}
+.idPw{border: 1px solid #046fd9; border-bottom: none;  color: #046fd9; font-weight: bold; color: #333333}
+.idPw a{color: #046fd9;}
+
+.member{margin: 105px 0 0 340px; font-size: 34px; letter-spacing: -2px;}
+.member>span{color: #1776b9;}
+
+form p{width: 500px;}
+form p:first-child {float: left;}
+form button{float: left;}
+
+.guideText{color: #666666;}
+
+#high>form{margin: 47px 0 0 378px;}
+#high>form #userId{padding: 26px 0 26px 26px; margin: 0 0 12px 0; width: 463px; font-size: 18px; border: 1px solid #c3c3c3;}
+#high>form #userPwd{padding: 26px 0 26px 26px; margin: 0 0 12px 0; width: 463px; font-size: 18px; border: 1px solid #c3c3c3;}
+.loginBtn{width: 166px; height: 163px; margin: -177px 0 0 500px;  line-height: 163px; text-align: center; background-color: #046fd9;}
+.loginBtn a{color: #ffffff; font-size: 20px;}
+.button{margin: 69px 0px 0px 408px;}
+.button ul li{float: left; } 
+.button>div>a{padding: 0px 36px 0px 0px; font-size: 20px; margin-right: 41px; background: url(../images/btn_login_link.gif) right no-repeat; background-size: 24px 24px; color: #333333}
+.button>div>a:hover{text-decoration: underline}
+
+
+/* contents>low */
+div.situation{margin: 65px 0 0 0px; font-size: 19px; background: url(../images/bull_char_i2.gif) no-repeat; background-size:20px; background-position: 220px 14px; border-top: 1px solid #f1f1f1; border-bottom: 1px solid #dddddd; padding: 13px 0px 15px 0; width: 1420px; text-align: center; letter-spacing: -1px}
+div.fishingCaution{margin: 44px 0 0 0; border: 1px solid #dddddd; height: 254px;}
+div.fishingCaution>div.fisgingSite>div.fakeSite{padding: 45px 0 0 109px; font-size: 26px; background: url(../images/ico_info_alarm.png) no-repeat left; background-size:40px; background-position: 51px 42px; font-weight: bold;}
+div.look{margin: 50px 0 0 16px; border: 2px solid #dddddd;}
+a.look{font-size: 18px; padding: 0 24px 0 24px; color: #333333;}
+.secretNumber{clear:both; margin: 0 0 0 110px; padding: 19px 0 0 0; font-size: 21px; letter-spacing: 1px; color: #046fd9; font-weight: bold;}
+.caution{margin: 16px 0 0 108px; line-height: 30px; font-size: 18px; letter-spacing: -1px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
