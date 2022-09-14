@@ -10,8 +10,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-@WebServlet("/member")
+		//이 클래스는 화면에 뿌리는 역할
+@WebServlet("/member")					//Servlet 병렬처리(=스레드)
 public class MemberServlet extends HttpServlet{
 
 	@Override

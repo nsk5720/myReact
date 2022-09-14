@@ -1,5 +1,5 @@
 package sec01.ex01;
-
+//비즈니스로직(무슨일 한거야?) = > DB를 연결하고 회원정보를 꺼내서 화면에 뿌리는~ 
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
+			//이 클래스는 DB를 연결하고 멤버(회원정보)를 리스트화 시킴
 public class MemberDAO {
 	private static final String driver = "oracle.jdbc.driver.OracleDriver";
 	private static final String url = "jdbc:oracle:thin:@localhost:1521:XE";
@@ -15,17 +15,17 @@ public class MemberDAO {
 	private static final String pwd = "tiger";
 	private Connection con;
 	private Statement stmt;
-	
+						//db를 list에 넣음
 	public List<MemberVO> listMembers() {
 		List<MemberVO> list = new ArrayList<MemberVO>();
 		try {
-			connDB();
-			String query = "select * from t_member ";
+			connDB();	//여는 동작 (open[x])
+			String query = "select * from t_member ";	//단순 문자열(String)
 			System.out.println(query);
 			// SQL 문으로 회원 정보를 조회 while 문을 돌리기 위해서...
-			ResultSet rs = stmt.executeQuery(query);
-			while (rs.next()) {
-				// 조회한 레코드의 각 컬럼 값을 받아 온다
+			ResultSet rs = stmt.executeQuery(query);	//실행
+			while (rs.next()) {							//rs는 레코드 개념이고 next는 다음 레코드  //rs.next=마지막 줄이면 실행문X
+				// 조회한 레코드의 각 컬럼 값을 받아 온다	(each문 같이 3바퀴 돔)
 				String id = rs.getString("id");
 				String pwd = rs.getString("pwd");
 				String name = rs.getString("name");
@@ -41,7 +41,7 @@ public class MemberDAO {
 				// 설정된 MemberVO 객체를 다시 ArrayList에 저장
 				list.add(vo);				
 			}
-			rs.close();
+			rs.close();		//데이터베이스는 꼭 닫아줘야 데이터손상X
 			stmt.close();
 			con.close();			
 		} catch (Exception e) {
@@ -51,9 +51,9 @@ public class MemberDAO {
 		return list;
 	}
 	
-	private void connDB() {
+	private void connDB() {		//실행요소를 가지는 클래스(변수)
 		try {
-			Class.forName(driver);
+			Class.forName(driver);	//WebContent.WEB-INF.lib에 들어간 2개의 jar파일이 드라이버파일임
 			System.out.println("Oracle 드라이버 로딩 성공");
 			con = DriverManager.getConnection(url, user, pwd);
 			System.out.println("Connection 생성 성공");

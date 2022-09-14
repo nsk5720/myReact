@@ -10,7 +10,7 @@ public class MemberVO {
 	private String email;
 	private Date joinDate;
 	
-	// getter/setter를 생성
+	// getter(리턴값 O)/setter(리턴값 X)를 생성
 	public MemberVO() {
 		System.out.println("MemberVO 생성자 호출");
 	}

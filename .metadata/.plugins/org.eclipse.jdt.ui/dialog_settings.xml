@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="C:\myJSP\workspace\pro07\WebContent\WEB-INF\lib" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="C:\Tomcat9.0\lib" key="org.eclipse.jdt.ui.lastextjar"/>
 	<section name="ProblemSeveritiesConfigurationBlock">
 		<item value="false" key="expanded2"/>
 		<item value="false" key="expanded1"/>
