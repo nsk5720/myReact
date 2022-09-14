@@ -1,0 +1,47 @@
+﻿/* body{background: red;}  */   
+html{overflow-y: scroll;}
+*{margin:0; padding: 0;}
+img{border: 0;}
+body table input label{font-family:'돋움', sans-serif;}
+/* body{background: url(../images/login.png) no-repeat center top;} */
+a{text-decoration: none; }
+
+.hidden{display: none;}
+
+
+section{width: 100%; height: 1000px; /* background: rgb(255,0,0,0.1); */ margin: 0 auto;}
+	#section{width: 1420px; height: 100%; /* background: rgb(255,100,200,0.3); */ margin: 0 auto; clear:both;}  
+
+
+			
+			
+			
+			
+			
+
+			
+/* 메인 콘텐트 */
+#signup_content {position: relative; width: 1420px; margin: 0 auto; }
+
+/* 가입 양식 폼 */
+.join_box {width: 400px; margin: 0 auto;}
+.join_box .signup_title {display:block; font-size: 33px; color:#333333; margin-top: 40px; margin-bottom: 30px; width: 390px; height: 80px; line-height:80px; padding-left: 10px; border-bottom:1px solid #dcdcdc; border-bottom: solid 1px #dddddd;}
+.join_box .form input {width: 100%; height: 50px; line-height:50px; margin-bottom: 10px; border:1px solid #dadada; padding-left:10px; box-sizing:border-box;}
+.join_box input:focus {outline:none; border:1px solid #2d71c4;}
+.join_box .col1 {width: 110px; margin-top: 4px; margin-bottom:10px; font-weight:bold;}
+.join_box .col2 {width: 400px;}
+.join_box .id {margin-top: 20px;}
+.form>.col2 label {display:block; position:relative; width:100%; height:50px; margin-bottom: 10px;}
+.form>.col2 .info_image {position:absolute; right:10px; top:7.5px;}
+.id_image {width: 35px; height:35px; background: url(../images/login_id_icon.png) no-repeat 0 0; }
+.pass_image {width: 35px; height:35px; background: url(../images/m_icon_pw_step.png) no-repeat 0 0;}
+.pass_confirm_image {width: 35px; height:35px; background: url(../images/m_icon_pw_step.png) no-repeat -43px 0; top:0px;}
+.join_box .bottom_line {margin-top: 20px; margin-bottom:30px; border-bottom: solid 1px #cccccc;}
+.id_info_box {position:relative;}
+.signup_info {width: 100%; line-height:20px; color:red; margin-bottom:20px; background-color:#fdfdfd; font-size:15px; padding-left:10px;}
+.color_blue {color:#2d71c4;}
+.id_check_text {width: 100%; line-height:20px; color:red; margin-bottom:20px; background-color:#fdfdfd; font-size:15px; position:absolute; top:0; left:0; z-index:2; display:none; padding-left:10px;}
+.buttons {width: 100%; margin-bottom: 60px;}
+.save_button, .reset_button {width:47.5%; box-sizing: border-box; display:block; text-align: center; font-size: 18px; border-radius:3px; padding:18px 15px;color:#fdfdfd; cursor:pointer;}
+.save_button {background-color: #3579d4;  border: 1px solid #3579d4;}
+.reset_button {background-color: #cccccc;  border: 1px solid #cccccc; color:#555555;  margin-right: 5%;}
