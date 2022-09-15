@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/project03/sub03/login5Sk")
+@WebServlet("/loginSk")
 public class LoginServlet5 extends HttpServlet{
 	
 @Override

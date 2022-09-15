@@ -22,30 +22,24 @@
 	<script src="js/jquery-1.12.3.js"></script>
 	<script src="js/script.js"></script>
 	<script>
-		function fnSendMember(){
-		//자바스크립트에서 <form> 태그의 name으로 접근해 입력한 값들을 얻는다.
-		var frmMember = document.member_form;
-		var id = frmMember.id.value;
-		var pwd = frmMember.pwd.value;
-		var name = frmMember.name.value;
-		var email = frmMember.email.value;
-			if(id.length == 0 || id == ""){
-				alert("아이디는 필수입니다.");
-			} else if(pwd.length == 0 || pwd == ""){
-				alert("비밀번호는 필수입니다.");
-			} else if(name.length == 0 || name == ""){
-				alert("이름은 필수입니다.");
-			} else if(email.length == 0 || name == ""){
-				alert("이메일은 필수입니다.");
-			} else{
-				// 전송 방법을 post로 지정
-				frmMember.method="post";
-				// 서블릿 매핑 이름을 member3으로 지정
-				frmMember.action="memberSk";
-				// 서블릿으로 전송
-				frmMember.submit();
-			}
+	function fnValidate(){
+		//<form> 태그의 name 속성으로 <form>태그의 객체를 받아온다.
+		var login=document.login;
+		//<form> 태그 내 <input> 태그의 name 속성으로 입력한 ID와 비밀번호를 받아 온다.
+		var userId=login.userId.value;
+		var userPwd=login.userPwd.value;
+		
+		if((userId.length==0 || userId=="") || (userPwd.length==0 || userPwd=="")){
+			alert("아이디와 비밀번호는 필수입니다.");
+		} else {
+			//<form> 태그의 전송 장식을 post로 설정한다.
+			login.method="post";
+			// action 속성을 서블릿 매핑 이름인 login5로 설정
+			login.action="/project03/loginSk";
+			// 자바스크립트에서 서블릿으로 전송
+			login.submit();
 		}
+	}
 	</script>
 </head>
 <body>
@@ -495,54 +489,65 @@
 	</header>
 	<section>
 		<div id="section">
-			<div id="signup_content">
-				<div id="join_box" class="join_box">
-					<span class="signup_title">회원 가입</span>
-					<form name="member_form" method="post" action="sub_mem_insert.php">							
-						<div class="form id">
-							<div class="col1">아이디</div>
-							<div class="col2">
-								<label>
-									<input autocomplete="off" maxlength="11" type="text" name="id">
-									<div class="id_image info_image"></div>
-								</label>
-							</div>
-							<div class="id_info_box"><div class="id_info signup_info">먼저 아이디 입력이 필요합니다.</div>								<div class="id_check_text">아이디 확인중입니다.</div>
-							</div>								
+			<h2>
+				<span class="hidden">인증서 로그인</span>
+			</h2>
+			<h2>
+				<span class="hidden">스마트 로그인</span>
+			</h2>
+			<h2>
+				<span class="hidden">ID/비밀번호</span>
+			</h2>
+			<article id="contents" class="cf" >
+			<h3>
+				<span class="hidden">ID/비밀번호</span>
+			</h3>
+				<div id="high" class="cf">
+					<ul class="cf">
+						<li class="certificateLogin "><a class="showTooltip" href="../index.html" tabindex="258" title="인증서로그인">인증서 로그인</a></li>
+						<li class="smartLogin "><a class="showTooltip" href="../sub01/sub01.html" tabindex="259" title="스마트로그인">스마트 로그인</a></li>
+						<li class="idPw "><a class="showTooltip" href="../sub02/sub02.html" tabindex="260" title="ID/비밀번호">ID/비밀번호</a></li>
+						
+					</ul>
+					<div class="member"><span>e농협회원</span>님은 일부 조회 서비스이용이 가능합니다.</div>
+					<form method="post" action="login" name="login">
+						<p>
+							<label for="userId"></label>   
+							<input class="guideText" type="text" name="userId" id="userId" value="아이디를 입력해주세요"/>
+						</p>
+						<p>
+							<label for="userPwd"></label> 
+							<input class="guideText" type="password" name="userPwd" id="userPwd" value="아이디를 입력해주세요">
+						</p>
+					<button class="loginBtn" onClick="fnValidate()" type="button">
+						<a href="#" onClick="fnValidate()" type="button">로그인</a>
+					</button>
+					</form>	
+					<div class="button">
+						<div class="fl">
+							<a href="../sub04/sub04.html" tabindex="262" class="showTooltip" title="e농협 회원가입">e농협 회원가입</a>
 						</div>
-						<div class="form password">
-							<div class="col1">비밀번호</div>
-							<div class="col2">
-								<label>
-									<input autocomplete="off" maxlength="15" type="password" name="pwd">
-									<div class="pass_image info_image"></div>
-								</label>
-							</div>
-							<div class="password_info signup_info"></div>
+						<div class="fl">
+							<a href="../sub01/sub01.html" tabindex="263" class="showTooltip" title="ID찾기">ID찾기</a>
 						</div>
-						<div class="form name">
-							<div class="col1">이름</div>
-							<div class="col2">
-								<input autocomplete="off" maxlength="5" type="text" name="name">
-							</div>
-							<div class="name_info signup_info"></div>
+						<div class="fl">
+							<a href="../sub02/sub02.html" tabindex="264" class="showTooltip" title="비밀번호 초기화(재설정)">비밀번호 초기화(재설정)</a>
 						</div>
-						<div class="form email">
-							<div class="col1">이메일</div>
-							<div class="col2 cf">
-								<input autocomplete="off" maxlength="35" type="text" name="email" class="fl">
-							</div>
-							<div class="email_info signup_info"></div>
+						
+					</div>
+				</div>	
+				<div id="low" class="fl">   
+					<div class="situation">맥(MAC)/리눅스 계열, 가상화(인터넷 망분리 PC, 가상OS)환경에서는 마우스 입력기(가상키보드)를 이용하셔야 합니다.</div>
+					<div class="fishingCaution">
+						<div class="fisgingSite">
+							<div class="fakeSite fl">가짜 은행사이트에 속지 마세요!!</div>
+							<div class="look fl"><a href="../index.html" tabindex="265" class="look showTooltip" title="자세히보기">자세히보기</a></div>
+							<div class="secretNumber">농협은 어떠한 이유로도 OTP카드와 보안카드 ‘전체(35개)’ 또는 ‘일부(2개 초과)’를 요구하지 않습니다.</div>
+							<div class="caution">최근 금융기관 콜센터(농협 고객행복센터 1588-2100 등) 번호를 도용하여 개인정보유출 등 사유로 가짜사이트 접속을 유도하는 SMS가 발견되고 있습니다.<br>또한 PC에 악성코드가 설치될 경우 즐겨찾기 또는 정상 은행사이트를 입력하셔도 가짜 은행사이트에 연결될 수 있습니다.</div>
 						</div>
-						<div class="bottom_line"></div>
-						<div class="buttons cf">
-							<input class="reset_button fl" href="#" title="" type="reset"/ value="다시하기">
-							<input class="save_button fl" href="#" title="" type="button" onclick="fnSendMember()" value="가입하기"/>	
-							<input type="hidden" name="command" value="addMember"/>					
-						</div>
-					</form>
-				</div> <!-- join_box -->
-			</div>
+					</div>
+				</div>
+			</article>
 		</div>
 	</section>
 	<footer>
