@@ -7,6 +7,7 @@ import java.util.List;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -50,6 +51,9 @@ public class MemberServlet extends HttpServlet{
 			 vo.setName(_name);
 			 vo.setEmail(_email);	
 			 dao.addMember(vo);		//데이터베이스에 추가하는 모듈
+		} else if(command!= null && command.equals("delMember")) {		//추가한 부분
+			String id = request.getParameter("id");
+			dao.delMember(id);
 		}
 		List list=dao.listMembers();		// 추가한 화면에 뿌리는
 		out.print("<html><body>");
@@ -67,9 +71,12 @@ public class MemberServlet extends HttpServlet{
 		                +name+"</td><td>"
 		                +email+"</td><td>"
 		                +joinDate+"</td><td>"
-	                    +"&nbsp;</td></tr>");	 		
+		                +"<a href='/project03/memberSk?command=delMember&id="+id+"'>삭제</a></td></tr>");	 		
 		}
 		out.print("</table></body></html>");
-		out.print("<a href='/pro07/memberForm.html'>새 회원 등록하기</a>");
+		out.print("<a href='/project03/sub04/sub04.html'>새 회원 등록하기</a>");
+		
+	
+		
 	}
 }

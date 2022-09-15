@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//@WebServlet("/member")
+@WebServlet("/member33")
 public class MemberServlet extends HttpServlet{
 
 	@Override
@@ -37,3 +37,4 @@ public class MemberServlet extends HttpServlet{
 		dispatch.forward(request, response);
 	}
 }
+

@@ -1,4 +1,4 @@
-package sec04.ex03;
+package login;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -33,7 +33,7 @@ public class ViewServlet extends HttpServlet{
 			String email = memberVO.getEmail();
 			Date joinDate = memberVO.getJoinDate();
 			out.print("<tr><td>" + id + "</td><td>" + pwd + "</td><td>" + name + "</td><td>" + email + "</td><td>"
-					+ joinDate + "</td><td>" + "<a href='/pro08/member?command=delMember&id=" + id
+					+ joinDate + "</td><td>" + "<a href='/pro08/member3?command=delMember&id=" + id
 					+ "'>ªË¡¶ </a></td></tr>");
 
 		}
@@ -42,7 +42,6 @@ public class ViewServlet extends HttpServlet{
 	}
 	
 }
-
 
 
 

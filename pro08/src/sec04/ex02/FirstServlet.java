@@ -1,4 +1,4 @@
-package sec04.ex02;
+ package sec04.ex02;
 
 import java.io.IOException;
 
@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 //A링크 거는 방법_4번쨰 _ 주소에 null값 없애줌
-@WebServlet("/first")
-public class FirstServlet extends HttpServlet {
+//@WebServlet("/first")
+public class loginFirstServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

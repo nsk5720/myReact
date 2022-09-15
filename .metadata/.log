@@ -4753,3 +4753,6 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 
 !ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-09-15 15:14:18.808
 !MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.wst.server.core 4 0 2022-09-15 18:04:23.888
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.

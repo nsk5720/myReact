@@ -41,7 +41,7 @@ public class LoginTest extends HttpServlet{
 			out.print("<body>");
 			out.print("아이디를 입력하세요!!!");
 			out.print("<br>");
-			out.print("<a href='http://localhost:8090/pro06/text01/login.html'>로그인창으로 </a>");
+			out.print("<a href='/pro06/text01/login.html'>로그인창으로 </a>");
 			out.print("</body>");
 			out.print("</html>");
 		}
