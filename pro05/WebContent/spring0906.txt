@@ -1,0 +1,53 @@
+http://127.0.0.1:8090/pro05/sec01.ex01.FirstServlet
+
+http://localhost:8090/pro05/first   
+
+
+
+extends HttpServlet 하고 다음 타이핑
+
+	@Override
+	public void init() throws ServletException {
+		System.out.println("init 메서드 호출");
+	}
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("doGet 메서드 호출");
+	}
+
+	@Override
+	public void destroy() {
+		System.out.println("distroy 메서드 호출");
+	}
+
+
+web.xml을 열어 다음 타이핑
+
+  <servlet>
+    <servlet-name>aaa</servlet-name>
+    <servlet-class>sec01.ex01.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>aaa</servlet-name>
+    <url-pattern>/first</url-pattern>
+  </servlet-mapping>  
+
+
+
+마우스 오른쪽 버튼을 클릭하여 Add and Remove를 선택
+pro05를 선택한 후 서버를 실행
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -16,7 +16,7 @@ public class FirstServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");		//한글로 받아!
-		
+		//Redirect를 이용했기 때문에 address 밸류값이 안넘어감
 		request.setAttribute("address", "서울시 성북구");
 		response.sendRedirect("second");
 	}

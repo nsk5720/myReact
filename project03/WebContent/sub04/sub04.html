@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="css/common.css"/>
 	<script src="js/jquery-1.12.3.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/signup.js"></script>
 	<script>
 		function fnSendMember(){
 		//자바스크립트에서 <form> 태그의 name으로 접근해 입력한 값들을 얻는다.
@@ -49,6 +50,10 @@
 	</script>
 </head>
 <body>
+
+<script>
+	var login_state = false;
+</script>
 	<header>
 		<div id="header">
 			<div id="logo">
@@ -493,12 +498,22 @@
 			</ul>
 		</nav>
 	</header>
+	<script>
+  var userid = '';
+</script>
 	<section>
 		<div id="section">
-			<div id="signup_content">
+		<div id="signup_content">
 				<div id="join_box" class="join_box">
 					<span class="signup_title">회원 가입</span>
-					<form name="member_form" method="post" action="sub_mem_insert.php">							
+					<form name="member_form" method="post" action="memberSk">
+
+<script>
+	/* 중복 아이디 체크 상태 및 현재 입력한 아이디 변수 */
+	var check_id_var = false;
+	var current_check_id; == $0
+</script>
+										
 						<div class="form id">
 							<div class="col1">아이디</div>
 							<div class="col2">
@@ -506,19 +521,30 @@
 									<input autocomplete="off" maxlength="11" type="text" name="id">
 									<div class="id_image info_image"></div>
 								</label>
-							</div>
-							<div class="id_info_box"><div class="id_info signup_info">먼저 아이디 입력이 필요합니다.</div>								<div class="id_check_text">아이디 확인중입니다.</div>
+							</div> 
+							<div class="id_info_box">
+<div class='id_info signup_info'></div>								<div class="id_check_text">사용가능한 아이디 입니다.</div>
 							</div>								
 						</div>
 						<div class="form password">
 							<div class="col1">비밀번호</div>
 							<div class="col2">
 								<label>
-									<input autocomplete="off" maxlength="15" type="password" name="pwd">
+									<input autocomplete="off" maxlength="15" type="password" name="pass">
 									<div class="pass_image info_image"></div>
 								</label>
 							</div>
 							<div class="password_info signup_info"></div>
+						</div>
+						<div class="form pass_confirm">
+							<div class="col1">비밀번호 확인</div>
+							<div class="col2">
+								<label>
+									<input autocomplete="off" maxlength="15" type="password" name="pass_confirm">
+									<div class="pass_confirm_image info_image"></div>
+								</label>
+							</div>
+							<div class="pass_confirm_info signup_info"></div>
 						</div>
 						<div class="form name">
 							<div class="col1">이름</div>
@@ -536,15 +562,13 @@
 						</div>
 						<div class="bottom_line"></div>
 						<div class="buttons cf">
-							<input class="reset_button fl" href="#" title="" type="reset" value="다시하기">
-							<input class="save_button fl" href="#" title="" type="button" onclick="fnSendMember()" value="가입하기"/>	
-							<input type="hidden" name="command" value="addMember"/>					
+							<a class="reset_button fl" href="#" title="다시하기">다시하기</a>
+							<a class="save_button fl" href="#" title="가입하기">가입하기</a>							
 						</div>
 					</form>
 				</div> <!-- join_box -->
-			</div>
-		</div>
-	</section>
+			</div> <!-- main_content -->
+		</section>
 	<footer>
 		<div id="footerLnb">
 			<div class="footerNavWrap">

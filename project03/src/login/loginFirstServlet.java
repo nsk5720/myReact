@@ -9,15 +9,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 //A링크 거는 방법_4번쨰 _ 주소에 null값 없애줌
-@WebServlet("/login")
+@WebServlet("/loginFirst")
 public class loginFirstServlet extends HttpServlet {
 
 	@Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");		//한글로 받아!
 
-		RequestDispatcher dispatch = request.getRequestDispatcher("loginServlet5");
+		RequestDispatcher dispatch = request.getRequestDispatcher("/loginSk");
 		dispatch.forward(request, response);
 	}
 	

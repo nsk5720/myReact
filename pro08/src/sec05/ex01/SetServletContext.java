@@ -27,7 +27,7 @@ public class SetServletContext extends HttpServlet{
 		context.setAttribute("member", member);
 		out.print("<html><body>");
 		out.print("이순신과 30 설정");
-		out.print("</body><html>");
+		out.print("</body></html>");
 	}
 	
 
