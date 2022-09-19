@@ -502,16 +502,15 @@
   var userid = '';
 </script>
 	<section>
-		<div id="section">
 		<div id="signup_content">
 				<div id="join_box" class="join_box">
 					<span class="signup_title">회원 가입</span>
-					<form name="member_form" method="post" action="memberSk">
+					<form name="member_form" method="post" action="/project03/memberSk">
 
 <script>
 	/* 중복 아이디 체크 상태 및 현재 입력한 아이디 변수 */
-	var check_id_var = false;
-	var current_check_id; == $0
+	/* var check_id_var = false;
+	var current_check_id; */
 </script>
 										
 						<div class="form id">
@@ -521,9 +520,9 @@
 									<input autocomplete="off" maxlength="11" type="text" name="id">
 									<div class="id_image info_image"></div>
 								</label>
-							</div> 
+							</div>
 							<div class="id_info_box">
-<div class='id_info signup_info'></div>								<div class="id_check_text">사용가능한 아이디 입니다.</div>
+<div class='id_info signup_info'></div>								<div class="id_check_text">사용 가능한 아이디입니다.</div>
 							</div>								
 						</div>
 						<div class="form password">
@@ -562,8 +561,8 @@
 						</div>
 						<div class="bottom_line"></div>
 						<div class="buttons cf">
-							<a class="reset_button fl" href="#" title="다시하기">다시하기</a>
-							<a class="save_button fl" href="#" title="가입하기">가입하기</a>							
+							<a class="reset_button fl" href="#" title="다시하기" type="reset">다시하기</a>
+							<a class="save_button fl" href="#" title="가입하기" type="button">가입하기</a>							
 						</div>
 					</form>
 				</div> <!-- join_box -->

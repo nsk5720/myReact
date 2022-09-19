@@ -1,13 +1,13 @@
 ﻿$(function(){
-	if(check_id_var=='true') {
+/*	if(check_id_var=='true') {
 		$('.form.id>.col2 input').val(current_check_id);
 		$('.form.id>.col2 input').attr('readonly', true);
 		$('.form.id>.col2 input').css('background-color', '#cccccc');
 		$('.id_image').css('background', 'url(images/login_id_icon.png) no-repeat -35px 0');
 		document.member_form.pass.focus();
-	}else{
+	}  else{
 		document.member_form.id.focus();
-	}
+	} */
 
 	function check_input()
 	{	
@@ -68,22 +68,22 @@
 		return;
 	}
 
-	function check_id(){
-		window.location.href='sub04.html?id=' + document.member_form.id.value
+	/* function check_id(){
+		window.location.href='sub_signup.php?id=' + document.member_form.id.value
 		// window.open("sub_check_id.php?id=" + document.member_form.id.value,
 		// 	"IDcheck",
 		// 	"left=700, top=300, width=350, height=200, scrollbars=no, resizable=yes");
-	}	
+	} */	
 
 	/* 모든 입력 */
-	$('.form>.col2 input').not('.form.id>.col2 input').focus(function(){
+	/* $('.form>.col2 input').not('.form.id>.col2 input').focus(function(){
 		if(check_id_var!='true'){
 			if(!document.member_form.id.value.trim()){
 				$('.id_info').text('먼저 아이디 입력이 필요합니다.');
 			}
 			document.member_form.id.focus();
 		}
-	});
+	}); */
 
 	$('.form>.col2 input').not('.form.id>.col2 input').blur(function(){
 		if(check_id_var=='true'){
@@ -157,7 +157,7 @@
 			document.member_form.id.focus();
 		} else {
 			$('.id_check_text').show();
-			/* check_id(); */
+			check_id();
 		}
 	});
 
