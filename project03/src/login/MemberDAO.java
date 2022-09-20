@@ -31,8 +31,8 @@ public class MemberDAO {
 		}
 	}
 	
-	public List/*<MemberVO>*/ listMembers() {
-		List/*<MemberVO>*/ list = new ArrayList/*<MemberVO>*/();
+	public List<MemberVO> listMembers() {
+		List<MemberVO> list = new ArrayList<MemberVO>();
 		try {
 			con = dataFactory.getConnection();
 			String query = "select * from t_member ";	
@@ -71,8 +71,8 @@ public class MemberDAO {
 			String email = memberVO.getEmail();
 			// insert into t_member "001, 100, 오윤석, ashram7@hanmail, 영업부"
 			String query = "insert into t_member"; 
-			query +=" (id,pwd,name,email)";		//()앞에 한칸 꼭 띄어라! values도 마찬가지
-			query +=" values(?,?,?,?)";
+			query += " (id,pwd,name,email)";		//()앞에 한칸 꼭 띄어라! values도 마찬가지
+			query += " values(?,?,?,?)";
 			System.out.println("prepareStatement: " + query);
 			pstmt = con.prepareStatement(query);
 			pstmt.setString(1, id);

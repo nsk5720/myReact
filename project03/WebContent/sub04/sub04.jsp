@@ -45,7 +45,7 @@
 				// 전송 방법을 post로 지정
 				frmMember.method="post";
 				// 서블릿 매핑 이름을 member3으로 지정
-				frmMember.action="/project03/memberSk";
+				frmMember.action="memberSk";
 				// 서블릿으로 전송
 				frmMember.submit();
 			}
@@ -64,8 +64,8 @@
 
 <script>
 	/* 중복 아이디 체크 상태 및 현재 입력한 아이디 변수 */
-	/* var check_id_var = false;
-	var current_check_id; */
+	 /* var check_id_var = false;
+	var current_check_id;  */
 </script>
 										
 						<div class="form id">
