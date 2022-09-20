@@ -76,8 +76,11 @@ public class LoginServlet5 extends HttpServlet{
 			out.print("</body></html>");
 		} else {
 			out.print("<html><body>회원 아이디가 틀립니다.");
-			out.print("<a href='sub03/sub03.html'> 다시 로그인하기</a><br>");
+			out.print("<a href='sub03/sub03.jsp'> 다시 로그인하기</a><br>");
 			out.print("</body></html>");
 		}	
 	}
+	
+	
+	
 }
