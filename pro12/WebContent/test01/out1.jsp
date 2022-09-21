@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>변수 넘기기 연습</title>
 </head>
 <body>
 	<form method="post" action="out2.jsp">
