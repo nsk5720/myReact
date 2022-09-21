@@ -6241,3 +6241,6 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 
 !ENTRY org.eclipse.jface.text 2 0 2022-09-21 14:26:04.277
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jst.server.core 4 0 2022-09-21 15:09:25.813
+!MESSAGE Could not launch in profiling mode because no profilers are configured.

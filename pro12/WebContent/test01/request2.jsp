@@ -1,14 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
-	String name=(String)session.getAttribute("name");
-	String address=(String)application.getAttribute("address");	
+	String name=(String)request.getAttribute("name");
+	String address=(String)request.getAttribute("address");	
 %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>내장 객체 이동 테스트3</title>
+<title>1주소가 떠야함</title>
 </head>
 <body>
 	<h1>이름은 <%=name %>입니다</h1>
