@@ -34,7 +34,6 @@
 	<%@ include file="../main/header.jsp" %>
 	<section class="cf">
 		<div id="sectionTop" class="cf">
-			<div style='text-align: center; font-size: 20px; color: #333;'><a href="member.jsp">관리자 모드</a></div>
 			<div class="quickBar">
 				<ul >
 					<li><a class="showTooltip" title="영업점찾기" href="sub02/sub02.jsp" tabindex="258">영업점찾기</a></li>

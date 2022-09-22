@@ -50,6 +50,7 @@
 			<div id="login">
 				<div class="login showTooltip fl" title="로그인">로그인</div>
 				<div class="security showTooltip fl" title="인증센터">인증센터</div>
+				<div style="width:120px; height: 50px; float: left; margin: 10px 0px 0px 15px; font-size: 20px; color: blue; font-weight: bold;"><a style="color: red;"href="member.jsp">관리자 모드</a></div>
 			</div>
 			<div id="subMenu">
 				<ul>
