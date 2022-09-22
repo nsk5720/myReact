@@ -11,24 +11,24 @@
 		<div id="footerLnb">
 			<div class="footerNavWrap">
 				<ul id="footerNav">
-					<li><a href="../sub01/sub01.html" tabindex="266" class="footerNavFirst margin145 showTooltip" title="사고신고">사고신고</a></li>
-					<li><a href="../sub02/sub02.html" tabindex="267" class="margin145 showTooltip" title="고객의소리[전자민원]">고객의소리[전자민원]</a></li>
-					<li><a href="../index.html" tabindex="268" class="margin145 showTooltip" title="고객전자서명">고객전자서명</a></li>
-					<li><a href="../sub01/sub01.html" tabindex="269" class="margin145 showTooltip" title="인터넷뱅킹오류해결">인터넷뱅킹오류해결</a></li>
-					<li><a href="../sub02/sub02.html" tabindex="270" class="margin145 showTooltip" title="영업점찾기">영업점찾기</a></li>
-					<li><a href="../index.html" tabindex="271" title="에스크로" class="showTooltip">에스크로</a></li>
+					<li><a href="../sub01/sub01.jsp" tabindex="266" class="footerNavFirst margin145 showTooltip" title="사고신고">사고신고</a></li>
+					<li><a href="../sub02/sub02.jsp" tabindex="267" class="margin145 showTooltip" title="고객의소리[전자민원]">고객의소리[전자민원]</a></li>
+					<li><a href="../index.jsp" tabindex="268" class="margin145 showTooltip" title="고객전자서명">고객전자서명</a></li>
+					<li><a href="../sub01/sub01.jsp" tabindex="269" class="margin145 showTooltip" title="인터넷뱅킹오류해결">인터넷뱅킹오류해결</a></li>
+					<li><a href="../sub02/sub02.jsp" tabindex="270" class="margin145 showTooltip" title="영업점찾기">영업점찾기</a></li>
+					<li><a href="../index.jsp" tabindex="271" title="에스크로" class="showTooltip">에스크로</a></li>
 				</ul>
 			</div>
 		</div>
 		<div id="footer">
 			<div id="consumerProtection">
 				<div class="cpList">
-					<a href="../sub01/sub01.html" tabindex="272" title="보호금융상품등록부" class="showTooltip">보호금융상품등록부</a>
-					<a href="../sub02/sub02.html" tabindex="273" class="cpListColor showTooltip" title="개인정보처리방침">개인정보처리방침</a>
-					<a href="../index.html" tabindex="274" class="cpListColor showTooltip" title="신용정보활용체제">신용정보활용체제</a>
-					<a href="../sub01/sub01.html" tabindex="275" title="그룹내고객정보제공내역조회" class="showTooltip">그룹내고객정보제공내역조회</a>
-					<a href="../sub02/sub02.html" tabindex="276" title="개인신용정보제공사실조회" class="showTooltip">개인신용정보제공사실조회</a>
-					<a href="../index.html" tabindex="277" title="경영공시" class="showTooltip">경영공시</a>
+					<a href="../sub01/sub01.jsp" tabindex="272" title="보호금융상품등록부" class="showTooltip">보호금융상품등록부</a>
+					<a href="../sub02/sub02.jsp" tabindex="273" class="cpListColor showTooltip" title="개인정보처리방침">개인정보처리방침</a>
+					<a href="../index.jsp" tabindex="274" class="cpListColor showTooltip" title="신용정보활용체제">신용정보활용체제</a>
+					<a href="../sub01/sub01.jsp" tabindex="275" title="그룹내고객정보제공내역조회" class="showTooltip">그룹내고객정보제공내역조회</a>
+					<a href="../sub02/sub02.jsp" tabindex="276" title="개인신용정보제공사실조회" class="showTooltip">개인신용정보제공사실조회</a>
+					<a href="../index.jsp" tabindex="277" title="경영공시" class="showTooltip">경영공시</a>
 				</div>
 			</div>
 			<div id="subSidiary">
@@ -50,8 +50,8 @@
 			</div>
 			<div id="SNS">
 				<div class="SNS">
-					<a href="../sub01/sub01.html" tabindex="278" class="rollover"><img src="images/ico_footer_facebook_off.png" alt="facebook" class="showTooltip" title="facebook"/></a>
-					<a href="../sub02/sub02.html" tabindex="279" class="rollover"><img src="images/ico_footer_insta_off.png" alt="instagram" class="showTooltip" title="instagram"/></a>
+					<a href="../sub01/sub01.jsp" tabindex="278" class="rollover"><img src="images/ico_footer_facebook_off.png" alt="facebook" class="showTooltip" title="facebook"/></a>
+					<a href="../sub02/sub02.jsp" tabindex="279" class="rollover"><img src="images/ico_footer_insta_off.png" alt="instagram" class="showTooltip" title="instagram"/></a>
 				</div>
 			</div>
 			<div id="nhInformation"> 
@@ -60,7 +60,7 @@
 			</div>
 			<div id="banner">
 				<div class="banner">
-					<a href="sub02/sub02.html" tabindex="312"><img src="images/img_footer_nhfngroup.jpg" alt="nonghyupgroup" class="showTooltip"  title="nonghyupgroup"/></a>
+					<a href="sub02/sub02.jsp" tabindex="312"><img src="images/img_footer_nhfngroup.jpg" alt="nonghyupgroup" class="showTooltip"  title="nonghyupgroup"/></a>
 				<img src="images/csstest.png" alt=""/>	
 				<img src="images/csstest2.png" alt=""/>	
 				</div>

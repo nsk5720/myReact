@@ -11,25 +11,25 @@
 		<div id="header">
 			<div id="logo">
 				<h1>
-					<a href="../index.html" tabindex="1" title="농협은행 메인 로고"><img src="images/logo_new.jpg" class="showTooltip" title="농협은행 메인 로고" alt="logo images" width="180" height="35"/></a>
+					<a href="../index.jsp" tabindex="1" title="농협은행 메인 로고"><img src="images/logo_new.jpg" class="showTooltip" title="농협은행 메인 로고" alt="logo images" width="180" height="35"/></a>
 				</h1>
 			</div>
 			<div id="version">
 				<ul>
-					<li class="versionIndividual showTooltip fl" title="개인"><a href="../sub01/sub01.html" tabindex="2">개인</a></li>
-					<li class="versionBigtext showTooltip fl" title="큰글"><a href="../sub02/sub02.html" tabindex="3">큰글</a></li>
+					<li class="versionIndividual showTooltip fl" title="개인"><a href="/sub01/sub01.jsp" tabindex="2">개인</a></li>
+					<li class="versionBigtext showTooltip fl" title="큰글"><a href="/sub02/sub02.jsp" tabindex="3">큰글</a></li>
 				</ul>
 			</div>
 			<div id="versionCompany" class="fl">
 				<ul>
-					<li class="fl showTooltip" title="기업"><a href="../index.html" tabindex="4">기업</a></li>
-					<li class="fl showTooltip" title="카드"><a href="../sub01/sub01.html" tabindex="5">카드</a></li>
+					<li class="fl showTooltip" title="기업"><a href="index.jsp" tabindex="4">기업</a></li>
+					<li class="fl showTooltip" title="카드"><a href="project03/sub01/sub01.jsp" tabindex="5">카드</a></li>
 				</ul>
 			</div>
 			<div id="btn">
-				<a href="../sub02/sub02.html" tabindex="6"><img src="images/ico_favorite_off.gif" class="showTooltip favorite" title="즐겨찾기" alt="favorite"/></a>
-				<a href="../index.html" tabindex="7"><img src="images/btn-set.png"  class="showTooltip setting" title="셋팅" alt="셋팅"/></a>
-				<a href="../sub01/sub01.html" tabindex="8"><img src="images/btn_header_search.gif"  class="showTooltip searchBtn" title="검색" alt="searching button" /></a>
+				<a href="../sub02/sub02.jsp" tabindex="6"><img src="images/ico_favorite_off.gif" class="showTooltip favorite" title="즐겨찾기" alt="favorite"/></a>
+				<a href="../index.jsp" tabindex="7"><img src="images/btn-set.png"  class="showTooltip setting" title="셋팅" alt="셋팅"/></a>
+				<a href="../sub01/sub01.jsp" tabindex="8"><img src="images/btn_header_search.gif"  class="showTooltip searchBtn" title="검색" alt="searching button" /></a>
 			</div>
 			<div id="gnbNav">
 				<select name="Language">
@@ -48,22 +48,21 @@
 				</select>
 			</div>
 			<div id="login">
-				<div class="headerLogin fl showTooltip" title="로그인">로그인</div>
 				<div class="login showTooltip fl" title="로그인">로그인</div>
 				<div class="security showTooltip fl" title="인증센터">인증센터</div>
 			</div>
 			<div id="subMenu">
 				<ul>
-					<li><a class="showTooltip" href="../sub02/sub02.html" tabindex="9" title="외환">외환</a></li>
-					<li><a class="showTooltip" href="../index.html" tabindex="10" title="퇴직연금">퇴직연금</a></li>
-					<li><a class="showTooltip" href="../sub01/sub01.html" tabindex="11" title="보안센터">보안센터</a></li>
-					<li><a class="showTooltip" href="../sub02/sub02.html" tabindex="12" title="고객센터">고객센터</a></li>
+					<li><a class="showTooltip" href="../sub02/sub02.jsp" tabindex="9" title="외환">외환</a></li>
+					<li><a class="showTooltip" href="../index.jsp" tabindex="10" title="퇴직연금">퇴직연금</a></li>
+					<li><a class="showTooltip" href="../sub01/sub01.jsp" tabindex="11" title="보안센터">보안센터</a></li>
+					<li><a class="showTooltip" href="../sub02/sub02.jsp" tabindex="12" title="고객센터">고객센터</a></li>
 				</ul>
 			</div>
 		</div>
 		<nav id="mainLnb" class="">  
 			<ul id="lnbNav">
-				<li class="margin93"><a href="../sub01/sub01.html" tabindex="15" class="headerNavFirst showTooltip" title="조회">조회</a>
+				<li class="margin93"><a href="../sub01/sub01.jsp" tabindex="15" class="headerNavFirst showTooltip" title="조회">조회</a>
 					<div class="twoDepth">
 						<div class="twoDepthWrap cf">
 							<div class="twoDepthTop cf">
@@ -160,7 +159,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="margin93"><a href="../sub02/sub02.html" tabindex="83" title="이체" class="showTooltip">이체</a>
+				<li class="margin93"><a href="../sub02/sub02.jsp" tabindex="83" title="이체" class="showTooltip">이체</a>
 					<div class="twoDepth">
 						<div class="twoDepthWrap cf">
 							<!-- <div class="twoDepthTop cf"> -->
@@ -208,7 +207,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="margin93"><a class="showTooltip" href="../index.html" tabindex="114" title="공과금">공과금</a>
+				<li class="margin93"><a class="showTooltip" href="../index.jsp" tabindex="114" title="공과금">공과금</a>
 					<div class="twoDepth">
 						<div class="twoDepthWrap">
 							<div class="twoDepthTop cf">
@@ -274,7 +273,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="margin93"><a class="showTooltip" href="../sub01/sub01.html" tabindex="156" title="뱅킹관리">뱅킹관리</a>
+				<li class="margin93"><a class="showTooltip" href="../sub01/sub01.jsp" tabindex="156" title="뱅킹관리">뱅킹관리</a>
 					<div class="twoDepth">
 						<div class="twoDepthWrap">
 							<div class="twoDepthTop cf">
@@ -357,7 +356,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="margin93"><a class="showTooltip" href="../sub02/sub02.html" tabindex="212" title="라운지">라운지</a>
+				<li class="margin93"><a class="showTooltip" href="../sub02/sub02.jsp" tabindex="212" title="라운지">라운지</a>
 					<div class="twoDepth">
 						<div class="twoDepthWrap">
 							<div class="twoDepthTop cf">
@@ -410,7 +409,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="margin93"><a class="showTooltip" href="../index.html" tabindex="244" title="금융상품몰">금융상품몰</a>
+				<li class="margin93"><a class="showTooltip" href="../index.jsp" tabindex="244" title="금융상품몰">금융상품몰</a>
 					<div class="twoDepth">
 						<div class="twoDepthWrap">
 							<div class="twoDepthTop cf">
@@ -424,7 +423,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="margin93"><a class="showTooltip" href="../sub01/sub01.html" tabindex="247" title="오픈뱅킹">오픈뱅킹</a>
+				<li class="margin93"><a class="showTooltip" href="../sub01/sub01.jsp" tabindex="247" title="오픈뱅킹">오픈뱅킹</a>
 					<div class="twoDepth">
 						<div class="twoDepthWrap">
 							<div class="twoDepthTop cf">
@@ -447,7 +446,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="allMenu"><a href="../sub02/sub02.html" tabindex="257"><img class="showTooltip" src="images/bg_all_menu.png" alt="all menu" title="전체메뉴"/></a></li>
+				<li class="allMenu"><a href="../sub02/sub02.jsp" tabindex="257"><img class="showTooltip" src="images/bg_all_menu.png" alt="all menu" title="전체메뉴"/></a></li>
 			</ul>
 		</nav>
 	</header>

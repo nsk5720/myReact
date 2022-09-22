@@ -55,7 +55,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%@ include file="../main/header.jsp" %><br>
+	<%@ include file="../main/header.jsp" %>
 		<section>
 			<div id="signup_content">
 				<div id="join_box" class="join_box">

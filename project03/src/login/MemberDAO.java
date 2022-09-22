@@ -62,6 +62,54 @@ public class MemberDAO {
 		}
 		return list;
 	}
+	
+	//멤버들 리스트 보는 모듈
+		public List listMembers(MemberVO memberVO) {
+			List membersList = new ArrayList();
+			String _name=memberVO.getName();
+			try {
+				con = dataFactory.getConnection();
+				String query = "select * from t_member ";
+				
+				if((_name!=null && _name.length()!=0)){
+					 query+=" where name=?";
+					 pstmt = con.prepareStatement(query);
+					 pstmt.setString(1, _name);
+				}else {
+					pstmt = con.prepareStatement(query);	
+				}
+				
+				
+				System.out.println("prepareStatememt: " + query);
+				ResultSet rs = pstmt.executeQuery();
+				while (rs.next()) {
+					String id = rs.getString("id");
+					String pwd = rs.getString("pwd");
+					String name = rs.getString("name");
+					String email = rs.getString("email");
+					Date joinDate = rs.getDate("joinDate");
+					MemberVO vo = new MemberVO();
+					vo.setId(id);
+					vo.setPwd(pwd);
+					vo.setName(name);
+					vo.setEmail(email);
+					vo.setJoinDate(joinDate);
+					membersList.add(vo);
+				}
+				rs.close();
+				pstmt.close();
+				con.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			return membersList;
+		}	
+	
+	
+	
+	
+	
+	//멤버 추가 모듈
 	public void addMember(MemberVO memberVO) {
 		try {
 			con = dataFactory.getConnection();
@@ -85,7 +133,9 @@ public class MemberDAO {
 			e.printStackTrace();
 		}
 	}
+
 	
+	//멤버 삭제 모듈
 	public void delMember(String id) {
 		try {
 			con = dataFactory.getConnection();
