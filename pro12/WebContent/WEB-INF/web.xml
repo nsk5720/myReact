@@ -4,6 +4,7 @@
 <welcome-file>/test02/add.jsp</welcome-file>
 <welcome-file>/test02/add.html</welcome-file>
 </welcome-file-list>
+
 <error-page>
 <error-code>404</error-code>
 <location>/err/error_404.jsp</location>
