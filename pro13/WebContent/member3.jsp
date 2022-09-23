@@ -5,6 +5,8 @@
   request.setCharacterEncoding("UTF-8");
 %>    
 
+<jsp:useBean id="m" class="sec01.ex01.memberBean" scope="page"/>
+    
 <%
    String   id=request.getParameter("id");
    String  pwd = request.getParameter("pwd");
@@ -12,7 +14,12 @@
    String  email = request.getParameter("email");
  
   
-   MemberBean  m =  new MemberBean(id, pwd, name, email);
+   //MemberBean  m =  new MemberBean(id, pwd, name, email);
+   m.setId(id);
+   m.setPwd(pwd);
+   m.setName(name);
+   m.setEmail(email);
+   
    MemberDAO  memberDAO=new MemberDAO();
    memberDAO.addMember(m);
    List membersList = memberDAO.listMembers();	
