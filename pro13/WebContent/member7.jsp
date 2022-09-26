@@ -2,26 +2,13 @@
      import="java.util.*,sec01.ex01.*" 
     pageEncoding="UTF-8"%>
 <%
-	request.setCharacterEncoding("UTF-8");
+  request.setCharacterEncoding("UTF-8");
 %>    
-	<jsp:useBean  id="m"  class="sec01.ex01.MemberBean"  scope="page"/>
-<jsp:setProperty name="m"  property="id"    value='<%= request.getParameter("id") %>'  />
-<jsp:setProperty name="m"  property="pwd"   value='<%= request.getParameter("pwd") %>'  />
-<jsp:setProperty name="m"  property="name"  value='<%= request.getParameter("name") %>'  />
-<jsp:setProperty name="m"  property="email" value='<%= request.getParameter("email") %>'  />	
+
+<jsp:useBean  id="m"  class="sec01.ex01.MemberBean"  scope="page"/>
+<jsp:setProperty name="m" property="*" />
+
 <%
-   /* String   id=request.getParameter("id");
-   String  pwd = request.getParameter("pwd");
-   String  name = request.getParameter("name");
-   String  email = request.getParameter("email"); */
- 
-  
-   //MemberBean  m =  new MemberBean(id, pwd, name, email);
-   /* m.setId(id);
-   m.setPwd(pwd);
-   m.setName(name);
-   m.setEmail(email); */
-   
    MemberDAO  memberDAO=new MemberDAO();
    memberDAO.addMember(m);
    List membersList = memberDAO.listMembers();	
@@ -52,8 +39,7 @@
 	  </tr>
 	<%
 	}else{
-	   for( int i = 0; i < membersList.size(); i++ ) {
-	      MemberBean bean = (MemberBean) membersList.get(i);
+	      MemberBean bean = (MemberBean) membersList.get(0);
 	%>
 	   <tr align="center">
 	       <td><%=bean.getId() %></td>
@@ -63,9 +49,7 @@
 	       <td><%=bean.getJoinDate() %></td>
 	   </tr>
 	<%
-	      } // end for
-	
-	   } // end if
+	}
 	%>
 	   <tr height="1" bgcolor="#99ccff">
 	      <td colspan="5"></td>

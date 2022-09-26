@@ -2,11 +2,9 @@
      import="java.util.*,sec01.ex01.*" 
     pageEncoding="UTF-8"%>
 <%
-  request.setCharacterEncoding("UTF-8");
+	request.setCharacterEncoding("UTF-8");
 %>    
-
-<jsp:useBean id="m" class="sec01.ex01.memberBean" scope="page"/>
-    
+	<jsp:useBean  id="m"  class="sec01.ex01.MemberBean"  scope="page"/>
 <%
    String   id=request.getParameter("id");
    String  pwd = request.getParameter("pwd");
