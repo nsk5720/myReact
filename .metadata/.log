@@ -11287,3 +11287,6 @@ org.eclipse.core.internal.resources.ResourceException: Marker id 7640 not found.
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 !SUBENTRY 1 org.eclipse.core.resources 4 376 2022-09-26 11:03:02.129
 !MESSAGE Marker id 7640 not found.
+
+!ENTRY org.eclipse.jface.text 2 0 2022-09-26 11:41:47.478
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
