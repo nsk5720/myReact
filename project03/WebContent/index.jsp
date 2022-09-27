@@ -9,6 +9,7 @@
 	<meta name="Author" content="남상권"/>
 	<meta name="Keywords" content="남상권, namsangkwon, 포트폴리오, 남상권 포트폴리오, portfolio, SanKwon's portfolio, 프로젝트, Project, 남 상권, 남 상 권, 상권 남, 상권, HTML5, CSS3, jQuery, 프로젝트, Portfolio, Project, 반응형웹, 반응형웹 포트폴리오, 학생 포트폴리오"/>
 	<meta name="Description" content="남상권의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />
+	<!-- <meta http-equiv="refresh" content="5; url=sub03/sub03.jsp"> -->
 	<link rel="icon" href="images/favicon.ico">
 	<title>농협은행 메인페이지</title>
 	<!--[if gte IE 9]>
@@ -27,6 +28,49 @@
 	<script src="js/jsPop1.js"></script>
 	<script src="js/signup.js"></script>
 	
+	
+<script>
+//로그인 카운트다운
+var tid;
+var cnt = parseInt(5);//초기값(초단위)
+function counter_init() {
+	tid = setInterval("counter_run()", 1000);
+}
+
+function counter_reset() {
+	clearInterval(tid);
+	cnt = parseInt(59);
+	counter_init();
+}
+
+function counter_run() {
+	document.getElementById("counter").innerText = time_format(cnt);
+	cnt--;
+	if(cnt < 0) {
+		clearInterval(tid);
+		self.location = "./sub03/sub03.jsp"; //로그인 경로 넣기
+	}
+}
+function time_format(s) {
+	var nHour=0;
+	var nMin=0;
+	var nSec=0;
+	if(s>0) {
+		nMin = parseInt(s/60);
+		nSec = s%60;
+
+		if(nMin>60) {
+			nHour = parseInt(nMin/60);
+			nMin = nMin%60;
+		}
+	} 
+	if(nSec<10) nSec = "0"+nSec;
+	if(nMin<10) nMin = "0"+nMin;
+
+	return  ""+nHour+":"+nMin+":" +nSec;
+}	
+	counter_init();
+</script>	
 
 
 </head>
@@ -34,16 +78,21 @@
 	<%@ include file="../main/header.jsp" %>
 	<section class="cf">
 		<div id="sectionTop" class="cf">
+		<div class="timeControl" style="width: 239px; margin: 0 auto;">	
+			<span id="counter"></span>
+			<span style="color: #333333">초 후 자동으로 <br/>로그인페이지로 이동합니다.</span>
+			<input class="timeBtn" type="button" value="연장" onclick="counter_reset()" style="width: 200px;">	
+		</div>
 			<div class="quickBar">
 				<ul >
-					<li><a class="showTooltip" title="영업점찾기" href="sub02/sub02.jsp" tabindex="258">영업점찾기</a></li>
-					<li><a class="showTooltip" title="이용안내" href="sub02/sujspjsp" tabindex="259">이용안내</a></li>
-					<li><a class="showTooltip" title="FAQ" href="sub02/sub02.jsp" tabindex="260">FAQ</a></li>
-					<li><a class="showTooltip" title="인증센터" href="sub02/sub02.jsp" tabindex="261">인증센터</a></li>
-					<li><a class="showTooltip" title="사고분실신고" href="sub02/sub02.jsp" tabindex="262">사고분실<br>신고</a></li>
-					<li><a class="showTooltip" title="상품공시실" href="sub02/sub02.jsp" tabindex="263">상품공시실</a></li>
-					<li><a class="showTooltip" title="금융소비자보호" href="sub02/sub02.jsp" tabindex="264">금융소비자보호</a></li>
-					<li><a class="showTooltip" title="고객센터" href="sub02/sub02.jsp" tabindex="265">고객센터 <span>1661-3000</span></a></li>
+					<li><a class="showTooltip" title="영업점찾기" href="./sub02/sub02.jsp" tabindex="258">영업점찾기</a></li>
+					<li><a class="showTooltip" title="이용안내" href="./sub02/sujspjsp" tabindex="259">이용안내</a></li>
+					<li><a class="showTooltip" title="FAQ" href="./sub02/sub02.jsp" tabindex="260">FAQ</a></li>
+					<li><a class="showTooltip" title="인증센터" href="./sub02/sub02.jsp" tabindex="261">인증센터</a></li>
+					<li><a class="showTooltip" title="사고분실신고" href="./sub02/sub02.jsp" tabindex="262">사고분실<br>신고</a></li>
+					<li><a class="showTooltip" title="상품공시실" href="./sub02/sub02.jsp" tabindex="263">상품공시실</a></li>
+					<li><a class="showTooltip" title="금융소비자보호" href="./sub02/sub02.jsp" tabindex="264">금융소비자보호</a></li>
+					<li><a class="showTooltip" title="고객센터" href="./sub02/sub02.jsp" tabindex="265">고객센터 <span>1661-3000</span></a></li>
 				</ul>
 			</div>
 			<div id="mainTop" class="c">

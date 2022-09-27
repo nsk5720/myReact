@@ -1,6 +1,6 @@
-ï»¿html{overflow-y: scroll;}
+html{overflow-y: scroll;}
 *{margin: 0; padding: 0;}
-body{font-family: 'ë§‘ì€ ê³ ë”•', 'ë‹ì›€', sans-serif;}
+body{font-family: '¸¼Àº °íµñ', 'µ¸¿ò', sans-serif;}
 ul, li, ol, dl{list-style: none;}
 a{text-decoration: none;}
 img{border: 0;}
@@ -20,7 +20,7 @@ section{width: 100%; height: 3500px;  margin: 0 auto;}
 			#summerImg img{margin: 20px 0 0 80px; position: absolute; left:695px;  }
 			#summerImg a{display: block; background: url(../images/img_main_slideTxt.png) no-repeat; position: relative;  width: 400px; height: 695px;}
 	
-	/* íŒì—… */
+	/* ÆË¾÷ */
 	.pop{z-index:9999999; display: none;  width: 526px; height: 500px; border: 3px solid #046fd9; position: absolute; top: 231px; left: 500px; background-color: #ffffff;   }
 	.popHeader{width: 526px; height: 135px; /* background: rgba(255,0,0,.3); */}
 	.popHeader>div{color: #046fd9; font-size: 31px; padding: 40px 0 0 43px; font-weight: bold; }
@@ -35,14 +35,14 @@ section{width: 100%; height: 3500px;  margin: 0 auto;}
 	.popFooter>label>input{width: 20px; height: 20px;}
 	.popFooter>label>span>a{font-size:19px; color: #ffffff; padding-left: 12px; letter-spacing: -1px; color: #ffffff;}
 	.popFooter>div>a{border-left: 1px solid #125380; float: right; color: white; margin: -28px 26px 0 0; font-size: 20px; padding-left: 20px; height: 25px; }
-	/* ì‹œê°„ */
+	/* ½Ã°£ */
 	#countwrap{width:320px; margin:10px auto; /* text-align:center; */ border:3px solid #efefef; padding-bottom:10px; border-radius: 30px 30px 30px 30px;}
 	#countwrap span{float: left; color:#333333; text-align:center; font-size:18px; line-height:200%; font-weight: bold; padding-left: 15px;}
 	#countwrap .counter{display:inline-block;}
 		.counter ul li{margin-left:15px; padding-top: 10px;}
 		.counter ul li.firstli{margin-left: 16px; padding-top: 10px;}
 		.counter ul li p{color:#046fd9; text-align:center; float: left; padding-top: 10px; font-weight: bold;}
-	/* ì‹œê°„	 */
+	/* ½Ã°£	 */
 	
 			/* .quickBar{} */
 			.quickBar>ul{background: #ffffff; position: fixed; top: 310px; right: 100px; z-index: 9999 ;width: 100px; height: 380px; border-radius: 0 15px 0 15px; border: 2px solid #046fd9;}
@@ -165,7 +165,7 @@ section{width: 100%; height: 3500px;  margin: 0 auto;}
 			#weatherNews{width: 450px; height: 370px;  float:left;}
 			.goBank{padding: 10px 0 10px 20px; font-size: 21px; font-weight: bold;}
 			.cDate{padding-bottom: 10px;}
-			span{color: #0c75dd; font-weight: bold}
+			/* span{color: #0c75dd; font-weight: bold} */
 			.ctemp, .clowtemp, .chightemp, .pressure, .humidity{padding: 10px; font-size: 18px;}
 			.cicon{float: left;}
 			.cicon img{ height: 73px}

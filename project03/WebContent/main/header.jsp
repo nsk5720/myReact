@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>농협은행 Header</title>
 </head>
 <body>
 	<header>
@@ -16,14 +16,14 @@
 			</div>
 			<div id="version">
 				<ul>
-					<li class="versionIndividual showTooltip fl" title="개인"><a href="/sub01/sub01.jsp" tabindex="2">개인</a></li>
-					<li class="versionBigtext showTooltip fl" title="큰글"><a href="/sub02/sub02.jsp" tabindex="3">큰글</a></li>
+					<li class="versionIndividual showTooltip fl" title="개인"><a href="./sub01/sub01.jsp" tabindex="2">개인</a></li>
+					<li class="versionBigtext showTooltip fl" title="큰글"><a href="./sub02/sub02.jsp" tabindex="3">큰글</a></li>
 				</ul>
 			</div>
 			<div id="versionCompany" class="fl">
 				<ul>
-					<li class="fl showTooltip" title="기업"><a href="index.jsp" tabindex="4">기업</a></li>
-					<li class="fl showTooltip" title="카드"><a href="project03/sub01/sub01.jsp" tabindex="5">카드</a></li>
+					<li class="fl showTooltip" title="기업"><a href="./index.jsp" tabindex="4">기업</a></li>
+					<li class="fl showTooltip" title="카드"><a href="./sub01/sub01.jsp" tabindex="5">카드</a></li>
 				</ul>
 			</div>
 			<div id="btn">
