@@ -5,6 +5,7 @@ ul, li, ol, dl{list-style: none;}
 a{text-decoration: none;}
 img{border: 0;}
 
+.ellipsis{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}  
 .fl{float: left;}
 .fr{float: right;}
 .cb{clear: both;}
@@ -19,7 +20,7 @@ header{width: 100%; height: 230px; /* background-color:rgba(255,0,0,0.3) */; mar
 		#btn{width: 206px; height: 80px; float: right;}
 		#gnbNav{width: 240px; height: 90px; float: right; /*  background-color:rgba(200,200,200,0.3) */; position: relative;}
 		#login{width: 500px; height: 65px;  clear: right; /*  background-color:rgba(0,100,225,0.3); */}
-		#subMenu{width: 390px; height: 60px; float: right; margin: -65px 0px 0 0; ;/* background-color:rgba(0,0,100,0.3) */;}
+		#subMenu{width: 390px; height: 60px; float: right; margin: -85px 50px 0px 0px; /* background-color:rgba(0,0,100,0.3) */;}
 	#mainLnb{width: 100%; height: 75px; /* float: left; */ border-top: 1px solid #dddddd; position: relative;}
 		#lnbNav{width: 1420px; height: 75px; /* float: left; */}
 	
@@ -41,9 +42,9 @@ footer{width: 100%; height: 320px; margin: 0 auto; position: relative;}
 #logo img{margin: 34px 0 0 14px; }
 		/* 버전: 개인 큰글 */
 	#version ul{height: 100px; margin: 28px 0; background: url(../images/btn_big.png) no-repeat ;background-size: 159px 43px;}
-	#version li{ padding: 9px 20px; font-size: 20px;  }
-		.versionIndividual a{color: #ffffff; font-weight: bold;}
-		.versionBigtext a{color: #333333; font-weight: bold;}
+	#version li{ padding: 9px 20px; font-size: 20px; width: 30px;}
+		.versionIndividual a{color: #ffffff; font-weight: bold; width: 70px; display: block;}
+		.versionBigtext a{color: #333333; font-weight: bold; display: block; width: 70px;}
 		/* 버전: 기업 카드 */
 #versionCompany ul{margin: 37px -20px;}
 #versionCompany li a{ color: #333333; font-size: 21px; margin-left: 46px; font-weight: bold; }
@@ -74,9 +75,9 @@ footer{width: 100%; height: 320px; margin: 0 auto; position: relative;}
 /* #lnbNav>li:hover .twoDepth{display: block;} */
 #lnbNav>li.allMenu img{width: 130%}
 #lnbNav>li.allMenu>a:hover{background: #ffffff}
-.margin93{margin-right:93px;} 
-
-	
+.margin85{margin-right:85px;} 
+.margin30{margin-right:30px;} 
+.margin93{margin-right:93px;}	
 		/* LNB 투뎁스 */
 .twoDepth{display: none; width: 100%; position: absolute; top: 73px; left: 0px; background-color: #ffffff; z-index:99999999999; border-top: 1px solid #dddddd;}
 div.twoDepth>.twoDepthWrap{width: 1420px; margin: 0 auto;}
