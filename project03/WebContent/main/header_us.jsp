@@ -13,6 +13,8 @@
 <title>농협은행 Header</title>
 </head>
 <body>
+	<fmt:setLocale value="en_US" />
+	<fmt:bundle basename="resource.header_en">
 	<header>
 		<div id="header">
 			<div id="logo">
@@ -22,14 +24,14 @@
 			</div>
 			<div id="version">
 				<ul>
-					<li class="versionIndividual showTooltip fl" title="개인"><a href="/project03/sub01/sub01.jsp" tabindex="2">개인</a></li>
-					<li class="versionBigtext showTooltip fl" title="큰글"><a href="/project03/sub02/sub02.jsp" tabindex="3">큰글</a></li>
+					<li class="versionIndividual showTooltip fl" title="개인"><a class="ellipsis" href="/project03/sub01/sub01.jsp" tabindex="2"><fmt:message key="individual" /></a></li>
+					<li class="versionBigtext showTooltip fl" title="큰글"><a class="ellipsis" href="/project03/sub02/sub02.jsp" tabindex="3"><fmt:message key="bigLetter" /></a></li>
 				</ul>
 			</div>
 			<div id="versionCompany" class="fl">
 				<ul>
-					<li class="fl showTooltip" title="기업"><a href="/project03/sub03/sub03.jsp" tabindex="4">기업</a></li>
-					<li class="fl showTooltip" title="카드"><a href="/project03/index.jsp" tabindex="5">카드</a></li>
+					<li class="fl showTooltip" title="기업"><a href="/project03/sub03/sub03.jsp" tabindex="4"><fmt:message key="corporation" /></a></li>
+					<li class="fl showTooltip" title="카드"><a href="/project03/index.jsp" tabindex="5"><fmt:message key="card" /></a></li>
 				</ul>
 			</div>
 			<div id="btn">
@@ -65,16 +67,16 @@
 			</div>
 			<div id="subMenu">
 				<ul>
-					<li><a class="showTooltip" href="/project03/index.jsp" tabindex="9" title="외환">외환</a></li>
-					<li><a class="showTooltip" href="/project03/sub01/sub01.jsp" tabindex="10" title="퇴직연금">퇴직연금</a></li>
-					<li><a class="showTooltip" href="/project03/sub02/sub02.jsp" tabindex="11" title="보안센터">보안센터</a></li>
-					<li><a class="showTooltip" href="/project03/sub03/sub03.jsp" tabindex="12" title="고객센터">고객센터</a></li>
+					<li><a class="showTooltip" href="/project03/index.jsp" tabindex="9" title="외환"><fmt:message key="foreignExchange" /></a></li>
+					<li><a class="showTooltip" href="/project03/sub01/sub01.jsp" tabindex="10" title="퇴직연금"><fmt:message key="retirementPension" /></a></li>
+					<li style="margin-right: 22px"><a class="showTooltip" href="/project03/sub02/sub02.jsp" tabindex="11" title="보안센터"><fmt:message key="securityCenter" /></a></li>
+					<li><a class="showTooltip" href="/project03/sub03/sub03.jsp" tabindex="12" title="고객센터"><fmt:message key="customerService" /></a></li>
 				</ul>
 			</div>
 		</div>
 		<nav id="mainLnb" class="">  
 			<ul id="lnbNav">
-				<li class="margin93"><a href="/project03/index.jsp" tabindex="15" class="headerNavFirst showTooltip" title="조회">조회</a>
+				<li class="margin73"><a href="/project03/index.jsp" tabindex="15" class="headerNavFirst showTooltip" title="조회"><fmt:message key="inquiry" /></a>
 					<div class="twoDepth">
 						<div class="twoDepthWrap cf">
 							<div class="twoDepthTop cf">
@@ -171,7 +173,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="margin93"><a href="/project03/sub01/sub01.jsp" tabindex="83" title="이체" class="showTooltip">이체</a>
+				<li class="margin73"><a href="/project03/sub01/sub01.jsp" tabindex="83" title="이체" class="showTooltip"><fmt:message key="transfer" /></a>
 					<div class="twoDepth">
 						<div class="twoDepthWrap cf">
 							<!-- <div class="twoDepthTop cf"> -->
@@ -219,7 +221,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="margin93"><a class="showTooltip" href="/project03/sub02/sub02.jsp" tabindex="114" title="공과금">공과금</a>
+				<li class="margin73"><a class="showTooltip" href="/project03/sub02/sub02.jsp" tabindex="114" title="공과금"><fmt:message key="utilityBill" /></a>
 					<div class="twoDepth">
 						<div class="twoDepthWrap">
 							<div class="twoDepthTop cf">
@@ -285,7 +287,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="margin93"><a class="showTooltip" href="/project03/sub03/sub03.jsp" tabindex="156" title="뱅킹관리">뱅킹관리</a>
+				<li class="margin73"><a class="showTooltip" href="/project03/sub03/sub03.jsp" tabindex="156" title="뱅킹관리"><fmt:message key="banking" /></a>
 					<div class="twoDepth">
 						<div class="twoDepthWrap">
 							<div class="twoDepthTop cf">
@@ -368,7 +370,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="margin93"><a class="showTooltip" href="/project03/index.jsp" tabindex="212" title="라운지">라운지</a>
+				<li class="margin73"><a class="showTooltip" href="/project03/index.jsp" tabindex="212" title="라운지"><fmt:message key="lounge" /></a>
 					<div class="twoDepth">
 						<div class="twoDepthWrap">
 							<div class="twoDepthTop cf">
@@ -421,7 +423,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="margin93"><a class="showTooltip" href="/project03/sub01/sub01.jsp" tabindex="244" title="금융상품몰">금융상품몰</a>
+				<li class="margin73"><a class="showTooltip" href="/project03/sub01/sub01.jsp" tabindex="244" title="금융상품몰"><fmt:message key="financialProductMall" /></a>
 					<div class="twoDepth">
 						<div class="twoDepthWrap">
 							<div class="twoDepthTop cf">
@@ -435,7 +437,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="margin93"><a class="showTooltip" href="/project03/sub02/sub02.jsp" tabindex="247" title="오픈뱅킹">오픈뱅킹</a>
+				<li class="margin30"><a class="showTooltip" href="/project03/sub02/sub02.jsp" tabindex="247" title="오픈뱅킹"><fmt:message key="openBanking" /></a>
 					<div class="twoDepth">
 						<div class="twoDepthWrap">
 							<div class="twoDepthTop cf">
@@ -462,5 +464,6 @@
 			</ul>
 		</nav>
 	</header>
+	</fmt:bundle>
 </body>
 </html>
