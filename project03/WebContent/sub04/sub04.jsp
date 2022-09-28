@@ -23,14 +23,14 @@
 	<link rel="stylesheet" href="css/common.css"/>
 	<script src="js/jquery-1.12.3.js"></script>
 	<script src="js/script.js"></script>
-	<script src="js/signup.js"></script>
+	<!-- <script src="js/signup.js"></script> -->
 	<script>
 		function fnSendMember(){
 		//자바스크립트에서 <form> 태그의 name으로 접근해 입력한 값들을 얻는다.
 		var frmMember = document.member_form;
 		var id = frmMember.id.value;
 		var pwd = frmMember.pwd.value;
-		var pwd = frmMember.pass_confirm.value;
+		/* var pwd = frmMember.pass_confirm.value; */
 		var name = frmMember.name.value;
 		var email = frmMember.email.value;
 			if(id.length == 0 || id == ""){
@@ -52,7 +52,7 @@
 		}
 	</script>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>농협은행 회원가입</title>
 </head>
 <body>
 	<%@ include file="../main/header.jsp" %>
@@ -60,14 +60,7 @@
 			<div id="signup_content">
 				<div id="join_box" class="join_box">
 					<span class="signup_title">회원 가입</span>
-					<form name="member_form" method="post" action="/project03/memberSk">
-
-<script>
-	/* 중복 아이디 체크 상태 및 현재 입력한 아이디 변수 */
-	 /* var check_id_var = false;
-	var current_check_id;  */
-</script>
-										
+					<form name="member_form" method="post" action="/project03/memberSk">				
 						<div class="form id">
 							<div class="col1">아이디</div>
 							<div class="col2">
@@ -90,7 +83,7 @@
 							</div>
 							<div class="password_info signup_info"></div>
 						</div>
-						<div class="form pass_confirm">
+						<!-- <div class="form pass_confirm">
 							<div class="col1">비밀번호 확인</div>
 							<div class="col2">
 								<label>
@@ -99,7 +92,7 @@
 								</label>
 							</div>
 							<div class="pass_confirm_info signup_info"></div>
-						</div>
+						</div> -->
 						<div class="form name">
 							<div class="col1">이름</div>
 							<div class="col2">
