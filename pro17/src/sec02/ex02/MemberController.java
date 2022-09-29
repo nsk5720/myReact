@@ -33,6 +33,8 @@ public class MemberController extends HttpServlet {
 		String nextPage = null;
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
+		
+		
 		String action = request.getPathInfo();
 		System.out.println("action:" + action);
 		if (action == null || action.equals("/listMembers.do")) {
