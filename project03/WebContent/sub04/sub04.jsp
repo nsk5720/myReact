@@ -21,6 +21,14 @@
 	<![endif]-->
 	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="css/common.css"/>
+	<style>
+	.wrap{width: 352px; margin: 0 auto;}
+	.memberJoin{width: 250px; margin: 50px auto; font-size: 50px; letter-spacing: 12px;}
+	.partWrap{width: 450px; margin: 15px 0px;}
+	.partWrap input{width: 350px; height: 40px;}
+	.wrap>input{width: 173px; height: 40px; margin: 20px 0px;}
+	.part{font-size: 20px;}
+	</style>
 	<script src="js/jquery-1.12.3.js"></script>
 	<script src="js/script.js"></script>
 	<!-- <script src="js/signup.js"></script> -->
@@ -56,30 +64,31 @@
 <body>
 	<%@ include file="../main/header.jsp" %>
 		<section>
-<form name="frmMember">
-		<div>
-			<div>회원가입창</div>
-			<div>
-				<div>아이디</div>
+	<form name="frmMember">
+		<div class="wrap">
+			<div class="memberJoin">회원가입</div>
+			<div class="partWrap">
+				<div class="part">아이디</div>
 				<div><input type="text" name="id"/></div>
 			</div>
-			<div>
-				<div>비밀번호</div>
+			<div class="partWrap">
+				<div class="part">비밀번호</div>
 				<div><input type="password" name="pwd"/></div>
-			</tr>
-			<div>
-				<div>이름</div>
+			</div>
+			<div class="partWrap">
+				<div class="part">이름</div>
 				<div><input type="text" name="name"/></div>
 			</div>
-			<div>
-				<div>이메일</div>
+			<div class="partWrap">
+				<div class="part">이메일</div>
 				<div><input type="text" name="email"/></div>
 			</div>
+		
+			<input type="button" value="가입하기" onclick="fn_sendMember()"/>
+			<input type="reset" value="다시입력"/>
+			<!-- <hidden> 태그를 이용해 서블릿에게 외원 등록임을 알린다 -->
+			<input type="hidden" name="command" value="addMember"/>
 		</div>
-		<input type="button" value="가입하기" onclick="fn_sendMember()"/>
-		<input type="reset" value="다시입력"/>
-		<!-- <hidden> 태그를 이용해 서블릿에게 외원 등록임을 알린다 -->
-		<input type="hidden" name="command" value="addMember"/>
 	</form>
 		</section>
 	<%@ include file="../main/footer.jsp" %><br>

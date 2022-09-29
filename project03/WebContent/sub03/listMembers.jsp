@@ -34,51 +34,57 @@
       </script>
 </c:when>
 </c:choose>
-	<link rel="stylesheet" href="css/common.css"/>
 	<meta charset="UTF-8">
 	<title>회원 정보 출력창</title>
+	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
 	<style>
-		.cls1{font-size: 40px; text-align:center;}
-		.cls2{font-size: 20px; text-align:center;} 
+	.title{width: 1100px; height: 50px; margin: 0 auto; }
+	.title > div {width: 14%; height: 50px; float: left; line-height: 50px; border: 1px solid #333; box-sizing: border-box; background: #efefef;}
+	.content{width: 1100px; height: 30px; margin: 0 auto; }
+	.content > div{width: 14%; height: 30px; float: left; line-height: 30px; border: 1px solid #333; box-sizing: border-box;}
+	.ellipsis{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+	.memberInfo{text-align:center; font-size:50px; margin:50px;}
+	.memberjoin{text-align:center; font-size:30px; margin:30px; color: #333; border: 1px solid #333}
 	</style>
 </head>
 <body>
 	<%@ include file="../main/header.jsp" %>
-	<p class="cls1"> 회원정보 </p>
-	<table align="center" border="1" >
-		<tr align="center" bgcolor="lightgreen">
-			<td width="7%"><b>아이디</b></td>
-			<td width="7%"><b>비밀번호</b></td>
-			<td width="7%"><b>이름</b></td>
-			<td width="7%"><b>이메일</b></td>
-			<td width="7%"><b>가입일</b></td>
-			<td width="7%" ><b>수정</b></td>
-			<td width="7%" ><b>삭제</b></td>
-		</tr>
+	<p class=memberInfo> 회원정보 </p>
+	<div align="center" border="1">
+		<div class="title" align="center" bgcolor="lightgreen">
+			<div width="7%"><b>아이디</b></div>
+			<div width="7%"><b>비밀번호</b></div>
+			<div width="7%"><b>이름</b></div>
+			<div width="7%"><b>이메일</b></div>
+			<div width="7%"><b>가입일</b></div>
+			<div width="7%" ><b>수정</b></div>
+			<div width="7%" ><b>삭제</b></div>
+		</div>
 <c:choose>
 	<c:when test="${empty membersList }">
-		<tr>
-			<td colspan=5 align="center">
+		<div>
+			<div colspan=5 align="center">
 				<b>등록된 회원이 없습니다.</b>
-			</td>
-		</tr>
+			</div>
+		</div>
 	</c:when>
 	<c:when test="${!empty membersList }" >
 		<c:forEach var="mem" items="${membersList }">
-		<tr align="center">
-			<td>${mem.id }</td>
-			<td>${mem.pwd }</td>
-			<td>${mem.name }</td>
-			<td>${mem.email }</td>
-			<td>${mem.joinDate }</td>
-			<td><a href="${contextPath}/member/modMemberForm.do?id=${mem.id }">수정</a></td>
-		    <td><a href="${contextPath}/member/delMember.do?id=${mem.id }">삭제</a></td>
-		</tr>
+		<div class="content" align="center">
+			<div class="ellipsis">${mem.id }</div>
+			<div class="ellipsis">${mem.pwd }</div>
+			<div class="ellipsis">${mem.name }</div>
+			<div class="ellipsis">${mem.email }</div>
+			<div class="ellipsis">${mem.joinDate }</div>
+			<div ><a href="${contextPath}/member/modMemberForm.do?id=${mem.id }">수정</a></div>
+		    <div><a href="${contextPath}/member/delMember.do?id=${mem.id }">삭제</a></div>
+		</div>
 		</c:forEach>
 	</c:when>
 </c:choose>
-	</table>
-	<a href="#"><p class="cls2">회원가입하기</p></a>
+	</div>
+	<a href="#"><p class="memberjoin">회원가입하기</p></a>
 	<%@ include file="../main/footer.jsp" %>
 </body>
 </html>
