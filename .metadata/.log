@@ -4457,3 +4457,9 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1471)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2022-09-29 10:43:59.160
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2022-09-29 10:44:15.637
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.

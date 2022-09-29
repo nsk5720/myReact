@@ -1,4 +1,4 @@
-package sec02.ex01;
+package sec02.ex02;
 
 import java.io.IOException;
 import java.util.List;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/member/*")
+@WebServlet("*.do")
 public class MemberController extends HttpServlet {
 	MemberDAO memberDAO;
 
@@ -37,7 +37,7 @@ public class MemberController extends HttpServlet {
 			List<MemberVO> membersList = memberDAO.listMembers();
 			request.setAttribute("membersList", membersList);
 			/*listMembers.jsp 로 포워딩*/
-			nextPage = "/test02/listMembers.jsp";
+			nextPage = "/test03/listMembers.jsp";
 		} else if (action.equals("/addMember.do")) { /*전송된 회원 정보를 가져와 테이블에 출력*/
 			String id = request.getParameter("id");
 			String pwd = request.getParameter("pwd");
@@ -45,15 +45,40 @@ public class MemberController extends HttpServlet {
 			String email = request.getParameter("email");
 			MemberVO memberVO = new MemberVO(id, pwd, name, email);
 			memberDAO.addMember(memberVO);
-			/*회원 등록 후 다시회원 목록을 출력*/
+			request.setAttribute("msg", "addMember");
 			nextPage = "/member/listMembers.do";
-		/*action 값이 /memberForm.do 이면 회원 가입창을 화면에 출력*/
 		} else if (action.equals("/memberForm.do")) {
-			nextPage = "/test02/memberForm.jsp"; /*memberForm.jsp로 포워딩*/
-		} else { /*그외 다른 action 값은 회원 목록을 출력*/
+			nextPage = "/test03/memberForm.jsp"; 
+			/*회원 수정 요청 시 id로 회원정보를 조회한 후 수정창으로 포워딩*/
+		} else if (action.equals("/modMemberForm.do")) {
+			/*전송된 id를 이용해 회원정보 조회*/
+			String id = request.getParameter("id");
+			MemberVO memInfo = memberDAO.findMember(id);
+			request.setAttribute("memInfo", memInfo);
+			nextPage="/test03/modMemberForm.jsp";
+			/*테이블의 회원 정보를 수정*/
+		} else if (action.equals("/modmember.do")){
+			String id =request.getParameter("id");
+			String pwd =request.getParameter("pwd");
+			String name =request.getParameter("name");
+			String email =request.getParameter("email");
+			MemberVO memberVO = new MemberVO(id, pwd, name, email);
+			memberDAO.modMember(memberVO);
+			/*회원 목록창으로 수정 작어 ㅂ완료 메세지 전달*/
+			request.setAttribute("msg", "modfied");
+			nextPage="/member/listMembers.do";
+	/*	회원 정보를 삭제*/
+		} else if(action.equals("/delMember.do")) {
+			/*삭제할 회원 아이디를 받아옴*/
+			String id = request.getParameter("id");
+			memberDAO.delMember(id);
+			/*회원 목록창으로 삭제 작업 완료 메세지 전달*/
+			request.setAttribute("msg", "deleted");
+			nextPage="/member/listMembers.do";
+		}else {
 			List<MemberVO> membersList = memberDAO.listMembers();
 			request.setAttribute("membersList", membersList);
-			nextPage = "/test02/listMembers.jsp";  /*회원등록후 다시 회원 목록을 출력*/
+			nextPage = "/test03/listMembers.jsp";  /*회원등록후 다시 회원 목록을 출력*/
 		}
 		/*nextPage에 지정한 요청명으로 다시 서블릿에 요청*/
 		RequestDispatcher dispatch = request.getRequestDispatcher(nextPage);

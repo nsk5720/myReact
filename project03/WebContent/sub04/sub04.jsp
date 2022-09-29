@@ -55,55 +55,34 @@
 <body>
 	<%@ include file="../main/header.jsp" %>
 		<section>
-			<div id="signup_content">
-				<div id="join_box" class="join_box">
-					<span class="signup_title">회원 가입</span>
-					<form name="member_form" method="post">				
-						<div class="form id">
-							<div class="col1">아이디</div>
-							<div class="col2">
-								<label>
-									<input autocomplete="off" maxlength="11" type="text" name="id">
-									<div class="id_image info_image"></div>
-								</label>
-							</div>
-							<div class="id_info_box">
-<div class='id_info signup_info'></div>								<div class="id_check_text">사용 가능한 아이디입니다.</div>
-							</div>								
-						</div>
-						<div class="form password">
-							<div class="col1">비밀번호</div>
-							<div class="col2">
-								<label>
-									<input autocomplete="off" maxlength="15" type="password" name="pwd">
-									<div class="pass_image info_image"></div>
-								</label>
-							</div>
-							<div class="password_info signup_info"></div>
-						</div>
-						<div class="form name">
-							<div class="col1">이름</div>
-							<div class="col2">
-								<input autocomplete="off" maxlength="5" type="text" name="name">
-							</div>
-							<div class="name_info signup_info"></div>
-						</div>
-						<div class="form email">
-							<div class="col1">이메일</div>
-							<div class="col2 cf">
-								<input autocomplete="off" maxlength="35" type="text" name="email" class="fl">
-							</div>
-							<div class="email_info signup_info"></div>
-						</div>
-						<div class="bottom_line"></div>
-						<div class="buttons cf">
-							<a class="reset_button fl" title="다시하기" type="reset">다시하기</a>
-							<a class="save_button fl" title="가입하기" type="button" onclick="fnSendMember()">가입하기</a>	
-							<a type="hidden" name="command" value="addMember"/>						
-						</div>
-					</form>
-				</div> <!-- join_box -->
-			</div> <!-- main_content -->
+<form method="post"   name="member_form">
+	<h1  style="text-align:center">회원 가입창</h1>
+	<table  align="center">
+      <tr>
+         <td width="200"><p align="right">아이디</td>
+         <td width="400"><input type="text" name="id"></td>
+      </tr>
+      <tr>
+          <td width="200"><p align="right">비밀번호</td>
+          <td width="400"><input type="password"  name="pwd"></td>
+      </tr>
+      <tr>
+          <td width="200"><p align="right">이름</td>
+          <td width="400"><p><input type="text"  name="name"></td>
+      </tr>
+      <tr>
+          <td width="200"><p align="right">이메일</td>
+          <td width="400"><p><input type="text"  name="email"></td>
+      </tr>
+      <tr>
+          <td width="200"><p>&nbsp;</p></td>
+          <td width="400">
+			<input type="submit" value="가입하기" onclick="fnSendMember()">
+			<input type="reset" value="다시입력">
+		  </td>
+      </tr>
+</table>
+</form>
 		</section>
 	<%@ include file="../main/footer.jsp" %><br>
 </body>

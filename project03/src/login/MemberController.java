@@ -56,14 +56,14 @@ public class MemberController extends HttpServlet{
 			//회원정보창으로 넘기기
 			List<MemberVO> membersList = memberDAO.listMembers();
 			request.setAttribute("membersList", membersList);
-			RequestDispatcher dispatch = request.getRequestDispatcher("listMembers.jsp");
+			RequestDispatcher dispatch = request.getRequestDispatcher("sub03/listMembers.jsp");
 			dispatch.forward(request, response);
 				} else {	//일반 로그인 후 보낼 페이지(로그인 된 페이지) 적기
 					response.sendRedirect("/project03/index.jsp");
 				}
 		} else {		//로그인 실패 시
 			out.print("<html><body>회원 아이디가 틀립니다.");
-			out.print("<a href='sub03/sub03.jsp'> 다시 로그인하기</a><br>");
+			out.print("<a href='sub04/sub04.jsp'> 다시 로그인하기</a><br>");
 			out.print("</body></html>");
 		}	
 		
