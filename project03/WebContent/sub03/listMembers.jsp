@@ -7,9 +7,33 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 %>       
+<c:set var="contextPath" value="${pageContext.request.contextPath}"  />     
 <!DOCTYPE html>
 <html>
 <head>
+<c:choose>
+   <c:when test='${msg=="addMember" }'>
+      <script>
+         window.onload=function(){
+            alert("회원을 등록했습니다.");
+         }
+      </script>
+   </c:when>
+   <c:when test='${msg=="modified" }'>
+      <script>
+        window.onload=function(){
+          alert("회원 정보를 수정했습니다.");
+        }
+      </script>
+   </c:when>
+   <c:when test= '${msg=="deleted" }'>
+      <script>
+         window.onload=function(){
+            alert("회원 정보를 삭제했습니다.");
+        } 
+      </script>
+</c:when>
+</c:choose>
 	<link rel="stylesheet" href="css/common.css"/>
 	<meta charset="UTF-8">
 	<title>회원 정보 출력창</title>
@@ -47,8 +71,8 @@
 			<td>${mem.name }</td>
 			<td>${mem.email }</td>
 			<td>${mem.joinDate }</td>
-			<td><a href="${contextPath}/project03/member/modMemberForm.do?id=${mem.id }">수정</a></td>
-		    <td><a href="${contextPath}/project03/member/delMember.do?id=${mem.id }">삭제</a></td>
+			<td><a href="${contextPath}/member/modMemberForm.do?id=${mem.id }">수정</a></td>
+		    <td><a href="${contextPath}/member/delMember.do?id=${mem.id }">삭제</a></td>
 		</tr>
 		</c:forEach>
 	</c:when>

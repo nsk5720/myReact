@@ -65,7 +65,7 @@ public class MemberController02 extends HttpServlet {
 		     MemberVO memberVO = new MemberVO(id, pwd, name, email);
 		     memberDAO.modMember(memberVO);
 		     request.setAttribute("msg", "modified");
-		     nextPage="/member/listMembers.do";
+		     nextPage="/sub03/listMembers.do";
 		}else if(action.equals("/delMember.do")){
 		     String id=request.getParameter("id");
 		     memberDAO.delMember(id);
