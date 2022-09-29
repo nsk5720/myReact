@@ -98,4 +98,42 @@ public class MemberDAO {
 		}
 			return memInfo;
 	}
-}
+	
+	public void modMember(MemberVO memberVO) {
+		String id = memberVO.getId();
+		String pwd = memberVO.getPwd();
+		String name = memberVO.getName();
+		String email = memberVO.getEmail();
+		try {
+			conn=dataFactory.getConnection();
+			/*전달된 수정 회원 정보를 update 문을 이용해 수정*/
+			String query = "update t_member set pwd=?, name=?, email=? where id=?";
+			System.out.println(query);
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, pwd);
+			pstmt.setString(2, name);
+			pstmt.setString(3, email);
+			pstmt.setString(4, id);
+			/*SQL문을 실행*/
+			pstmt.executeUpdate();
+			pstmt.close();
+			conn.close();
+		}	catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void delMember(String id) {
+		try {
+			conn = dataFactory.getConnection();
+			/*전달된 수정 회원정보를 delete문을 사용해 수정*/
+			String query = "delete from t_member where id=?";
+			System.out.println(query);
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, id);
+			pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}	

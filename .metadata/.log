@@ -4463,3 +4463,6 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.wst.server.core 4 0 2022-09-29 10:44:15.637
 !MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.jface.text 2 0 2022-09-29 11:34:07.592
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'

@@ -25,8 +25,9 @@
 	<script src="js/script.js"></script>
 	<!-- <script src="js/signup.js"></script> -->
 	<script>
-		function fnSendMember(){
-		var frmMember = document.member_form;
+		function fn_sendMember(){
+		//자바스크립트에서 <form> 태그의 name으로 접근해 입력한 값들을 얻는다.
+		var frmMember = document.frmMember;
 		var id = frmMember.id.value;
 		var pwd = frmMember.pwd.value;
 		var name = frmMember.name.value;
@@ -55,34 +56,31 @@
 <body>
 	<%@ include file="../main/header.jsp" %>
 		<section>
-<form method="post"   name="member_form">
-	<h1  style="text-align:center">회원 가입창</h1>
-	<table  align="center">
-      <tr>
-         <td width="200"><p align="right">아이디</td>
-         <td width="400"><input type="text" name="id"></td>
-      </tr>
-      <tr>
-          <td width="200"><p align="right">비밀번호</td>
-          <td width="400"><input type="password"  name="pwd"></td>
-      </tr>
-      <tr>
-          <td width="200"><p align="right">이름</td>
-          <td width="400"><p><input type="text"  name="name"></td>
-      </tr>
-      <tr>
-          <td width="200"><p align="right">이메일</td>
-          <td width="400"><p><input type="text"  name="email"></td>
-      </tr>
-      <tr>
-          <td width="200"><p>&nbsp;</p></td>
-          <td width="400">
-			<input type="submit" value="가입하기" onclick="fnSendMember()">
-			<input type="reset" value="다시입력">
-		  </td>
-      </tr>
-</table>
-</form>
+<form name="frmMember">
+		<div>
+			<div>회원가입창</div>
+			<div>
+				<div>아이디</div>
+				<div><input type="text" name="id"/></div>
+			</div>
+			<div>
+				<div>비밀번호</div>
+				<div><input type="password" name="pwd"/></div>
+			</tr>
+			<div>
+				<div>이름</div>
+				<div><input type="text" name="name"/></div>
+			</div>
+			<div>
+				<div>이메일</div>
+				<div><input type="text" name="email"/></div>
+			</div>
+		</div>
+		<input type="button" value="가입하기" onclick="fn_sendMember()"/>
+		<input type="reset" value="다시입력"/>
+		<!-- <hidden> 태그를 이용해 서블릿에게 외원 등록임을 알린다 -->
+		<input type="hidden" name="command" value="addMember"/>
+	</form>
 		</section>
 	<%@ include file="../main/footer.jsp" %><br>
 </body>
