@@ -1,6 +1,8 @@
 package sec03.brd01;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -43,7 +45,7 @@ public class BoardController extends HttpServlet{
 					request.setAttribute("articlesList", articlesList);
 					nextPage = "/board01/listArticles.jsp";
 				} else if(action.equals("/listArticles.do")) {	/* action 값이 listArticles.do 이면 전체글 조회*/
-					articlesList = boardService.listARticles();
+					articlesList = boardService.listArticles();
 					/*조회된 글 목록을 articleList로 바인딩 한 후 listArticles.jsp로 포워딩*/
 					request.setAttribute("articlesList", articlesList);
 					nextPage = "/board01/listArticles.jsp";

@@ -47,7 +47,7 @@ public class BoardDAO {
 				Date writeDate = rs.getDate("writeDate");
 				ArticleVO article = new ArticleVO();
 				article.setLevel(level);
-				article.setArticleNo(articleNO);
+				article.setArticleNO(articleNO);
 				article.setParentNO(parentNO);
 				article.setTitle(title);
 				article.setContent(content);
