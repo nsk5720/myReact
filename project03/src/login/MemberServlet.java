@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import login.MemberDAO;
 import login.MemberVO;
-
+//삭제 모듈 추가
 @WebServlet("/memberSk")
 public class MemberServlet extends HttpServlet{
 
@@ -70,12 +70,9 @@ public class MemberServlet extends HttpServlet{
 		                +name+"</td><td>"
 		                +email+"</td><td>"
 		                +joinDate+"</td><td>"
-		                +"<a href='/project03/memberSk?command=delMember&id="+id+"'>삭제</a></td></tr>");	 		
+		                +"<a href='/project03/memberSk?command=delMember&id="+id+"'>삭제</a></td></tr>");		
 		}
 		out.print("</table></body></html>");
 		out.print("<a href='/project03/sub04/sub04.jsp'>새 회원 등록하기</a>");
-		
-	
-		
 	}
 }

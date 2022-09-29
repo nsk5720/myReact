@@ -26,11 +26,9 @@
 	<!-- <script src="js/signup.js"></script> -->
 	<script>
 		function fnSendMember(){
-		//자바스크립트에서 <form> 태그의 name으로 접근해 입력한 값들을 얻는다.
 		var frmMember = document.member_form;
 		var id = frmMember.id.value;
 		var pwd = frmMember.pwd.value;
-		/* var pwd = frmMember.pass_confirm.value; */
 		var name = frmMember.name.value;
 		var email = frmMember.email.value;
 			if(id.length == 0 || id == ""){
@@ -39,13 +37,13 @@
 				alert("비밀번호는 필수입니다.");
 			} else if(name.length == 0 || name == ""){
 				alert("이름은 필수입니다.");
-			} else if(email.length == 0 || name == ""){
+			} else if(email.length == 0 || email == ""){
 				alert("이메일은 필수입니다.");
 			} else{
 				// 전송 방법을 post로 지정
 				frmMember.method="post";
 				// 서블릿 매핑 이름을 member3으로 지정
-				frmMember.action="memberSk";
+				frmMember.action="/project03/memberSk";
 				// 서블릿으로 전송
 				frmMember.submit();
 			}
@@ -60,7 +58,7 @@
 			<div id="signup_content">
 				<div id="join_box" class="join_box">
 					<span class="signup_title">회원 가입</span>
-					<form name="member_form" method="post" action="/project03/memberSk">				
+					<form name="member_form" method="post">				
 						<div class="form id">
 							<div class="col1">아이디</div>
 							<div class="col2">
@@ -77,22 +75,12 @@
 							<div class="col1">비밀번호</div>
 							<div class="col2">
 								<label>
-									<input autocomplete="off" maxlength="15" type="password" name="pass">
+									<input autocomplete="off" maxlength="15" type="password" name="pwd">
 									<div class="pass_image info_image"></div>
 								</label>
 							</div>
 							<div class="password_info signup_info"></div>
 						</div>
-						<!-- <div class="form pass_confirm">
-							<div class="col1">비밀번호 확인</div>
-							<div class="col2">
-								<label>
-									<input autocomplete="off" maxlength="15" type="password" name="pass_confirm">
-									<div class="pass_confirm_image info_image"></div>
-								</label>
-							</div>
-							<div class="pass_confirm_info signup_info"></div>
-						</div> -->
 						<div class="form name">
 							<div class="col1">이름</div>
 							<div class="col2">
@@ -109,8 +97,9 @@
 						</div>
 						<div class="bottom_line"></div>
 						<div class="buttons cf">
-							<a class="reset_button fl" href="#" title="다시하기" type="reset">다시하기</a>
-							<a class="save_button fl" href="#" title="가입하기" type="button">가입하기</a>							
+							<a class="reset_button fl" title="다시하기" type="reset">다시하기</a>
+							<a class="save_button fl" title="가입하기" type="button" onclick="fnSendMember()">가입하기</a>	
+							<a type="hidden" name="command" value="addMember"/>						
 						</div>
 					</form>
 				</div> <!-- join_box -->
