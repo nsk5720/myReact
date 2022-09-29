@@ -66,6 +66,9 @@ public class MemberController extends HttpServlet{
 			out.print("<a href='sub04/sub04.jsp'> 다시 로그인하기</a><br>");
 			out.print("</body></html>");
 		}	
+
+		
+		
 		
 		
 		

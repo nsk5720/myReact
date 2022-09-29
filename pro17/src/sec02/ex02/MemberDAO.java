@@ -16,7 +16,7 @@ public class MemberDAO {
 	private DataSource dataFactory;
 	private Connection conn;
 	private PreparedStatement pstmt;
-	
+
 	public MemberDAO() {
 		try {
 			Context ctx = new InitialContext();
@@ -26,7 +26,7 @@ public class MemberDAO {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public List<MemberVO> listMembers() {
 		List<MemberVO> membersList = new ArrayList();
 		try {
@@ -42,17 +42,17 @@ public class MemberDAO {
 				String email = rs.getString("email");
 				Date joinDate = rs.getDate("joinDate");
 				MemberVO memberVO = new MemberVO(id, pwd, name, email, joinDate);
-				membersList.add(memberVO);				
+				membersList.add(memberVO);
 			}
 			rs.close();
 			pstmt.close();
-			conn.close();			
+			conn.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return membersList;
 	}
-	
+
 	public void addMember(MemberVO m) {
 		try {
 			conn = dataFactory.getConnection();
@@ -73,22 +73,22 @@ public class MemberDAO {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-	}	
-	
+	}
+
 	public MemberVO findMember(String _id) {
 		MemberVO memInfo = null;
 		try {
 			conn = dataFactory.getConnection();
-			String query = "select * from t_member where id=?";
+			String query = "select * from  t_member where id=?";
 			pstmt = conn.prepareStatement(query);
-			pstmt.setString(1,  _id);
+			pstmt.setString(1, _id);
 			System.out.println(query);
 			ResultSet rs = pstmt.executeQuery();
 			rs.next();
 			String id = rs.getString("id");
 			String pwd = rs.getString("pwd");
 			String name = rs.getString("name");
-			String email= rs.getString("email");
+			String email = rs.getString("email");
 			Date joinDate = rs.getDate("joinDate");
 			memInfo = new MemberVO(id, pwd, name, email, joinDate);
 			pstmt.close();
@@ -96,44 +96,42 @@ public class MemberDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-			return memInfo;
+		return memInfo;
 	}
-	
+
 	public void modMember(MemberVO memberVO) {
 		String id = memberVO.getId();
 		String pwd = memberVO.getPwd();
 		String name = memberVO.getName();
 		String email = memberVO.getEmail();
 		try {
-			conn=dataFactory.getConnection();
-			/*전달된 수정 회원 정보를 update 문을 이용해 수정*/
-			String query = "update t_member set pwd=?, name=?, email=? where id=?";
+			conn = dataFactory.getConnection();
+			String query = "update t_member set pwd=?,name=?,email=?  where id=?";
 			System.out.println(query);
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1, pwd);
 			pstmt.setString(2, name);
 			pstmt.setString(3, email);
 			pstmt.setString(4, id);
-			/*SQL문을 실행*/
 			pstmt.executeUpdate();
 			pstmt.close();
 			conn.close();
-		}	catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void delMember(String id) {
 		try {
 			conn = dataFactory.getConnection();
-			/*전달된 수정 회원정보를 delete문을 사용해 수정*/
 			String query = "delete from t_member where id=?";
 			System.out.println(query);
 			pstmt = conn.prepareStatement(query);
-			pstmt.setString(1, id);
+			pstmt.setString(1,id);
 			pstmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-}	
+
+}
