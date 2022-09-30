@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"
+    isELIgnored="false"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%
+	request.setCharacterEncoding("UTF-8");
+%>  
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,8 +25,9 @@
 		}
 	</style>
 	<![endif]-->
-	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="stylesheet" href="/project03/sub01/css/board.css"/>
+	<link rel="stylesheet" href="/project03/sub01/css/style.css"/>
+	<link rel="stylesheet" href="/project03/sub01/css/common.css"/>
 	<script src="js/jquery-1.12.3.js"></script>
 	<script src="js/script.js"></script>
 </head>
@@ -101,61 +108,62 @@
 					</div>
 				</div>
 				<div id="low" class="fl cf">
-					<form action="#">
+					<div action="#" style="float: right; margin: 30px 0px 0px 0px;">
 					<select name="order">
 						<option value="선택">선택</option>
 						<option value="회순">조회순</option>
 						<option value="등록일순">등록일순</option>
 					</select>
 					<button class="showTooltip" type="submit" title="검색">검색</button>
-					</form>
-					<div id="table">
-						<div id="firstNum" class="fl">순번</div>
-						<div id="firstCategory" class="fl">구분</div>
-						<div id="firstTitle" class="fl">제목</div>
-						<div id="firstDate" class="fl">날짜</div>
-						<div class="num fl" >777</div>
-						<div class="category fl">대출</div>
-						<div class="title fl"><a class="showTooltip" href="/project03/sub02/sub02.jsp" tabindex="278" title="비대면으로 기한연기 신청 가능한가요?">예금담보대출관련해서 혹시 예금 만기가 지난후에도 원금 상환을 못하면 어떻게되나요?</a></div>
-						<div class="date fl">08/16</div>
-						<div class="num fl" >776</div>
-						<div class="category fl">기타</div>
-						<div class="title fl"><a class="showTooltip" href="/project03/sub03/sub03.jsp" tabindex="279" title="요즘 유튜브에서 백종원 나오는 농협광고에 배경음악이 궁금해요 애기들 여러명이 함께하는~ 이러고 있는 그 영상에욥">요즘 유튜브에서 백종원 나오는 농협광고에 배경음악이 궁금해요 애기들 여러명이 함께하는~ 이러고 있는 그 영상에욥</a></div>
-						<div class="date fl">08/16</div>
-						<div class="num fl" >775</div>
-						<div class="category fl">예금</div>
-						<div class="title fl"><a class="showTooltip" href="/project03/index.jsp" tabindex="280" title="한도제한계좌 해제는 어디서 하나요?">만기시 타지역 일반농협에서 수령 할 수있나요??</a></div>
-						<div class="date fl">08/16</div>
-						<div class="num fl" >774</div>
-						<div class="category fl">외화</div>
-						<div class="title fl"><a class="showTooltip" href="/project03/sub03/sub03.jsp" tabindex="282" title="외화통장에 있는 달러 은행가서 원화로 달라고 하면 바로 빼주나요? 외화통장 atm에서 사용 가능한가요?">외화통장에 있는 달러 은행가서 원화로 달라고 하면 바로 빼주나요? 외화통장 atm에서 사용 가능한가요?</a></div>
-						<div class="date fl">08/16</div>
-						<div class="num fl" >773</div>
-						<div class="category fl">예금</div>
-						<div class="title fl"><a class="showTooltip" href="/project03/sub02/sub02.jsp" tabindex="281" title="인터넷뱅킹에서 개설한 한도제한계좌 이용한도가 어떻게 되나요?">농협 정기예금 가족이 대리해지 가능한가요?</a></div>
-						<div class="date fl">08/16</div>
-						<div class="num fl" >772</div>
-						<div class="category fl">대출</div>
-						<div class="title fl"><a class="showTooltip" href="/project03/index.jsp" tabindex="283" title="전세대출을 받을수 있으려면 살던곳의 은행에서만 받을수 있나요? 농협말입니다. 거주할 곳의 농협에서 대출받아야 하는건가요.=?">전세대출을 받을수 있으려면 살던곳의 은행에서만 받을수 있나요? 농협말입니다. 거주할 곳의 농협에서 대출받아야 하는건가요.</a></div>
-						<div class="date fl">08/16</div>
-						<div class="num fl" >771</div>
-						<div class="category fl">오픈뱅킹</div>
-						<div class="title fl"><a class="showTooltip" href="/project03/sub02/sub02.jsp" tabindex="284" title="농협말고 농축협 계좌도 타 은행 (우리은행) 오픈뱅킹으로 조회가 가능한지 알고 싶습니다.">농협말고 농축협 계좌도 타 은행 (우리은행) 오픈뱅킹으로 조회가 가능한지 알고 싶습니다.</a></div>
-						<div class="date fl">08/15</div>
-						<div class="num fl" >770</div>
-						<div class="category fl">인증서/간편로그인</div>
-						<div class="title fl"><a class="showTooltip" href="/project03/sub03/sub03.jsp" tabindex="285" title="농협은행인증서 만료가 되어 연장했는데  농협카드 어플에 들어가니 유효하지않는다고나와요">농협은행인증서 만료가 되어 연장했는데  농협카드 어플에 들어가니 유효하지않는다고나와요</a></div>
-						<div class="date fl">08/15</div>
-						<div class="num fl" >769</div>
-						<div class="category fl">대출</div>
-						<div class="title fl"><a class="showTooltip" href="/project03/index.jsp" tabindex="286" title="남편이 사망시 외국인 아내의 농협 주택담보대출은 상속가능합니까?">남편이 사망시 외국인 아내의 농협 주택담보대출은 상속가능합니까?</a></div>
-						<div class="date fl">08/15</div>
-						<div class="num fl borderBottom" >768</div>
-						<div class="category fl borderBottom">주택청약</div>
-						<div class="title fl borderBottom"><a class="showTooltip" href="/project03/sub02/sub02.jsp" tabindex="287" title="현재 농협 주택청약 가입되어있는데 청년 우대형 주택청약으로 변경하려고 합니다.">현재 농협 주택청약 가입되어있는데 청년 우대형 주택청약으로 변경하려고 합니다.</a></div>
-						<div class="date fl borderBottom">08/14</div>
 					</div>
-					<div class="writing"><a href="../sub03/sub03.jsp" tabindex="287">글쓰기</a></div>
+					
+					
+					<div >
+						<div class="titleWrap">
+							<div class="fl titleNo">글번호</div>
+							<div class="fl titleWriter">작성자</div>              
+							<div class="fl title">제목</div>
+							<div class="fl titleDay">작성일</div>
+						</div>
+					<c:choose>
+						<c:when test="${empty articlesList }" >
+							<div  height="10">
+								<div colspan="4">
+									<p align="center">
+										<b><span style="font-size:9pt;">등록된 글이 없습니다.</span></b>
+									</p>
+								</div>  
+							</div>
+						</c:when>
+						<c:when test="${!empty articlesList}" >
+					    <c:forEach  var="article" items="${articlesList }" varStatus="articleNum" >
+					    <div align="center">
+							<div width="5%">${articleNum.count}</div>
+							<div width="10%">${article.id }</div>
+							<div align='left'  width="35%"></div>
+								<span style="padding-right:30px"></span>
+								<c:choose>
+									<c:when test='${article.level > 1 }'>  
+										<c:forEach begin="1" end="${article.level }" step="1">
+											<span style="padding-left:20px"></span>    
+										</c:forEach>
+										<span style="font-size:12px;">[답변]</span>
+										<a class='cls1' href="${contextPath}/project03/board/viewArticle.do?articleNO=${article.articleNO}">${article.title}</a>
+									</c:when>
+									<c:otherwise>
+										<a class='cls1' href="${contextPath}/project03/board/viewArticle.do?articleNO=${article.articleNO}">${article.title }</a>
+									</c:otherwise>
+								</c:choose>
+							</div>
+							<div  width="10%"><fmt:formatDate value="${article.writeDate}" /></div> 
+					</div>
+					    </c:forEach>	
+						</c:when>
+					</c:choose>	
+					</div>
+					<a  class="cls1"  href="${contextPath}/project03/board/articleForm.do"><p class="cls2">글쓰기</p></a>
+					
+					
 					<div class="pageNum">
 						<div class="pageNumFirst"><a href="../sub03/sub03.jsp" tabindex="288">1</a></div>
 						<div><a href="/project03/index.jsp" tabindex="289" class="pageNumber">2</a></div>
