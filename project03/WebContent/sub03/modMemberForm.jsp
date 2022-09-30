@@ -9,17 +9,12 @@
 %>       
 <c:set var="contextPath" value="${pageContext.request.contextPath}"  />     
 <head>
-<link rel="stylesheet" href="css/common.css"/>
 <meta charset="UTF-8">
 <title>회원 정보 수정창</title>
-<style>
-  .cls1 {
-     font-size:40px;
-     text-align:center;
-   }
-</style>
+<link rel="stylesheet" href="/project03/sub03/css/common.css"/>
 </head>
 <body>
+	<%@ include file="../main/header.jsp" %>
  <h1 class="cls1">회원 정보 수정창</h1>
 <form  method="post" action="${contextPath}/member/modMember.do?id=${memInfo.id}">
  <table align="center" >
@@ -51,4 +46,6 @@
    </tr>
  </table>
 </form>
+	<%@ include file="../main/footer.jsp" %>
+</body>
 </html>

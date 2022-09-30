@@ -50,8 +50,8 @@
 			</div>
 			<div id="SNS">
 				<div class="SNS">
-					<a href="/project03/sub01/sub01.jsp" tabindex="278" class="rollover"><img src="images/ico_footer_facebook_off.png" alt="facebook" class="showTooltip" title="facebook"/></a>
-					<a href="/project03/sub02/sub02.jsp" tabindex="279" class="rollover"><img src="images/ico_footer_insta_off.png" alt="instagram" class="showTooltip" title="instagram"/></a>
+					<a href="/project03/sub01/sub01.jsp" tabindex="278" class="rollover"><img src="/project03/images/ico_footer_facebook_off.png" alt="facebook" class="showTooltip" title="facebook"/></a>
+					<a href="/project03/sub02/sub02.jsp" tabindex="279" class="rollover"><img src="/project03/images/ico_footer_insta_off.png" alt="instagram" class="showTooltip" title="instagram"/></a>
 				</div>
 			</div>
 			<div id="nhInformation"> 
@@ -60,9 +60,9 @@
 			</div>
 			<div id="banner">
 				<div class="banner">
-					<a href="/project03/sub03/sub03.jsp" tabindex="312"><img src="images/img_footer_nhfngroup.jpg" alt="nonghyupgroup" class="showTooltip"  title="nonghyupgroup"/></a>
-				<img src="images/csstest.png" alt=""/>	
-				<img src="images/csstest2.png" alt=""/>	
+					<a href="/project03/sub03/sub03.jsp" tabindex="312"><img src="/project03/images/img_footer_nhfngroup.jpg" alt="nonghyupgroup" class="showTooltip"  title="nonghyupgroup"/></a>
+				<img src="/project03/images/csstest.png" alt=""/>	
+				<img src="/project03/images/csstest2.png" alt=""/>	
 				</div>
 			</div>
 

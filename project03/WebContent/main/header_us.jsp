@@ -19,7 +19,7 @@
 		<div id="header">
 			<div id="logo">
 				<h1>
-					<a href="/project03/index.jsp" tabindex="1" title="농협은행 메인 로고"><img src="images/logo_new.jpg" class="showTooltip" title="농협은행 메인 로고" alt="logo images" width="180" height="35"/></a>
+					<a href="/project03/index.jsp" tabindex="1" title="농협은행 메인 로고"><img src="/project03/images/logo_new.jpg" class="showTooltip" title="농협은행 메인 로고" alt="logo images" width="180" height="35"/></a>
 				</h1>
 			</div>
 			<div id="version">
@@ -35,9 +35,9 @@
 				</ul>
 			</div>
 			<div id="btn">
-				<a href="/project03/sub01/sub01.jsp" tabindex="6"><img src="images/ico_favorite_off.gif" class="showTooltip favorite" title="즐겨찾기" alt="favorite"/></a>
-				<a href="/project03/sub02/sub02.jsp" tabindex="7"><img src="images/btn-set.png"  class="showTooltip setting" title="셋팅" alt="셋팅"/></a>
-				<a href="/project03/sub03/sub03.jsp" tabindex="8"><img src="images/btn_header_search.gif"  class="showTooltip searchBtn" title="검색" alt="searching button" /></a>
+				<a href="/project03/sub01/sub01.jsp" tabindex="6"><img src="/project03/images/ico_favorite_off.gif" class="showTooltip favorite" title="즐겨찾기" alt="favorite"/></a>
+				<a href="/project03/sub02/sub02.jsp" tabindex="7"><img src="/project03/images/btn-set.png"  class="showTooltip setting" title="셋팅" alt="셋팅"/></a>
+				<a href="/project03/sub03/sub03.jsp" tabindex="8"><img src="/project03/images/btn_header_search.gif"  class="showTooltip searchBtn" title="검색" alt="searching button" /></a>
 			</div>
 			<div id="gnbNav">
 				<a href="./index.jsp"><img src="images/flag_ko.png" style="position: absolute; top: 45px; left: -30px;"></a>
@@ -460,7 +460,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="allMenu"><a href="/project03/sub03/sub03.jsp" tabindex="257"><img class="showTooltip" src="images/bg_all_menu.png" alt="all menu" title="전체메뉴"/></a></li>
+				<li class="allMenu"><a href="/project03/sub03/sub03.jsp" tabindex="257"><img class="showTooltip" src="/project03/images/bg_all_menu.png" alt="all menu" title="전체메뉴"/></a></li>
 			</ul>
 		</nav>
 	</header>
