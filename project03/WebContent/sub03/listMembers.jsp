@@ -36,8 +36,8 @@
 </c:choose>
 	<meta charset="UTF-8">
 	<title>회원 정보 출력창</title>
-	<link rel="stylesheet" href="css/common.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="/project03/sub03/css/common.css"/>
+	<link rel="stylesheet" href="/project03/suv03/css/style.css"/>
 	<style>
 	a{text-decoration: none}
 	.title{width: 1100px; height: 50px; margin: 0 auto; }

@@ -1,17 +1,18 @@
 /* sub01.jsp */
-.boardTop{height:10px; width: 1072px; align:center; bgcolor:lightgreen; box-sizing: border-box; margin-top: 10px;}
-.boardNo{width: 106px; height: 55px; border-top:2px solid #919baa; box-sizing: border-box; line-height: 55px; text-align: center; border-right: 1px solid #ccd3d9}
-.boardWriter{width: 157px; height: 55px; border-top:2px solid #919baa; box-sizing: border-box; line-height: 55px; text-align: center; border-right: 1px solid #ccd3d9}
-.boardTitle{width: 655px; height: 55px; border-top:2px solid #919baa; box-sizing: border-box; line-height: 55px; text-align: center; border-right: 1px solid #ccd3d9}
-.boardDay{width: 154px; height: 55px; border-top:2px solid #919baa; box-sizing: border-box; line-height: 55px; text-align: center; border-right: 1px solid #ccd3d9}
+.boardTop{height:55px; width: 1072px; align:center; bgcolor:lightgreen; box-sizing: border-box; margin-top: 10px;}
+.boardNo{width: 106px; height: 55px; border-top:2px solid #919baa; border-bottom:1px solid #919baa; box-sizing: border-box; line-height: 55px; text-align: center; border-right: 1px solid #ccd3d9}
+.boardWriter{width: 157px; height: 55px; border-top:2px solid #919baa; border-bottom:1px solid #919baa; box-sizing: border-box; line-height: 55px; text-align: center; border-right: 1px solid #ccd3d9}
+.boardTitle{width: 655px; height: 55px; border-top:2px solid #919baa; border-bottom:1px solid #919baa; box-sizing: border-box; line-height: 55px; text-align: center; border-right: 1px solid #ccd3d9}
+.boardDay{width: 154px; height: 55px; border-top:2px solid #919baa; border-bottom:1px solid #919baa; box-sizing: border-box; line-height: 55px; text-align: center; border-right: 1px solid #ccd3d9}
 
-.boardContentNo
+.boardContentNo{width: 106px; height: 54px; border-bottom:1px solid #ccd3d9; box-sizing: border-box; line-height: 54px; text-align: center; }
+.boardContentWriter{width: 157px; height: 54px; border-bottom:1px solid #ccd3d9; box-sizing: border-box; line-height: 54px; text-align: center; color:#e2632e}
+.boardContent{width: 655px; height: 54px; border-bottom:1px solid #ccd3d9; box-sizing: border-box; line-height: 54px; text-align: left; color: #1776b4}
+.boardContent:hover{color: #e2632e; text-decoration: underline}
+.boardContentDay{width: 154px; height: 54px; border-bottom:1px solid #ccd3d9; box-sizing: border-box; line-height: 54px; text-align: center;}
 
-
-
-
-
-
+.writingText{font-size:18px; line-height: 40px; color: #fff; text-align:center;}
+.writingBtn{background-color: #1776c2; width: 80px; height: 40px; float: right; margin: -30px 20px 0 0}
 
 
 

@@ -35,48 +35,48 @@
 	<script src="js/signup.js"></script>
 	
 	
-<script>
-//로그인 카운트다운
-var tid;
-var cnt = parseInt(5);//초기값(초단위)
-function counter_init() {
-	tid = setInterval("counter_run()", 1000);
-}
-
-function counter_reset() {
-	clearInterval(tid);
-	cnt = parseInt(59);
-	counter_init();
-}
-
-function counter_run() {
-	document.getElementById("counter").innerText = time_format(cnt);
-	cnt--;
-	if(cnt < 0) {
-		clearInterval(tid);
-		self.location = "./sub03/sub03.jsp"; //로그인 경로 넣기
+	<script>
+	//로그인 카운트다운
+	var tid;
+	var cnt = parseInt(5);//초기값(초단위)
+	function counter_init() {
+		tid = setInterval("counter_run()", 1000);
 	}
-}
-function time_format(s) {
-	var nHour=0;
-	var nMin=0;
-	var nSec=0;
-	if(s>0) {
-		nMin = parseInt(s/60);
-		nSec = s%60;
-
-		if(nMin>60) {
-			nHour = parseInt(nMin/60);
-			nMin = nMin%60;
+	
+	function counter_reset() {
+		clearInterval(tid);
+		cnt = parseInt(59);
+		counter_init();
+	}
+	
+	function counter_run() {
+		document.getElementById("counter").innerText = time_format(cnt);
+		cnt--;
+		if(cnt < 0) {
+			clearInterval(tid);
+			self.location = "./sub03/sub03.jsp"; //로그인 경로 넣기
 		}
-	} 
-	if(nSec<10) nSec = "0"+nSec;
-	if(nMin<10) nMin = "0"+nMin;
-
-	return  ""+nHour+":"+nMin+":" +nSec;
-}	
-	counter_init();
-</script>	
+	}
+	function time_format(s) {
+		var nHour=0;
+		var nMin=0;
+		var nSec=0;
+		if(s>0) {
+			nMin = parseInt(s/60);
+			nSec = s%60;
+	
+			if(nMin>60) {
+				nHour = parseInt(nMin/60);
+				nMin = nMin%60;
+			}
+		} 
+		if(nSec<10) nSec = "0"+nSec;
+		if(nMin<10) nMin = "0"+nMin;
+	
+		return  ""+nHour+":"+nMin+":" +nSec;
+	}	
+		counter_init();
+	</script>	
 
 
 </head>
@@ -86,7 +86,7 @@ function time_format(s) {
 		<div id="sectionTop" class="cf">
 		<div class="timeControl" style="width: 239px; margin: 0 auto;">	
 			<span id="counter"></span>
-			<span style="color: #333333">초 후 자동으로 <br/>로그인페이지로 이동합니다.</span>
+			<span style="color: red">초 후 자동으로 <br/>로그인페이지로 이동합니다.</span>
 			<input class="timeBtn" type="button" value="연장" onclick="counter_reset()" style="width: 200px;">	
 		</div>
 			<div class="quickBar">

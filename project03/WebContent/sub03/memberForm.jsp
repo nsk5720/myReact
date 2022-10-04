@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css/common.css"/>
+<link rel="stylesheet" href="/project03/sub03/css/common.css"/>
    <meta charset="UTF-8">
    <title>회원 가입창</title>
 <body>

@@ -6,7 +6,12 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 %>
-<c:set var="contextPath" value="${pageContext.request.contextPath}"  />  
+<c:set var="contextPath"  value="${pageContext.request.contextPath}"  />
+<c:set  var="articlesList"  value="${articlesMap.articlesList}" />
+<c:set  var="totArticles"  value="${articlesMap.totArticles}" />
+<c:set  var="section"  value="${articlesMap.section}" />
+<c:set  var="pageNum"  value="${articlesMap.pageNum}" />
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +33,8 @@
 		}
 	}
 	function backToList(obj) {
-		obj.action="${contextPath}/board/listArticles.do"
+		obj.action="${contextPath}/board/listArticles.do";
+	    obj.submit();
 	}
 </script>
 </head>
@@ -44,7 +50,7 @@
 			</div>
 			<div class="contentPart">
 				<div class="fl contentLeft" valign="top">글내용:</div>
-				<div class="fl contentRight" colspan="2"><textarea type="content" rows="10" cols="65" maxlength="4000"></textarea> </div>
+				<div class="fl contentRight" colspan="2"><textarea name="content" rows="10" cols="65" maxlength="4000"></textarea> </div>
 			</div>
 			<div class="imagePart">
 				<div class="fl imageLeft">이미지파일 첨부:</div>

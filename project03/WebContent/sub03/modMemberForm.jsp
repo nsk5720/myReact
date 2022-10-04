@@ -16,7 +16,7 @@
 </head>
 <body>
 	<%@ include file="../main/header.jsp" %>
-	<section style="height: 60%;">
+	<section style="height: 70%;">
  <div class="memberCorrectWrap">
  	<h1 class="memberCorrect">회원 정보 수정</h1>
  </div>

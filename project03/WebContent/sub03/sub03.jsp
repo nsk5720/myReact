@@ -27,8 +27,8 @@
 		}
 	</style>
 	<![endif]-->
-	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="stylesheet" href="/project03/sub03/css/style.css"/>
+	<link rel="stylesheet" href="/project03/sub03/css/common.css"/>
 	<script src="js/jquery-1.12.3.js"></script>
 	<script src="js/script.js"></script>
 	<script>
