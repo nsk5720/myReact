@@ -19,16 +19,9 @@
 		}
 	</style>
 	<![endif]-->
-	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href="css/common.css"/>
-	<style>
-	.wrap{width: 352px; margin: 0 auto;}
-	.memberJoin{width: 250px; margin: 50px auto; font-size: 50px; letter-spacing: 12px;}
-	.partWrap{width: 450px; margin: 15px 0px;}
-	.partWrap input{width: 350px; height: 40px;}
-	.wrap>input{width: 173px; height: 40px; margin: 20px 0px;}
-	.part{font-size: 20px;}
-	</style>
+	<link rel="stylesheet" href="/project03/sub04/css/style.css"/>
+	<link rel="stylesheet" href="/project03/sub04/css/common.css"/>
+	
 	<script src="js/jquery-1.12.3.js"></script>
 	<script src="js/script.js"></script>
 	<!-- <script src="js/signup.js"></script> -->
@@ -63,31 +56,34 @@
 </head>
 <body>
 	<%@ include file="../main/header.jsp" %>
-		<section>
+		<section style=height:100%;>
 	<form name="frmMember">
-		<div class="wrap">
+		<div class="memberJoinWrap">
 			<div class="memberJoin">회원가입</div>
+		</div>
+		<div class="wrap">
 			<div class="partWrap">
-				<div class="part">아이디</div>
-				<div><input type="text" name="id"/></div>
+				<div class="part fl"><span>*</span>아이디</div>
+				<div class="fl"><input class="guideText" type="text" name="id" value="아이디를 입력해주세요"/></div>
 			</div>
 			<div class="partWrap">
-				<div class="part">비밀번호</div>
-				<div><input type="password" name="pwd"/></div>
+				<div class="part fl"><span>*</span>비밀번호</div>
+				<div class="fl"><input class="guideText" type="password" name="pwd" value="비밀번호를 입력해주세요"/></div>
 			</div>
 			<div class="partWrap">
-				<div class="part">이름</div>
-				<div><input type="text" name="name"/></div>
+				<div class="part fl"><span>*</span>이름</div>
+				<div class="fl"><input class="guideText" type="text" name="name" value="이름을 입력해주세요"/></div>
 			</div>
 			<div class="partWrap">
-				<div class="part">이메일</div>
-				<div><input type="text" name="email"/></div>
+				<div class="part fl"><span>*</span>이메일</div>
+				<div class="fl"><input class="guideText" type="text" name="email" value="이메일을 입력해주세요"/></div>
 			</div>
-		
-			<input type="button" value="가입하기" onclick="fn_sendMember()"/>
-			<input type="reset" value="다시입력"/>
+		<div class="button">
+			<input class="join" type="button" value="가입하기" onclick="fn_sendMember()"/>
+			<input class="reset" type="reset" value="다시입력"/>
 			<!-- <hidden> 태그를 이용해 서블릿에게 외원 등록임을 알린다 -->
 			<input type="hidden" name="command" value="addMember"/>
+		</div>
 		</div>
 	</form>
 		</section>

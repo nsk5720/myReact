@@ -1,5 +1,62 @@
-.titleWrap{height:10px; align:center; bgcolor:lightgreen; box-sizing: border-box}
-.titleNo{width: 106px; height: 55px;}
-.titleWriter{width: 157px; height: 55px;}
-.title{width: 663px; height: 55px;}
-.titleDay{width: 154px; height: 55px;}
+/* sub01.jsp */
+.boardTop{height:10px; width: 1072px; align:center; bgcolor:lightgreen; box-sizing: border-box; margin-top: 10px;}
+.boardNo{width: 106px; height: 55px; border-top:2px solid #919baa; box-sizing: border-box; line-height: 55px; text-align: center; border-right: 1px solid #ccd3d9}
+.boardWriter{width: 157px; height: 55px; border-top:2px solid #919baa; box-sizing: border-box; line-height: 55px; text-align: center; border-right: 1px solid #ccd3d9}
+.boardTitle{width: 655px; height: 55px; border-top:2px solid #919baa; box-sizing: border-box; line-height: 55px; text-align: center; border-right: 1px solid #ccd3d9}
+.boardDay{width: 154px; height: 55px; border-top:2px solid #919baa; box-sizing: border-box; line-height: 55px; text-align: center; border-right: 1px solid #ccd3d9}
+
+.boardContentNo
+
+
+
+
+
+
+
+
+
+/* articleForm.jsp */
+.newBoard{color: #2196f3; text-align:center; margin: 60px 0px 30px 0px;}
+.boardWrap{width: 900px; height: 600px; margin: 0 auto;}
+.titlePart{width: 900px; height: 50px; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
+.titleLeft{width: 150px; height: 50px; background-color: #efefef; line-height: 50px; text-align:center;}
+.titleRight{width: 749px;}
+.titlePart input {height: 18px; margin: 10px 0px 0px 20px; width: 724px;}
+
+.contentPart{width: 900px; height: 232px; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
+.contentLeft{width: 150px; height: 232px; background-color: #efefef; line-height: 232px; text-align:center;}
+.contentRight{width: 749px;}
+.contentPart textarea{margin: 10px 0px 0px 20px; width: 724px;}
+
+.imagePart{width: 900px; height: 232px; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
+.imageLeft{width: 150px; height: 232px; background-color: #efefef; line-height: 232px; text-align:center;}
+.fileSelect{line-height: 232px; margin-left: 20px;}
+.imagePreview{margin: 15px 0px 0px 35px}
+.wirteButton{width: 306px; margin: 0 auto;}
+.write{width: 150px; height: 50px; margin: 20px 0px; border-radius: 10px 10px 10px 10px; background-color: #2196f3; color: white}
+.reset{width: 150px; height: 50px; margin: 20px 0px; border-radius: 10px 10px 10px 10px; background-color: #79796a; color: white}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

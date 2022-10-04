@@ -1,11 +1,11 @@
-Ôªø/* body{background: red;}  */   
+/* body{background: red;}  */   
 html{overflow-y: scroll;}
 *{margin:0; padding: 0;}
 img{border: 0;}
-body table input label{font-family:'ÎèãÏõÄ', sans-serif;}
+body table input label{font-family:'µ∏øÚ', sans-serif;}
 /* body{background: url(../images/login.png) no-repeat center top;} */
 a{text-decoration: none; }
-
+.fl{float: left;}
 .hidden{display: none;}
 
 
@@ -20,10 +20,10 @@ section{width: 100%; height: 1000px; /* background: rgb(255,0,0,0.1); */ margin:
 			
 
 			
-/* Î©îÏù∏ ÏΩòÌÖêÌä∏ */
+/* ∏ﬁ¿Œ ƒ‹≈Ÿ∆Æ */
 #signup_content {position: relative; width: 1420px; margin: 0 auto; }
 
-/* Í∞ÄÏûÖ ÏñëÏãù Ìèº */
+/* ∞°¿‘ æÁΩƒ ∆˚ */
 .join_box {width: 400px; margin: 0 auto;}
 .join_box .signup_title {display:block; font-size: 33px; color:#333333; margin-top: 40px; margin-bottom: 30px; width: 390px; height: 80px; line-height:80px; padding-left: 10px; border-bottom:1px solid #dcdcdc; border-bottom: solid 1px #dddddd;}
 .join_box .form input {width: 100%; height: 50px; line-height:50px; margin-bottom: 10px; border:1px solid #dadada; padding-left:10px; box-sizing:border-box;}
@@ -45,3 +45,53 @@ section{width: 100%; height: 1000px; /* background: rgb(255,0,0,0.1); */ margin:
 .save_button, .reset_button {width:47.5%; box-sizing: border-box; display:block; text-align: center; font-size: 18px; border-radius:3px; padding:18px 15px;color:#fdfdfd; cursor:pointer;}
 .save_button {background-color: #3579d4;  border: 1px solid #3579d4;}
 .reset_button {background-color: #cccccc;  border: 1px solid #cccccc; color:#555555;  margin-right: 5%;}
+
+
+
+
+
+
+
+/* sub04.jsp */
+	.memberJoinWrap{width: 650px; margin: 80px auto 20px auto;}
+	.memberJoin{ font-size: 25px; letter-spacing: 5px; font-weight: bold;}
+	.wrap{width: 650px; margin: 0 auto; border: 1px solid #ddd; height: 400px; margin-bottom: 150px;}
+	.partWrap{width: 650px; margin: 15px 0px; height: 55px; border-bottom: 1px solid #ddd}
+	.partWrap input{width: 350px; height: 40px; border:1px solid white;}
+	.partWrap span{color: red; margin-right: 10px;}
+	.join{width: 150px; height: 50px; margin: 20px 0px; border-radius: 10px 10px 10px 10px; background-color: #2196f3; color: white}
+	.reset{width: 150px; height: 50px; margin: 20px 0px; border-radius: 10px 10px 10px 10px; background-color: #79796a; color: white}
+	.part{font-size: 20px; width: 120px; margin-left: 25px; line-height: 40px;}
+	.button{margin: 0 auto; width: 306px;}
+	.guideText{color: #cccccc;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

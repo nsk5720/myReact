@@ -12,40 +12,42 @@
 <meta charset="UTF-8">
 <title>회원 정보 수정창</title>
 <link rel="stylesheet" href="/project03/sub03/css/common.css"/>
+<link rel="stylesheet" href="/project03/sub03/css/style.css"/>
 </head>
 <body>
 	<%@ include file="../main/header.jsp" %>
- <h1 class="cls1">회원 정보 수정창</h1>
+	<section style="height: 60%;">
+ <div class="memberCorrectWrap">
+ 	<h1 class="memberCorrect">회원 정보 수정</h1>
+ </div>
 <form  method="post" action="${contextPath}/member/modMember.do?id=${memInfo.id}">
- <table align="center" >
-   <tr>
-     <td width="200"><p align="right" >아이디</td>
-     <td width="400"><input   type="text" name="id" value="${memInfo.id}" disabled ></td>
-     
-   </tr>
- <tr>
-     <td width="200"><p align="right" >비밀번호</td>
-     <td width="400"><input   type="password" name="pwd" value="${memInfo.pwd}" >
-     </td>
-   </tr>
-   <tr>
-     <td width="200"><p align="right" >이름</td>
-     <td width="400"><input   type="text" name="name" value="${memInfo.name}" ></td>
-   </tr>
-   <tr>
-     <td width="200"><p align="right" >이메일</td>
-     <td width="400"><input   type="text" name="email"  value="${memInfo.email}" ></td>
-   </tr>
-   <tr>
-     <td width="200"><p align="right" >가입일</td>
-     <td width="400"><input   type="text"  name="joinDate" value="${memInfo.joinDate }" disabled  ></td>
-   </tr>
-   <tr align="center" >
-    <td colspan="2" width="400"><input type="submit" value="수정하기" >
-       <input type="reset" value="다시입력" > </td>
-   </tr>
- </table>
+		<div class="wrap">
+			<div class="partWrap">
+				<div class="part fl">아이디</div>
+				<div class="fl"><input type="text" name="id" value="${memInfo.id}" disabled/></div>
+			</div>
+			<div class="partWrap">
+				<div class="part fl">비밀번호</div>
+				<div class="fl"><input type="password" name="pwd" value="${memInfo.pwd}"/></div>
+			</div>
+			<div class="partWrap">
+				<div class="part fl">이름</div>
+				<div class="fl"><input type="text" name="name" value="${memInfo.name}"/></div>
+			</div>
+			<div class="partWrap">
+				<div class="part fl">이메일</div>
+				<div class="fl"><input type="text" name="email" value="${memInfo.email}"/></div>
+			</div>
+			<div class="partWrap">
+				<div class="part fl">가입일</div>
+				<div class="fl"><input type="text" name="joinDate"  value="${memInfo.joinDate }" disabled/></div>
+			</div>
+		<div class="modButton">
+			<input type="submit" class="correct" value="수정하기">
+			<input type="reset" class="reset" value="다시입력"/>
+		</div>
 </form>
+	</section>
 	<%@ include file="../main/footer.jsp" %>
 </body>
 </html>

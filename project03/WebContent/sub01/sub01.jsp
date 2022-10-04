@@ -108,22 +108,22 @@
 					</div>
 				</div>
 				<div id="low" class="fl cf">
-					<div action="#" style="float: right; margin: 30px 0px 0px 0px;">
+					<!-- <div action="#" style="float: right; margin: 30px 0px 0px 0px;">
 					<select name="order">
 						<option value="선택">선택</option>
 						<option value="회순">조회순</option>
 						<option value="등록일순">등록일순</option>
 					</select>
 					<button class="showTooltip" type="submit" title="검색">검색</button>
-					</div>
+					</div> -->
 					
 					
 					<div >
-						<div class="titleWrap">
-							<div class="fl titleNo">글번호</div>
-							<div class="fl titleWriter">작성자</div>              
-							<div class="fl title">제목</div>
-							<div class="fl titleDay">작성일</div>
+						<div class="boardTop">
+							<div class="fl boardNo">글번호</div>
+							<div class="fl boardWriter">작성자</div>              
+							<div class="fl boardTitle">제목</div>
+							<div class="fl boardDay">작성일</div>
 						</div>
 					<c:choose>
 						<c:when test="${empty articlesList }" >
@@ -154,7 +154,7 @@
 										<a class='cls1' href="${contextPath}/project03/board/viewArticle.do?articleNO=${article.articleNO}">${article.title }</a>
 									</c:otherwise>
 								</c:choose>
-							</div>
+						</div>
 							<div  width="10%"><fmt:formatDate value="${article.writeDate}" /></div> 
 					</div>
 					    </c:forEach>	

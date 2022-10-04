@@ -1,8 +1,8 @@
-ï»¿/* body{background: red;}  */   
+/* body{background: red;}  */   
 html{overflow-y: scroll;}
 *{margin:0; padding: 0;}
 img{border: 0;}
-body table input label{font-family:'ë‹ì›€', sans-serif;}
+body table input label{font-family:'µ¸¿ò', sans-serif;}
 /* body{background: url(../images/login.png) no-repeat center top;} */
 a{text-decoration: none; }
 
@@ -46,7 +46,7 @@ form button{float: left;}
 #high>form #userPwd{padding: 26px 0 26px 26px; margin: 0 0 12px 0; width: 463px; font-size: 18px; border: 1px solid #c3c3c3;}
 .loginBtn{width: 166px; height: 163px; margin: -177px 0 0 500px;  line-height: 163px; text-align: center; background-color: #046fd9;}
 .loginBtn a{color: #ffffff; font-size: 20px;}
-.button{margin: 69px 0px 0px 408px;}
+.button{margin: 20px 0px 0px 408px;}
 .button ul li{float: left; } 
 .button>div>a{padding: 0px 36px 0px 0px; font-size: 20px; margin-right: 41px; background: url(../images/btn_login_link.gif) right no-repeat; background-size: 24px 24px; color: #333333}
 .button>div>a:hover{text-decoration: underline}
@@ -63,11 +63,28 @@ a.look{font-size: 18px; padding: 0 24px 0 24px; color: #333333;}
 
 
 
+/* listMembers.jsp */
+.title{width: 1100px; height: 50px; margin: 0 auto; }
+.title > div {width: 14%; height: 50px; float: left; line-height: 50px; border: 1px solid #333; box-sizing: border-box; background: #efefef;}
+.content{width: 1100px; height: 30px; margin: 0 auto; }
+.content > div{width: 14%; height: 30px; float: left; line-height: 30px;}
 
 
 
 
-
+/* modMemberForm.jsp */
+.h1{text-align:center; width: 432px; margin: 50px auto; font-size: 50px; letter-spacing: 12px;}
+	.memberCorrectWrap{width: 650px; margin: 80px auto 20px auto;}
+	.memberCorrect{ font-size: 25px; letter-spacing: 5px; font-weight: bold;}
+	.wrap{width: 650px; margin: 0 auto; border: 1px solid #ddd; height: 500px; margin-bottom: 150px;}
+	.partWrap{width: 650px; margin: 15px 0px; height: 55px; border-bottom: 1px solid #ddd}
+	.partWrap input{width: 350px; height: 40px; border:1px solid white;}
+	.partWrap span{color: red; margin-right: 10px;}
+	.correct{width: 150px; height: 50px; margin: 20px 0px; border-radius: 10px 10px 10px 10px; background-color: #2196f3; color: white}
+	.reset{width: 150px; height: 50px; margin: 20px 0px; border-radius: 10px 10px 10px 10px; background-color: #79796a; color: white}
+	.part{font-size: 20px; width: 120px; margin-left: 25px; line-height: 40px;}
+	.modButton{margin: 0 auto; width: 306px;}
+	.guideText{color: #cccccc;}
 
 
 

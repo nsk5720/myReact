@@ -39,13 +39,16 @@
 	<link rel="stylesheet" href="css/common.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 	<style>
+	a{text-decoration: none}
 	.title{width: 1100px; height: 50px; margin: 0 auto; }
-	.title > div {/* width: 14%; */ height: 50px; float: left; line-height: 50px; border: 1px solid #333; box-sizing: border-box; color: #046fd9;}
+	.title > div {/* width: 14%; */ height: 50px; float: left; line-height: 50px; border-top: 2px solid #ddd; border-bottom: 2px solid #ddd; box-sizing: border-box; font-wegiht: bold; font-size: 19px;}
 	.content{width: 1100px; height: 45px; margin: 0 auto; }
-	.content > div{/* width: 14%; */ height: 45px; float: left; line-height: 45px; border-bottom: 1px solid #333; box-sizing: border-box; }
+	.content > div{/* width: 14%; */ height: 45px; float: left; line-height: 45px; border-bottom: 1px solid #ddd; box-sizing: border-box; }
+	.delete{color: red;}
+	.correct{color: #333;}
 	.ellipsis{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 	.memberInfo{text-align:center; font-size:50px; margin:50px;}
-	.memberjoin{text-align:center; font-size:30px; margin:130px; color: #046fd9; border: 1px solid #333; background-color: #efefef;}
+	.memberjoin{text-align:center; font-size:30px; margin:130px; color: #046fd9; border: 1px solid #ddd; background-color: #efefef;}
 	.color{background-color: #efefef;}
 	</style>
 </head>
@@ -59,8 +62,8 @@
 			<div style="width:12%" class="color"><b>이름</b></div>
 			<div style="width:25%"><b>이메일</b></div>
 			<div style="width:17%" class="color"><b>가입일</b></div>
-			<div style="width:5%" ><b>수정</b></div>
-			<div style="width:5%" class="color"><b>삭제</b></div>
+			<div style="width:5%"><b>수정</b></div>
+			<div style="width:5%" class="color "><b>삭제</b></div>
 		</div>
 <c:choose>
 	<c:when test="${empty membersList }">
@@ -78,14 +81,14 @@
 			<div class="ellipsis color" style="width:12%">${mem.name }</div>
 			<div class="ellipsis" style="width:25%">${mem.email }</div>
 			<div class="ellipsis color" style="width:17%">${mem.joinDate }</div>
-			<div style="width:5%"><a href="${contextPath}/member/modMemberForm.do?id=${mem.id }">수정</a></div>
-		    <div class="color" style="width:5%"><a href="${contextPath}/member/delMember.do?id=${mem.id }">삭제</a></div>
+			<div style="width:5%"><a class="correct" href="${contextPath}/member/modMemberForm.do?id=${mem.id }">수정</a></div>
+		    <div class="color" style="width:5%"><a class="delete" href="${contextPath}/member/delMember.do?id=${mem.id }">삭제</a></div>
 		</div>
 		</c:forEach>
 	</c:when>
 </c:choose>
 	</div>
-	<a href="#"><p class="memberjoin">회원추가하기</p></a>
+	<a href="/project03/sub04/sub04.jsp"><p class="memberjoin">회원추가하기</p></a>
 	<%@ include file="../main/footer.jsp" %>
 </body>
 </html>
