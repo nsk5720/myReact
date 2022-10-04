@@ -59,6 +59,20 @@
 	         reader.readAsDataURL(input.files[0]);
 	     }
 	 }  
+	 
+	 function fn_reply_form(url, parentNO) {
+		 var form = document.createElement("form");
+		 form.setAttribute("method", "post");
+		 form.setAttribute("action", url);
+		 var parentNOInput = document.createElement("input");
+		 parentNOInput.setAttribute("type","hidden");
+		 parentNOInput.setAttribute("name","parentNO");
+		 parentNOInput.setAttribute("value",parentNO);
+		 
+		 form.appendChild(parentNOInput);
+		 document.body.appendChild(form);
+		 form.submit();
+	 }
  </script>
 </head>
 <body>

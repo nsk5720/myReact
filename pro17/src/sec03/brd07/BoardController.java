@@ -139,7 +139,7 @@ public class BoardController extends HttpServlet {
             	nextPage = "/board06/replyForm.jsp";
             } else if (action.equals("/addReply.do")) {
             	session = request.getSession();
-            	Int parentNO = (Integer) session.getAttribute("parentNO");
+            	int parentNO = (Integer) session.getAttribute("parentNO");
             	session.removeAttribute("parentNO");
             	Map<String, String> articleMap = upload(request, response);
             	String title = articleMap.get("title");
