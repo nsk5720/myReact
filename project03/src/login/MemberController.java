@@ -62,8 +62,8 @@ public class MemberController extends HttpServlet{
 					response.sendRedirect("/project03/index.jsp");
 				}
 		} else {		//로그인 실패 시
-			out.print("<html><body>회원 아이디가 틀립니다.");
-			out.print("<a href='sub04/sub04.jsp'> 다시 로그인하기</a><br>");
+			out.print("<html><body>회원정보가 수정/삭제되었습니다.");
+			out.print("<a href='sub04/sub04.jsp'> 회원정보 보기 </a><br>");
 			out.print("</body></html>");
 		}	
 	}
