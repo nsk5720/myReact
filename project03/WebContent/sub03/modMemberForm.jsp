@@ -43,7 +43,7 @@
 				<div class="fl"><input type="text" name="joinDate"  value="${memInfo.joinDate }" disabled/></div>
 			</div>
 		<div class="modButton">
-			<input type="submit" class="correct" value="수정하기">
+			<input type="submit" class="correctBtn" value="수정하기">
 			<input type="reset" class="reset" value="다시입력"/>
 		</div>
 </form>

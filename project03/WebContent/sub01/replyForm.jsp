@@ -82,7 +82,7 @@
 			    <div class="boardWrap">
 					<div class="writerPart">
 						<div class="fl writerLeft"> 글쓴이:&nbsp; </div>
-						<div class="fl titleRight"><input type="text" size="5" value="lee" disabled /> </div>
+						<div class="fl titleRight"><input type="text" size="5" value="admin" disabled /> </div>
 					</div>
 					<div class="titlePart">
 						<div class="fl titleLeft">글제목:&nbsp;  </div>
