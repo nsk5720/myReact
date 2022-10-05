@@ -13,6 +13,8 @@
 <title>회원 정보 수정창</title>
 <link rel="stylesheet" href="/project03/sub03/css/common.css"/>
 <link rel="stylesheet" href="/project03/sub03/css/style.css"/>
+	<script src="/project03/sub03/js/jquery-1.12.3.js"></script>
+	<script src="/project03/sub03/js/script.js"></script>
 </head>
 <body>
 	<%@ include file="../main/header.jsp" %>

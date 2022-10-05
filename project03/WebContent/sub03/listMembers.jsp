@@ -51,6 +51,8 @@
 	.memberjoin{text-align:center; font-size:30px; margin:130px; color: #046fd9; border: 1px solid #ddd; background-color: #efefef;}
 	.color{background-color: #efefef;}
 	</style>
+	<script src="/project03/sub03/js/jquery-1.12.3.js"></script>
+	<script src="/project03/sub03/js/script.js"></script>
 </head>
 <body>
 	<%@ include file="../main/header.jsp" %>

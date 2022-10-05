@@ -8,11 +8,20 @@
   request.setCharacterEncoding("UTF-8");
 %> 
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="Generator" content="Notepad++" />
+	<meta name="Author" content="남상권"/>
+	<meta name="Keywords" content="남상권, namsangkwon, 포트폴리오, 남상권 포트폴리오, portfolio, SanKwon's portfolio, 프로젝트, Project, 남 상권, 남 상 권, 상권 남, 상권, HTML5, CSS3, jQuery, 프로젝트, Portfolio, Project, 반응형웹, 반응형웹 포트폴리오, 학생 포트폴리오"/>
+	<meta name="Description" content="남상권의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />
+	<link rel="icon" href="images/favicon.ico">
 <meta charset="UTF-8">
 	<link rel="stylesheet" href="/project03/sub01/css/board.css"/>
 	<link rel="stylesheet" href="/project03/sub01/css/style.css"/>
 	<link rel="stylesheet" href="/project03/sub01/css/common.css"/>
 <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="/project03/sub01/js/jquery-1.12.3.js"></script>
+	<script src="/project03/sub01/js/script.js"></script>
 <script type="text/javascript">
   function backToList(obj){
 	 obj.action="${contextPath}/board/listArticles.do";

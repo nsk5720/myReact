@@ -29,8 +29,8 @@
 	<![endif]-->
 	<link rel="stylesheet" href="/project03/sub03/css/style.css"/>
 	<link rel="stylesheet" href="/project03/sub03/css/common.css"/>
-	<script src="js/jquery-1.12.3.js"></script>
-	<script src="js/script.js"></script>
+	<script src="/project03/sub03/js/jquery-1.12.3.js"></script>
+	<script src="/project03/sub03/js/script.js"></script>
 	<script>
 	function fnValidate(){
 		//<form> 태그의 name 속성으로 <form>태그의 객체를 받아온다.

@@ -12,8 +12,11 @@
 <html>
 <head>
 <link rel="stylesheet" href="/project03/sub03/css/common.css"/>
+	<script src="/project03/sub03/js/jquery-1.12.3.js"></script>
+	<script src="/project03/sub03/js/script.js"></script>
    <meta charset="UTF-8">
    <title>회원 가입창</title>
+</head>
 <body>
 <form method="post" action="${contextPath}/member/addMember.do" style="width:350px; margin: 0 auto;">
 <h1  style="text-align:center; font-size:50px; margin:50px;}">회원 가입창</h1>

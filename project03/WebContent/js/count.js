@@ -16,7 +16,7 @@
 		}
 		// 카운트 함수 정의 
 		function ddaycount(){
-			imgArr = ['images/num0.png','images/num1.png','images/num2.png','images/num3.png','images/num4.png','images/num5.png','images/num6.png','images/num7.png','images/num8.png','images/num9.png']
+			imgArr = ['/project03/images/num0.png','/project03/images/num1.png','/project03/images/num2.png','/project03/images/num3.png','/project03/images/num4.png','/project03/images/num5.png','/project03/images/num6.png','/project03/images/num7.png','/project03/images/num8.png','/project03/images/num9.png']
 			// 목표되는 날짜(타겟되는 날짜)
 			doomsday = new Date('Marc 1, 2023 00:00:00')
 			// Janu Febr Marc Apri May June July Augu Sept Octo Nove Dece

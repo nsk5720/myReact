@@ -21,8 +21,8 @@
 	<![endif]-->
 	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="css/common.css"/>
-	<script src="js/jquery-1.12.3.js"></script>
-	<script src="js/script.js"></script>
+	<script src="/project03/sub02/js/jquery-1.12.3.js"></script>
+	<script src="/project03/sub02/js/script.js"></script>
 	<meta charset="UTF-8">
 	<title>농협은행 FAQ게시판</title> 
 </head>

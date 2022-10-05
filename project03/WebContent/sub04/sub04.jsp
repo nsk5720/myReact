@@ -22,8 +22,8 @@
 	<link rel="stylesheet" href="/project03/sub04/css/style.css"/>
 	<link rel="stylesheet" href="/project03/sub04/css/common.css"/>
 	
-	<script src="js/jquery-1.12.3.js"></script>
-	<script src="js/script.js"></script>
+	<script src="/project03/sub04/js/jquery-1.12.3.js"></script>
+	<script src="/project03/sub04/js/script.js"></script>
 	<!-- <script src="js/signup.js"></script> -->
 	<script>
 		function fn_sendMember(){

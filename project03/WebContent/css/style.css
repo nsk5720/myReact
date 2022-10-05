@@ -21,7 +21,7 @@ section{width: 100%; height: 3500px;  margin: 0 auto;}
 			#summerImg a{display: block; background: url(../images/img_main_slideTxt.png) no-repeat; position: relative;  width: 400px; height: 695px;}
 	
 	/* ÆË¾÷ */
-	.pop{z-index:9999999; display: none;  width: 526px; height: 500px; border: 3px solid #046fd9; position: absolute; top: 231px; left: 500px; background-color: #ffffff;   }
+	.pop{z-index:99999999999999999; display: none;  width: 526px; height: 500px; border: 3px solid #046fd9; position: absolute; top: 231px; left: 250px; background-color: #ffffff;   }
 	.popHeader{width: 526px; height: 135px; /* background: rgba(255,0,0,.3); */}
 	.popHeader>div{color: #046fd9; font-size: 31px; padding: 40px 0 0 43px; font-weight: bold; }
 	.popContent{width: 526px; height: 334px; }

@@ -80,7 +80,62 @@
 
 
 </head>
-<body>
+<body onLoad="ddaycount()">
+	<div class="pop" onLoad="ddaycount()">
+		<div class="popHeader">
+			<div>코로나19 관련 영업점<br>
+			영업시간 조정 안내
+			</div>
+		</div>		
+		<div class="popContent">
+			<p>코로나19 확산 방지를 위한 농협은행, 농·축협<br>
+				영업점의 영업시간 조정을 안내드립니다.</p>
+			<p class="subPopContent">* 은행 탄력점포 및 공공출장소, 농·축협 금융점포는 해당<br>
+				 &nbsp;&nbsp;영업점으로 확인</p>
+			<div class="popContentBox">
+				<ul>
+					<li>대상영업점 : 모든 영업점</li>
+					<li>영업시간 : 09:30~15:30 (1시간 단축)</li>
+					<li>적용 기간 : 코로나 종식까지</li>
+				</ul>
+				<div id="countwrap">
+					<!-- <span id="countment">적용 기간: 코로나 종식까지</span> -->
+					<div class="counter">
+						<ul class="cf">
+							<li id="countD" class="firstli fl">
+								<img src="images/num0.png" width="20" id="day100" class="fl" alt="일자100의자리"/>
+								<img src="images/num0.png" width="20" id="day10" class="fl" alt="일자10의자리"/>
+								<img src="images/num0.png" width="20" id="day1" class="fl" alt="일자10의자리"/>
+								<p>일</p>
+							</li>
+							<li id="counterH" class="fl">
+								<img src="images/num0.png" width="20" id="hour10" class="fl" alt="시간10의자리" />
+								<img src="images/num0.png" width="20" id="hour1" class="fl" alt="시간1의자리" />
+								<p>시</p>
+							</li>
+							<li id="counterM" class="fl">
+								<img src="images/num0.png" width="20" id="min10" class="fl" alt="분10의자리"/>
+								<img src="images/num0.png" width="20" id="min1" class="fl" alt="분1의자리" />
+								<p>분</p>
+							</li>
+							<li id="counterS" class="fl">
+								<img src="images/num0.png" width="20" id="sec10" class="fl" alt="초10의자리"/>
+								<img src="images/num0.png" width="20" id="sec1" class="fl" alt="초1의자리" />
+								<p>초</p>
+							</li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+			
+		</div>		
+		<div class="popFooter">
+			<label class="cf">
+				<input type="checkbox"/><span><a href="#" tabindex="1">오늘 하루 창 열지 않기</a></span>
+			</label>
+			<div><a href="#" tabindex="2">확인</a></div>
+		</div>
+	</div>
 	<%@ include file="../main/header_ko.jsp" %>
 	<section class="cf">
 		<div id="sectionTop" class="cf">

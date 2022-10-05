@@ -15,15 +15,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="Generator" content="Notepad++" />
+	<meta name="Author" content="남상권"/>
+	<meta name="Keywords" content="남상권, namsangkwon, 포트폴리오, 남상권 포트폴리오, portfolio, SanKwon's portfolio, 프로젝트, Project, 남 상권, 남 상 권, 상권 남, 상권, HTML5, CSS3, jQuery, 프로젝트, Portfolio, Project, 반응형웹, 반응형웹 포트폴리오, 학생 포트폴리오"/>
+	<meta name="Description" content="남상권의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />
+	<link rel="icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="/project03/sub01/css/board.css"/>
 	<link rel="stylesheet" href="/project03/sub01/css/style.css"/>
 	<link rel="stylesheet" href="/project03/sub01/css/common.css"/>
- <style>
+  <style>
    .no-uline {text-decoration:none; color: #333}
    .sel-page{text-decoration:underline;color:#1776b4;}
    .cls1 {text-decoration:none; color: #1176b4; }
    .cls2{text-align:center; font-size:30px;}
   </style>
+	<script src="/project03/sub01/js/jquery-1.12.3.js"></script>
+	<script src="/project03/sub01/js/script.js"></script>
   <meta charset="UTF-8">
   <title>글목록창</title>
 </head>
@@ -137,7 +146,7 @@
 					   <div>
 						<div class="boardContentNo fl" width="5%">${articleNum.count}</div>
 						<div class="boardContentWriter fl" width="10%">${article.id }</div>
-						<div class="boardContent fl" align='left'  width="35%">
+						<div class="boardContent ellipsis fl" align='left'  width="35%">
 						    <span style="padding-right:30px"></span>    
 						   <c:choose>
 						      <c:when test='${article.level > 1 }'>  

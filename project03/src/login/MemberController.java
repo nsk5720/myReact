@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import login.MemberVO;
+
 @WebServlet("/mem.do")
 public class MemberController extends HttpServlet{
 		MemberDAO memberDAO;
@@ -59,7 +61,7 @@ public class MemberController extends HttpServlet{
 			RequestDispatcher dispatch = request.getRequestDispatcher("sub03/listMembers.jsp");
 			dispatch.forward(request, response);
 				} else {	//일반 로그인 후 보낼 페이지(로그인 된 페이지) 적기
-					response.sendRedirect("/project03/index.jsp");
+					response.sendRedirect("/project03/main/index.jsp");
 				}
 		} else {		//로그인 실패 시
 			out.print("<html><body>회원정보가 수정/삭제되었습니다.");

@@ -28,8 +28,8 @@
 	<link rel="stylesheet" href="/project03/sub01/css/board.css"/>
 	<link rel="stylesheet" href="/project03/sub01/css/style.css"/>
 	<link rel="stylesheet" href="/project03/sub01/css/common.css"/>
-	<script src="js/jquery-1.12.3.js"></script>
-	<script src="js/script.js"></script>
+	<script src="/project03/sub01/js/jquery-1.12.3.js"></script>
+	<script src="/project03/sub01/js/script.js"></script>
 </head>
 <body>
 	<%@ include file="../main/header.jsp" %>

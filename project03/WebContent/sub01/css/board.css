@@ -49,7 +49,7 @@
 .viewId{width: 200px; height: 50px; border-top: 2px solid #919baa; border-bottom: 1px solid #ccd3d9; border-right: 1px dashed #ccd3d9}
 .viewIdText{width:200px; height: 20px; text-align: center;}
 .viewId input{text-align: center; width: 200px; border: 7px solid white; color:#e2632e}
-.viewTitle{width: 871px; height: 50px; border-top: 2px solid #919baa; border-bottom: 1px solid #ccd3d9;}
+.viewTitle{width: 870px; height: 50px; border-top: 2px solid #919baa; border-bottom: 1px solid #ccd3d9;}
 .viewTitle input{width: 872px; height: 50px; font-size: 25px; border:1px solid white; text-align:left; margin-left: 20px; color: #333}
 .viewContent{border-bottom: 1px solid #919baa;}
 .viewContent textarea{border:1px solid white; margin: 13px; width:1050px; font-size: 23px;}
