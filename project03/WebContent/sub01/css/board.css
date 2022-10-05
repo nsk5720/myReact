@@ -57,7 +57,8 @@
 .viewDay{margin-top: 15px;}
 #tr_btn{margin-top: 100px;}
 #tr_btn input{background-color: #2196f3; color: white; width: 125px; height: 50px; border-radius: 10px}
-
+.correct{width: 150px; height: 50px; margin: 20px 0px; border-radius: 10px 10px 10px 10px; background-color: #2196f3; color: white}
+.reset{width: 150px; height: 50px; margin: 20px 0px; border-radius: 10px 10px 10px 10px; background-color: #79796a; color: white}
 
 
 

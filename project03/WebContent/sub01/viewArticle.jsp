@@ -195,10 +195,10 @@
 								<input type=text value="<fmt:formatDate value="${article.writeDate}" />" disabled />
 							</div>   
 						</div>
-						<div   id="tr_btn_modify"  >
+						<div id="tr_btn_modify"  >
 							<div colspan="2"   align="center" >
-								<input type=button value="수정반영하기"   onClick="fn_modify_article(frmArticle)"  >
-								<input type=button value="취소"  onClick="backToList(frmArticle)">
+								<input class="correct" type=button value="수정반영하기"   onClick="fn_modify_article(frmArticle)"  >
+								<input class="reset" type=button value="취소"  onClick="backToList(frmArticle)">
 							</div>   
 						</div> 
 						<div  id="tr_btn">
