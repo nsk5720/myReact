@@ -31,16 +31,24 @@
 		var frmMember = document.frmMember;
 		var id = frmMember.id.value;
 		var pwd = frmMember.pwd.value;
+		var pwdCheck = frmMember.pwdCheck.value;
 		var name = frmMember.name.value;
 		var email = frmMember.email.value;
 			if(id.length == 0 || id == ""){
 				alert("아이디는 필수입니다.");
 			} else if(pwd.length == 0 || pwd == ""){
 				alert("비밀번호는 필수입니다.");
+			} else if(pwdCheck.length == 0 || pwdCheck == ""){
+				alert("비밀번호 확인은 필수입니다.");		
 			} else if(name.length == 0 || name == ""){
 				alert("이름은 필수입니다.");
 			} else if(email.length == 0 || email == ""){
 				alert("이메일은 필수입니다.");
+			} else if(document.frmMember.pwdCheck.value.trim() != document.frmMember.pwdCheck.value.trim()) { 
+			        alert("비밀번호가 일치하지 않습니다.\n다시 입력해 주세요!"); 
+			       // document.frmMember.pwdCheck.focus(); 
+			        // select()를 사용하여 블럭지정
+			       // document.frmMember.pwdCheck.select(); 
 			} else{
 				// 전송 방법을 post로 지정
 				frmMember.method="post";
@@ -70,6 +78,10 @@
 				<div class="part fl"><span>*</span>비밀번호</div>
 				<div class="fl"><input class="guideText" type="password" name="pwd" value="비밀번호를 입력해주세요"/></div>
 			</div>
+			<div class="partWrap">
+				<div class="part fl"><span>*</span>비밀번호 확인</div>
+				<div class="fl"><input class="guideText" type="password" name="pwdCheck" value="비밀번호를 입력해주세요"/></div>
+			</div>			
 			<div class="partWrap">
 				<div class="part fl"><span>*</span>이름</div>
 				<div class="fl"><input class="guideText" type="text" name="name" value="이름을 입력해주세요"/></div>
