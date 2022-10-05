@@ -44,10 +44,10 @@
 			</h2>
 			<aside id="aside" class="fl cf">
 				<ul class="asideFaq">
-					<li><a href="/project03/sub01/sub01.jsp" tabindex="253" class="faqTitle showTooltip" title="FAQ">&nbsp;&nbsp;FAQ</a></li>
+					<li><a href="/project03/board/listArticles.do" tabindex="253" class="faqTitle showTooltip" title="FAQ">&nbsp;&nbsp;FAQ</a></li>
 					<li><a href="/project03/sub03/sub03.jsp" tabindex="254" class="faqFirst showTooltip" title="기금대출">&nbsp;&nbsp;기금대출</a></li>
-					<li><a href="/project03/index.jsp" tabindex="255" class=" showTooltip faqList" title="주택청약">&nbsp;&nbsp;주택청약</a></li>
-					<li><a href="/project03/sub01/sub01.jsp" tabindex="256" class="faqList showTooltip" title="주택채권">&nbsp;&nbsp;주택채권</a></li>
+					<li><a href="/project03/main/index.jsp" tabindex="255" class=" showTooltip faqList" title="주택청약">&nbsp;&nbsp;주택청약</a></li>
+					<li><a href="/project03/board/listArticles.do" tabindex="256" class="faqList showTooltip" title="주택채권">&nbsp;&nbsp;주택채권</a></li>
 				</ul>	<!-- class="passBtn" -->
 			</aside>
 			<article id="contents" class="fl cf" >
@@ -57,8 +57,8 @@
 					<ul class="path">
 						<li class="pathColor showTooltip" title="기금대출">&nbsp;기금대출</li>
 						<li>&nbsp;<a class="showTooltip" href="/project03/sub03/sub03.jsp" tabindex="257" title="FAQ">FAQ</a> ></li>
-						<li>&nbsp;<a class="showTooltip" href="/project03/index.jsp" tabindex="258" title="FAQ">FAQ</a> ></li>
-						<li><a class="showTooltip" href="/project03/sub01/sub01.jsp" tabindex="259" title="주택도시기금">주택도시기금 ></a></li>
+						<li>&nbsp;<a class="showTooltip" href="/project03/main/index.jsp" tabindex="258" title="FAQ">FAQ</a> ></li>
+						<li><a class="showTooltip" href="/project03/board/listArticles.do" tabindex="259" title="주택도시기금">주택도시기금 ></a></li>
 					</ul>
 					<div class="fundLoan">기금대출</div>
 				</div>	

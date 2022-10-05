@@ -52,10 +52,10 @@
 			</h2>
 			<aside id="aside" class="fl cf">
 				<ul class="customerCounseling">
-					<li class="ccTitle"><a href="/project03/index.jsp" tabindex="253" class="ccTitle showTooltip" title="고객상담">&nbsp;&nbsp;고객상담</a></li>
+					<li class="ccTitle"><a href="/project03/main/index.jsp" tabindex="253" class="ccTitle showTooltip" title="고객상담">&nbsp;&nbsp;고객상담</a></li>
 					<li class="ccListFirst"><a href="/project03/sub02/sub02.jsp" tabindex="254" class="ccListFirst showTooltip" title="고객의소리">&nbsp;&nbsp;고객의소리</a></li>
 					<li><a href="/project03/sub03/sub03.jsp" tabindex="255" class="ccList showTooltip" title="자주하는질문FAQ">&nbsp;&nbsp;자주하는질문FAQ</a></li>
-					<li><a href="/project03/index.jsp" tabindex="256" class="ccListShort showTooltip" title="상담원상담">&nbsp;&nbsp;상담원상담</a></li>
+					<li><a href="/project03/main/index.jsp" tabindex="256" class="ccListShort showTooltip" title="상담원상담">&nbsp;&nbsp;상담원상담</a></li>
 					<li><a href="/project03/sub02/sub02.jsp" tabindex="257" class="ccList showTooltip" title="1:1문의">&nbsp;&nbsp;1:1문의</a></li>
 				</ul>	<!-- class="passBtn" -->
 			</aside>
@@ -67,7 +67,7 @@
 					<ul class="path">
 						<li class="pathColor showTooltip" title="자주묻는질문FAQ">&nbsp;고객의소리</li>
 						<li><a class="showTooltip" href="/project03/sub03/sub03.jsp" tabindex="258" title="고객상담">&nbsp;고객상담 ></a> </li>
-						<li><a class="showTooltip" href="/project03/index.jsp" tabindex="259" title="고객센터">고객센터 ></a></li>
+						<li><a class="showTooltip" href="/project03/main/index.jsp" tabindex="259" title="고객센터">고객센터 ></a></li>
 					</ul>
 					<div class="faq showTooltip" title="자주묻는 질문">고객의 소리</div>
 					<ul class="description">
@@ -87,22 +87,22 @@
 						<ul>
 							<li>
 								<span><a title="전체" href="/project03/sub03/sub03.jsp" tabindex="261" class="all showTooltip">전체</a></span>
-								<span><a class="showTooltip" title="예금" href="/project03/index.jsp" tabindex="262">예금</a></span>
+								<span><a class="showTooltip" title="예금" href="/project03/main/index.jsp" tabindex="262">예금</a></span>
 								<span><a class="showTooltip" title="펀드/신탁" href="/project03/sub02/sub02.jsp" tabindex="263">펀드/신탁</a></span>
 								<span><a class="showTooltip" title="주택청약" href="/project03/sub03/sub03.jsp" tabindex="264">주택청약</a></span>
-								<span><a class="showTooltip" title="대출" href="/project03/index.jsp" tabindex="265">대출</a></span>
+								<span><a class="showTooltip" title="대출" href="/project03/main/index.jsp" tabindex="265">대출</a></span>
 								<span><a class="showTooltip" title="인증서/간편로그인" href="/project03/sub02/sub02.jsp" tabindex="266">인증서/간편로그인</a></span>
 								<span><a class="showTooltip" title="입출금알림" href="/project03/sub03/sub03.jsp" tabindex="267">입출금알림</a></span>
-								<span><a class="showTooltip" title="오픈뱅킹" href="/project03/index.jsp" tabindex="268">오픈뱅킹</a></span>
+								<span><a class="showTooltip" title="오픈뱅킹" href="/project03/main/index.jsp" tabindex="268">오픈뱅킹</a></span>
 								<span><a class="showTooltip" title="텔레뱅킹" href="/project03/sub02/sub02.jsp" tabindex="269">텔레뱅킹</a></span>
 								<span><a class="showTooltip" title="전자금융사기예방서비스" href="/project03/sub03/sub03.jsp" tabindex="270">전자금융사기예방서비스</a></span>
-								<span><a class="showTooltip" title="기타앱서비스" href="/project03/index.jsp" tabindex="271">기타앱서비스</a></span>
+								<span><a class="showTooltip" title="기타앱서비스" href="/project03/main/index.jsp" tabindex="271">기타앱서비스</a></span>
 								<span><a class="showTooltip" title="자동화기기" href="/project03/sub02/sub02.jsp" tabindex="272">자동화기기</a></span>
 								<span><a class="showTooltip" title="자동이체" href="/project03/sub03/sub03.jsp" tabindex="273">자동이체</a></span>
-								<span><a class="showTooltip" title="우수고객" href="/project03/index.jsp" tabindex="274">우수고객</a></span>
+								<span><a class="showTooltip" title="우수고객" href="/project03/main/index.jsp" tabindex="274">우수고객</a></span>
 								<span><a class="showTooltip" title="외환" href="/project03sub02/sub02.jsp" tabindex="275">외환</a></span>
 								<span><a class="showTooltip" title="기타" href="/project03/sub03/sub03.jsp" tabindex="276">기타</a></span>
-								<span><a class="showTooltip" title="인터넷/스마트뱅킹" href="/project03/index.jsp" tabindex="277">인터넷/스마트뱅킹</a></span>
+								<span><a class="showTooltip" title="인터넷/스마트뱅킹" href="/project03/main/index.jsp" tabindex="277">인터넷/스마트뱅킹</a></span>
 							</li>
 						</ul>
 					</div>
@@ -166,17 +166,17 @@
 					
 					<div class="pageNum">
 						<div class="pageNumFirst"><a href="../sub03/sub03.jsp" tabindex="288">1</a></div>
-						<div><a href="/project03/index.jsp" tabindex="289" class="pageNumber">2</a></div>
+						<div><a href="/project03/main/index.jsp" tabindex="289" class="pageNumber">2</a></div>
 						<div><a href="/project03/sub02/sub02.jsp" tabindex="290" class="pageNumber">3</a></div>
 						<div><a href="/project03/sub03/sub03.jsp" tabindex="291" class="pageNumber">4</a></div>
-						<div><a href="/project03/index.jsp" tabindex="292" class="pageNumber">5</a></div>
+						<div><a href="/project03/main/index.jsp" tabindex="292" class="pageNumber">5</a></div>
 						<div><a href="/project03/sub02/sub02.jsp" tabindex="293" class="pageNumber">6</a></div>
 						<div><a href="/project03/sub03/sub03.jsp" tabindex="294" class="pageNumber">7</a></div>
-						<div><a href="/project03/index.jsp" tabindex="295" class="pageNumber">8</a></div>
+						<div><a href="/project03/main/index.jsp" tabindex="295" class="pageNumber">8</a></div>
 						<div><a href="/project03/sub02/sub02.jsp" tabindex="296" class="pageNumber">9</a></div>
 						<div class="num10 pageNumber"><a href="/project03/sub03/sub03.jsp" tabindex="297">10</a></div>
 						<div class="pageBtn cf">
-							<div class="nextPage fl"><a href="/project03/index.jsp" tabindex="298"><img class="showTooltip" src="images/btn_numnext.gif" alt="nextpage" title="nextpage"/></a></div>
+							<div class="nextPage fl"><a href="/project03/main/index.jsp" tabindex="298"><img class="showTooltip" src="images/btn_numnext.gif" alt="nextpage" title="nextpage"/></a></div>
 							<div class="lastPage fl"><a href="/project03/sub02/sub02.jsp" tabindex="299"><img class="showTooltip" src="images/btn_num10next.gif" alt="lastpage" title="lastpage"/></a></div>
 						</div>
 					</div>

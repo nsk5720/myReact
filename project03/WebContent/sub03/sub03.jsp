@@ -74,8 +74,8 @@
 			</h3>
 				<div id="high" class="cf">
 					<ul class="cf">
-						<li class="certificateLogin "><a class="showTooltip" href="/project03/index.jsp" tabindex="258" title="인증서로그인">인증서 로그인</a></li>
-						<li class="smartLogin "><a class="showTooltip" href="/project03/sub01/sub01.jsp" tabindex="259" title="스마트로그인">스마트 로그인</a></li>
+						<li class="certificateLogin "><a class="showTooltip" href="/project03/main/index.jsp" tabindex="258" title="인증서로그인">인증서 로그인</a></li>
+						<li class="smartLogin "><a class="showTooltip" href="/project03/board/listArticles.do" tabindex="259" title="스마트로그인">스마트 로그인</a></li>
 						<li class="idPw "><a class="showTooltip" href="/project03/sub02/sub02.jsp" tabindex="260" title="ID/비밀번호">ID/비밀번호</a></li>
 						
 					</ul>
@@ -98,7 +98,7 @@
 							<a href="/project03/sub04/sub04.jsp" tabindex="262" class="showTooltip" title="e농협 회원가입">e농협 회원가입</a>
 						</div>
 						<div class="fl">
-							<a href="/project03/sub01/sub01.jsp" tabindex="263" class="showTooltip" title="ID찾기">ID찾기</a>
+							<a href="project03/board/listArticles.do" tabindex="263" class="showTooltip" title="ID찾기">ID찾기</a>
 						</div>
 						<div class="fl">
 							<a href="/project03/sub02/sub02.jsp" tabindex="264" class="showTooltip" title="비밀번호 초기화(재설정)">비밀번호 초기화(재설정)</a>
@@ -111,7 +111,7 @@
 					<div class="fishingCaution">
 						<div class="fisgingSite">
 							<div class="fakeSite fl">가짜 은행사이트에 속지 마세요!!</div>
-							<div class="look fl"><a href="/project03/index.jsp" tabindex="265" class="look showTooltip" title="자세히보기">자세히보기</a></div>
+							<div class="look fl"><a href="/project03/main/index.jsp" tabindex="265" class="look showTooltip" title="자세히보기">자세히보기</a></div>
 							<div class="secretNumber">농협은 어떠한 이유로도 OTP카드와 보안카드 ‘전체(35개)’ 또는 ‘일부(2개 초과)’를 요구하지 않습니다.</div>
 							<div class="caution">최근 금융기관 콜센터(농협 고객행복센터 1588-2100 등) 번호를 도용하여 개인정보유출 등 사유로 가짜사이트 접속을 유도하는 SMS가 발견되고 있습니다.<br>또한 PC에 악성코드가 설치될 경우 즐겨찾기 또는 정상 은행사이트를 입력하셔도 가짜 은행사이트에 연결될 수 있습니다.</div>
 						</div>

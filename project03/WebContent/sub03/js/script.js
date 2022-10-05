@@ -1,5 +1,13 @@
 ﻿$(function(){
 	
+
+	
+	
+	
+	
+	
+	
+	//가이드 텍스트
 	var guideClass = "guideText"						// 회색에서 다른 색으로 바꿀때마다 .gray -> .해당클래스명 으로 바꿔만 주면 됨
 	$('.guideText').each(function(){
 		var guideText = this.defaultValue;

@@ -59,10 +59,10 @@
 		</h2>
 		<aside id="aside" class="fl cf" style="height: 100px;">
 			<ul class="customerCounseling">
-				<li class="ccTitle"><a href="/project03/index.jsp" tabindex="253" class="ccTitle showTooltip" title="고객상담">&nbsp;&nbsp;고객상담</a></li>
+				<li class="ccTitle"><a href="/project03/main/index.jsp" tabindex="253" class="ccTitle showTooltip" title="고객상담">&nbsp;&nbsp;고객상담</a></li>
 				<li class="ccListFirst"><a href="/project03/sub02/sub02.jsp" tabindex="254" class="ccListFirst showTooltip" title="고객의소리">&nbsp;&nbsp;고객의소리</a></li>
 				<li><a href="/project03/sub03/sub03.jsp" tabindex="255" class="ccList showTooltip" title="자주하는질문FAQ">&nbsp;&nbsp;자주하는질문FAQ</a></li>
-				<li><a href="/project03/index.jsp" tabindex="256" class="ccListShort showTooltip" title="상담원상담">&nbsp;&nbsp;상담원상담</a></li>
+				<li><a href="/project03/main/index.jsp" tabindex="256" class="ccListShort showTooltip" title="상담원상담">&nbsp;&nbsp;상담원상담</a></li>
 				<li><a href="/project03/sub02/sub02.jsp" tabindex="257" class="ccList showTooltip" title="1:1문의">&nbsp;&nbsp;1:1문의</a></li>
 			</ul>	<!-- class="passBtn" -->
 		</aside>
@@ -74,7 +74,7 @@
 				<ul class="path">
 					<li class="pathColor showTooltip" title="자주묻는질문FAQ">&nbsp;고객의소리</li>
 					<li><a class="showTooltip" href="/project03/sub03/sub03.jsp" tabindex="258" title="고객상담">&nbsp;고객상담 ></a> </li>
-					<li><a class="showTooltip" href="/project03/index.jsp" tabindex="259" title="고객센터">고객센터 ></a></li>
+					<li><a class="showTooltip" href="/project03/main/index.jsp" tabindex="259" title="고객센터">고객센터 ></a></li>
 				</ul>
 				<div class="faq showTooltip" title="자주묻는 질문">고객의 소리</div>
 				<ul class="description">
