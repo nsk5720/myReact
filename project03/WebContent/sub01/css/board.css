@@ -1,3 +1,5 @@
+.ellipsis{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
 /* sub01.jsp */
 .boardTop{height:55px; width: 1072px; align:center; bgcolor:lightgreen; box-sizing: border-box; margin-top: 10px;}
 .boardNo{width: 106px; height: 55px; border-top:2px solid #919baa; border-bottom:1px solid #919baa; box-sizing: border-box; line-height: 55px; text-align: center; border-right: 1px solid #ccd3d9}
@@ -6,8 +8,8 @@
 .boardDay{width: 154px; height: 55px; border-top:2px solid #919baa; border-bottom:1px solid #919baa; box-sizing: border-box; line-height: 55px; text-align: center; border-right: 1px solid #ccd3d9}
 
 .boardContentNo{width: 106px; height: 54px; border-bottom:1px solid #ccd3d9; box-sizing: border-box; line-height: 54px; text-align: center; }
-.boardContentWriter{width: 157px; height: 54px; border-bottom:1px solid #ccd3d9; box-sizing: border-box; line-height: 54px; text-align: center; color:#e2632e}
-.boardContent{width: 655px; height: 54px; border-bottom:1px solid #ccd3d9; box-sizing: border-box; line-height: 54px; text-align: left; color: #1776b4}
+.boardContentWriter{width: 157px; height: 54px; border-bottom:1px solid #ccd3d9; box-sizing: border-box; line-height: 54px; text-align: center; color:#e2632e; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.boardContent{width: 655px; height: 54px; border-bottom:1px solid #ccd3d9; box-sizing: border-box; line-height: 54px; text-align: left; color: #1776b4; }
 .boardContent:hover{color: #e2632e; text-decoration: underline}
 .boardContentDay{width: 154px; height: 54px; border-bottom:1px solid #ccd3d9; box-sizing: border-box; line-height: 54px; text-align: center;}
 
@@ -17,8 +19,8 @@
 
 
 /* articleForm.jsp */
-.newBoard{color: #2196f3; text-align:center; margin: 60px 0px 30px 0px;}
-.boardWrap{width: 900px; height: 600px; margin: 0 auto;}
+.newBoard{color: #2196f3; text-align:center; margin-bottom: 30px;}
+.boardWrap{width: 900px; height: 600px;}
 .titlePart{width: 900px; height: 50px; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
 .titleLeft{width: 150px; height: 50px; background-color: #efefef; line-height: 50px; text-align:center;}
 .titleRight{width: 749px;}
@@ -41,18 +43,48 @@
 
 
 
+/* viewArticle.jsp */
+.viewNo{width: 1072px; height: 20px; margin-bottom: 10px;}
+.viewNo input{border: 2px solid white;}
+.viewId{width: 200px; height: 50px; border-top: 2px solid #919baa; border-bottom: 1px solid #ccd3d9; border-right: 1px dashed #ccd3d9}
+.viewIdText{width:200px; height: 20px; text-align: center;}
+.viewId input{text-align: center; width: 200px; border: 7px solid white; color:#e2632e}
+.viewTitle{width: 871px; height: 50px; border-top: 2px solid #919baa; border-bottom: 1px solid #ccd3d9;}
+.viewTitle input{width: 872px; height: 50px; font-size: 25px; border:1px solid white; text-align:left; margin-left: 20px; color: #333}
+.viewContent{border-bottom: 1px solid #919baa;}
+.viewContent textarea{border:1px solid white; margin: 13px; width:1050px; font-size: 23px;}
+.viewImage{width:500px; margin-top: 15px;}
+.viewDay{margin-top: 15px;}
+#tr_btn{margin-top: 100px;}
+#tr_btn input{background-color: #2196f3; color: white; width: 125px; height: 50px; border-radius: 10px}
 
 
 
 
+/* replyForm.jsp */
+.newBoard{color: #2196f3; text-align:center; margin-bottom: 30px;}
+.boardWrap{width: 900px; height: 600px;}
+.writerPart{width: 900px; height: 50px; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
+.writerLeft{width: 150px; height: 50px; background-color: #efefef; line-height: 50px; text-align:center;}
+.writerRight{width: 749px;}
+.writerPart input {height: 23px; margin: 12px 0px 0px 12px; width: 724px; border: 1px solid white; font-size: 25px;}
+.titlePart{width: 900px; height: 50px; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
+.titleLeft{width: 150px; height: 50px; background-color: #efefef; line-height: 50px; text-align:center;}
+.titleRight{width: 749px;}
+.titlePart input {height: 18px; margin: 10px 0px 0px 20px; width: 724px;}
 
+.contentPart{width: 900px; height: 232px; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
+.contentLeft{width: 150px; height: 232px; background-color: #efefef; line-height: 232px; text-align:center;}
+.contentRight{width: 749px;}
+.contentPart textarea{margin: 10px 0px 0px 20px; width: 724px;}
 
-
-
-
-
-
-
+.imagePart{width: 900px; height: 232px; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
+.imageLeft{width: 150px; height: 232px; background-color: #efefef; line-height: 232px; text-align:center;}
+.fileSelect{line-height: 232px; margin-left: 20px;}
+.imagePreview{margin: 15px 0px 0px 35px}
+.wirteButton{width: 306px; margin: 0 auto;}
+.reply{width: 150px; height: 50px; margin: 20px 0px; border-radius: 10px 10px 10px 10px; background-color: #2196f3; color: white}
+.reset{width: 150px; height: 50px; margin: 20px 0px; border-radius: 10px 10px 10px 10px; background-color: #79796a; color: white}
 
 
 

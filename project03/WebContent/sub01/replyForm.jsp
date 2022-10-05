@@ -9,6 +9,9 @@
 %> 
 <head>
 <meta charset="UTF-8">
+	<link rel="stylesheet" href="/project03/sub01/css/board.css"/>
+	<link rel="stylesheet" href="/project03/sub01/css/style.css"/>
+	<link rel="stylesheet" href="/project03/sub01/css/common.css"/>
 <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript">
   function backToList(obj){
@@ -29,35 +32,80 @@
 <title>답글쓰기 페이지</title>
 </head>
 <body>
- <h1 style="text-align:center">답글쓰기</h1>
-  <form name="frmReply" method="post"  action="${contextPath}/board/addReply.do"   enctype="multipart/form-data">
-    <table align="center">
-    <tr>
-			<td align="right"> 글쓴이:&nbsp; </td>
-			<td><input type="text" size="5" value="lee" disabled /> </td>
-		</tr>
-		<tr>
-			<td align="right">글제목:&nbsp;  </td>
-			<td><input type="text" size="67"  maxlength="100" name="title" /></td>
-		</tr>
-		<tr>
-			<td align="right" valign="top"><br>글내용:&nbsp; </td>
-			<td><textarea name="content" rows="10" cols="65" maxlength="4000"> </textarea> </td>
-		</tr>
-		<tr>
-			<td align="right">이미지파일 첨부:  </td>
-			<td> <input type="file" name="imageFileName"  onchange="readURL(this);" /></td>
-            <td><img  id="preview" src="#"   width=200 height=200/></td>
-		</tr>
-		<tr>
-			<td align="right"> </td>
-			<td>
-				<input type=submit value="답글반영하기" />
-				<input type=button value="취소"onClick="backToList(this.form)" />
-				
-			</td>
-		</tr>
-    </table>
-  </form>
+	<%@ include file="../main/header.jsp" %>
+	<section>
+		<div id="section">
+		<h2>
+			<span class="hidden">고객상담</span>
+		</h2>
+		<h2>
+			<span class="hidden">고객의소리</span>
+		</h2>
+		<h2>
+			<span class="hidden">자주하는질문FAQ</span>
+		</h2>
+		<h2>
+			<span class="hidden">상담원상담</span>
+		</h2>
+		<h2>
+			<span class="hidden">1:1문의</span>
+		</h2>
+		<aside id="aside" class="fl cf">
+			<ul class="customerCounseling">
+				<li class="ccTitle"><a href="/project03/index.jsp" tabindex="253" class="ccTitle showTooltip" title="고객상담">&nbsp;&nbsp;고객상담</a></li>
+				<li class="ccListFirst"><a href="/project03/sub02/sub02.jsp" tabindex="254" class="ccListFirst showTooltip" title="고객의소리">&nbsp;&nbsp;고객의소리</a></li>
+				<li><a href="/project03/sub03/sub03.jsp" tabindex="255" class="ccList showTooltip" title="자주하는질문FAQ">&nbsp;&nbsp;자주하는질문FAQ</a></li>
+				<li><a href="/project03/index.jsp" tabindex="256" class="ccListShort showTooltip" title="상담원상담">&nbsp;&nbsp;상담원상담</a></li>
+				<li><a href="/project03/sub02/sub02.jsp" tabindex="257" class="ccList showTooltip" title="1:1문의">&nbsp;&nbsp;1:1문의</a></li>
+			</ul>	<!-- class="passBtn" -->
+		</aside>
+		<article id="contents" class="fl cf" >
+		<h3>
+			<span class="hidden">자주묻는질문FAQ</span>
+		</h3>
+			<div id="high" class="fl cf">
+				<ul class="path">
+					<li class="pathColor showTooltip" title="자주묻는질문FAQ">&nbsp;고객의소리</li>
+					<li><a class="showTooltip" href="/project03/sub03/sub03.jsp" tabindex="258" title="고객상담">&nbsp;고객상담 ></a> </li>
+					<li><a class="showTooltip" href="/project03/index.jsp" tabindex="259" title="고객센터">고객센터 ></a></li>
+				</ul>
+				<div class="faq showTooltip" title="자주묻는 질문">고객의 소리</div>
+				<ul class="description">
+					<li class="descriptionFirst">고객님들의 목소리를 귀담아 듣겠습니다.</li>
+					<li class="descriptionSecond">여기서 다 해결되지 않는 문의사항은 1:1문의를 이용해주세요.</li>
+				</ul>
+				<div class="inquiry"><a class="showTooltip" href="/project03/sub02/sub02.jsp" tabindex="260" title="1:1문의">1:1문의</a></div>
+			</div>	
+			<div id="low" class="fl cf">
+			<h1 class="newBoard">답글쓰기</h1>
+			  <form name="frmReply" method="post"  action="${contextPath}/board/addReply.do"   enctype="multipart/form-data">
+			    <div class="boardWrap">
+					<div class="writerPart">
+						<div class="fl writerLeft"> 글쓴이:&nbsp; </div>
+						<div class="fl titleRight"><input type="text" size="5" value="lee" disabled /> </div>
+					</div>
+					<div class="titlePart">
+						<div class="fl titleLeft">글제목:&nbsp;  </div>
+						<div class="fl titleRight" colspan="2"><input type="text" size="67"  maxlength="100" name="title" /></div>
+					</div>
+					<div>
+						<div class="contentPart">
+						<div class="fl contentLeft" valign="top">글내용:&nbsp; </div>
+						<div class="fl contentRight" colspan="2"><textarea name="content" rows="10" cols="65" maxlength="4000"> </textarea> </div>
+					</div>
+					<div class="imagePart">
+							<div class="fl imageLeft">이미지파일 첨부:  </div>
+						<div class="fl fileSelect"colspan="2"><input type="file" name="imageFileName"  onchange="readURL(this);" /></div>
+			           <div class="fl imagePreview"><img  id="preview" src="#"   width=200 height=200/></div>
+					</div>
+					<div>
+						<div class="fl" class="wirteButton">
+							<input class="reply" type=submit value="답글반영하기" />
+							<input class="reset" type=button value="취소"onClick="backToList(this.form)" />
+						</div>
+					</div>
+			  </form>
+  </section>
+  <%@ include file="../main/footer.jsp" %>
 </body>
 </html>

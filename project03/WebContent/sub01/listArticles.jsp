@@ -21,7 +21,7 @@
  <style>
    .no-uline {text-decoration:none; color: #333}
    .sel-page{text-decoration:underline;color:#1776b4;}
-   .cls1 {text-decoration:none; color: #1176b4;}
+   .cls1 {text-decoration:none; color: #1176b4; }
    .cls2{text-align:center; font-size:30px;}
   </style>
   <meta charset="UTF-8">
@@ -124,13 +124,13 @@
 					  </div>
 					<c:choose>
 					  <c:when test="${empty articlesList}" >
-					    <tr  height="10">
-					      <td colspan="4">
+					    <div  height="10">
+					      <div colspan="4">
 					         <p align="center">
 					            <b><span style="font-size:9pt;">등록된 글이 없습니다.</span></b>
 					        </p>
-					      </td>  
-					    </tr>
+					      </div>  
+					    </div>
 					  </c:when>
 					  <c:when test="${!empty articlesList}" >
 					    <c:forEach  var="article" items="${articlesList }" varStatus="articleNum" >
@@ -145,10 +145,10 @@
 						             <span style="padding-left:10px"></span> 
 						         </c:forEach>
 						         <span style="font-size:12px;">[답변]</span>
-					                   <a class='cls1' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}">${article.title}</a>
+					                   <a class='cls1 ellipsis' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}">${article.title}</a>
 						          </c:when>
 						          <c:otherwise>
-						            <a class='cls1' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}">${article.title }</a>
+						            <a class='cls1 ellipsis' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}">${article.title }</a>
 						          </c:otherwise>
 						        </c:choose>
 						  </div>
@@ -159,7 +159,7 @@
 					    </c:choose>
 					</div>
 					
-					<div class="cls2">
+					<div class="cls2 ">
 					 <c:if test="${totArticles != null }" >
 					      <c:choose>
 					        <c:when test="${totArticles >100 }">  <!-- 글 개수가 100 초과인경우 -->
