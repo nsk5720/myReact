@@ -98,7 +98,7 @@
 							<a href="/project03/sub04/sub04.jsp" tabindex="262" class="showTooltip" title="e농협 회원가입">e농협 회원가입</a>
 						</div>
 						<div class="fl">
-							<a href="project03/board/listArticles.do" tabindex="263" class="showTooltip" title="ID찾기">ID찾기</a>
+							<a href="/project03/board/listArticles.do" tabindex="263" class="showTooltip" title="ID찾기">ID찾기</a>
 						</div>
 						<div class="fl">
 							<a href="/project03/sub02/sub02.jsp" tabindex="264" class="showTooltip" title="비밀번호 초기화(재설정)">비밀번호 초기화(재설정)</a>

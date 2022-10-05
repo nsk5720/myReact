@@ -322,9 +322,9 @@
 								</ul>
 								<ul class="twoDepthList fl">
 									<li class="twoDepthTitle"><a href="/project03/sub02/sub02.jsp" tabindex="180">계좌이동서비스</a></li>
-									<li><a href="project03/sub03/sub03.jsp" tabindex="181">서비스소개</a></li>
+									<li><a href="/project03/sub03/sub03.jsp" tabindex="181">서비스소개</a></li>
 									<li><a href="/project03/board/listArticles.do" tabindex="182">자동납부변경서비스</a></li>
-									<li><a href="project03/sub01/sub01.jsp" tabindex="183">자동송금변경서비스</a></li>
+									<li><a href="/project03/sub01/sub01.jsp" tabindex="183">자동송금변경서비스</a></li>
 								</ul>
 								<ul class="twoDepthList fl">
 									<li class="twoDepthTitle"><a href="/project03/sub02/sub02.jsp" tabindex="184">증명서</a></li>
