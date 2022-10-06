@@ -46,7 +46,7 @@
 			</div>
 			<div class="fl" style="position: relative; top: 60px; right: 75px;">
 				[admin님 환영합니다.]<br>
-				<a href="/project03/" style="position: relative; left: 20px;">로그아웃</a>
+				<a href="/project03/" style="position: relative; left: 40px;">로그아웃</a>
 			</div>
 			<div id="btn">
 				<a href="/project03/board/listArticles.do" tabindex="6"><img src="/project03/images/ico_favorite_off.gif" class="showTooltip favorite" title="즐겨찾기" alt="favorite"/></a>
