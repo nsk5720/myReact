@@ -31,7 +31,7 @@
 	<script src="/project03/js/script.js"></script>
 	<script src="/project03/js/count.js"></script>
 	<script src="/project03/js/slideBtn.js"></script>
-	<script src="/project03/js/jsPop1.js"></script>
+	<script src="/project03/js/jsPop.js"></script>
 	<script src="/project03/js/signup.js"></script>
 	
 

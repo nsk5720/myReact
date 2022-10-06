@@ -42,6 +42,7 @@
 				<a href="/project03/sub03/sub03Login.jsp" tabindex="8"><img src="/project03/images/btn_header_search.gif"  class="showTooltip searchBtn" title="검색" alt="searching button" /></a>
 			</div>
 			<div id="gnbNav">
+			<a href="/project03/index_us.jsp"><img src="/project03/images/flag_us.png" style="position: absolute; top: 45px; left: -30px;"></a>
 				<select name="Language">
 					<option>Language</option>
 					<option value="#">English</option>

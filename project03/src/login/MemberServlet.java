@@ -50,6 +50,8 @@ public class MemberServlet extends HttpServlet{
 			 vo.setName(_name);
 			 vo.setEmail(_email);	
 			 dao.addMember(vo);		//데이터베이스에 추가하는 모듈
+			 
+			 response.sendRedirect("/project03/sub03/sub03.jsp");
 		} else if(command!= null && command.equals("delMember")) {		//추가한 부분
 			String id = request.getParameter("id");
 			dao.delMember(id);
