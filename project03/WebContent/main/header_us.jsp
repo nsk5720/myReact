@@ -24,8 +24,8 @@
 			</div>
 			<div id="version">
 				<ul>
-					<li class="versionIndividual showTooltip fl" title="개인"><a class="ellipsis" href="/project03/board/listArticles.do" tabindex="2"><fmt:message key="individual" /></a></li>
-					<li class="versionBigtext showTooltip fl" title="큰글"><a class="ellipsis" href="/project03/sub02/sub02.jsp" tabindex="3"><fmt:message key="bigLetter" /></a></li>
+					<li class="versionIndividual showTooltip fl" title="개인" style="width: 30px;"><a class="ellipsis" style="display: block; width: 70px;" href="/project03/board/listArticles.do" tabindex="2"><fmt:message key="individual" /></a></li>
+					<li class="versionBigtext showTooltip fl" title="큰글" style="width: 30px;"><a class="ellipsis" style="display: block; width: 70px;" href="/project03/sub02/sub02.jsp" tabindex="3"><fmt:message key="bigLetter" /></a></li>
 				</ul>
 			</div>
 			<div id="versionCompany" class="fl">

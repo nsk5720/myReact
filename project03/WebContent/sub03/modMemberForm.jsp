@@ -17,7 +17,7 @@
 	<script src="/project03/sub03/js/script.js"></script>
 </head>
 <body>
-	<%@ include file="../main/header.jsp" %>
+	<%@ include file="../main/headerLogin.jsp" %>
 	<section style="height: 70%;">
  <div class="memberCorrectWrap">
  	<h1 class="memberCorrect">회원 정보 수정</h1>

@@ -42,9 +42,9 @@ footer{width: 100%; height: 320px; margin: 0 auto; position: relative;}
 #logo img{margin: 34px 0 0 14px; }
 		/* 버전: 개인 큰글 */
 	#version ul{height: 100px; margin: 28px 0; background: url(../images/btn_big.png) no-repeat ;background-size: 159px 43px;}
-	#version li{ padding: 9px 20px; font-size: 20px; width: 30px;}
-		.versionIndividual a{color: #ffffff; font-weight: bold; width: 70px; display: block;}
-		.versionBigtext a{color: #333333; font-weight: bold; display: block; width: 70px;}
+	#version li{ padding: 9px 20px; font-size: 20px;  }
+		.versionIndividual a{color: #ffffff; font-weight: bold;}
+		.versionBigtext a{color: #333333; font-weight: bold;}
 		/* 버전: 기업 카드 */
 #versionCompany ul{margin: 37px -20px;}
 #versionCompany li a{ color: #333333; font-size: 21px; margin-left: 46px; font-weight: bold; }

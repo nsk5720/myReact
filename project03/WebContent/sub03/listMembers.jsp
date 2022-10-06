@@ -55,7 +55,7 @@
 	<script src="/project03/sub03/js/script.js"></script>
 </head>
 <body>
-	<%@ include file="../main/header.jsp" %>
+	<%@ include file="../main/headerLogin.jsp" %>
 	<p class=memberInfo> 회원정보 </p>
 	<div class="goBoard"><a href="/project03/board/listArticles.do">게시판 바로가기</a></div>
 	<div align="center" border="1">

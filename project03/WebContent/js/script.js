@@ -24,7 +24,7 @@
 	var timer;
 	
 	function move(tg,start,end,op1,op2){   
-		tg.css({left: start,opacity:op1}).stop().animate({left:end,opacity:op2},2000);	
+		tg.css({left: start,opacity:op1}).stop().animate({left:end,opacity:op2},500);	
 		};
 	timer = setInterval(function(){
 		var prev = banner.eq(current);
@@ -33,7 +33,7 @@
 		if(current>=banner.size()){current = 0 ;}
 		var next = banner.eq(current);
 		move(next,'100%','0%',0,1);
-	},3000);
+	},2000);
 	
 	banner.hover(
 		function(){
@@ -47,7 +47,7 @@
 		if(current>=banner.size()){current = 0 ;}
 		var next = banner.eq(current);
 		move(next,'100%','0%',0,1);
-	},3000);
+	},2000);
 		}
 	);
 	/* 이미지 슬라이드 */
