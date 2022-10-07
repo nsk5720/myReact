@@ -74,7 +74,7 @@ footer{width: 100%; height: 320px; margin: 0 auto; position: relative;}
 		/* LNB ¿øµª½º*/
 #lnbNav{width: 1420px; margin: 0 auto;  }	
 #lnbNav>li{float: left; margin-top: 7px;}
-#lnbNav>li>a{display: block; font-size: 22px; color: #333333; font-weight: bold; letter-spacing: -1px; padding: 15px 15px; height: 30px;}
+#lnbNav>li>a{display: block; font-size: 22px; color: #333333; font-weight: bold; letter-spacing: -1px; padding: 15px 15px; height: 30px; border-radius: 30px;}
 #lnbNav>li>a:hover{background: #046fd9; color: #ffffff; /* margin-top: 20px; */}
 /* #lnbNav>li:hover .twoDepth{display: block;} */
 #lnbNav>li.allMenu>a:hover{background: #ffffff}

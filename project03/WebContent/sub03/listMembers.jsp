@@ -41,7 +41,7 @@
 	<style>
 	a{text-decoration: none}
 	.title{width: 1100px; height: 50px; margin: 0 auto; }
-	.title > div {/* width: 14%; */ height: 50px; float: left; line-height: 50px; border-top: 2px solid #ddd; border-bottom: 2px solid #ddd; box-sizing: border-box; font-wegiht: bold; font-size: 19px;}
+	.title > div {/* width: 14%; */ height: 50px; float: left; line-height: 50px; border-top: 5px solid #ddd; border-bottom: 2px solid #ddd; box-sizing: border-box; font-wegiht: bold; font-size: 19px;}
 	.content{width: 1100px; height: 45px; margin: 0 auto; }
 	.content > div{/* width: 14%; */ height: 45px; float: left; line-height: 45px; border-bottom: 1px solid #ddd; box-sizing: border-box; }
 	.delete{color: red;}
