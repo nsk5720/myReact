@@ -33,7 +33,7 @@
 				</ul>
 			</div>
 			<div class="fl" style="position: relative; top: 60px; right: 75px;">
-				[환영합니다.]<br>
+				[${memInfo.id}환영합니다.]<br>
 				<a href="/project03/" style="position: relative; left: 13px;">로그아웃</a>
 			</div>
 			<div id="btn">
