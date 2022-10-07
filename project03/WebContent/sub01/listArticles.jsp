@@ -29,7 +29,7 @@
    .no-uline {text-decoration:none; color: #333}
    .sel-page{text-decoration:underline;color:#1776b4;}
    .cls1 {text-decoration:none; color: #1176b4; }
-   .cls2{text-align:center; font-size:30px;}
+   .cls2{text-align:center; font-size:30px; height: 20px; margin-top: 575px;}
   </style>
 	<script src="/project03/sub01/js/jquery-1.12.3.js"></script>
 	<script src="/project03/sub01/js/script.js"></script>
@@ -124,7 +124,7 @@
 					
 
 	
-					<div>
+					<div style="margin-top: 40px;">
 					  <div class="boardTop">
 					     <div class="boardNo fl">글번호</div>
 					     <div class="boardWriter fl">작성자</div>              
