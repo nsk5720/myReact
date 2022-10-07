@@ -53,6 +53,7 @@
 	</style>
 	<script src="/project03/sub03/js/jquery-1.12.3.js"></script>
 	<script src="/project03/sub03/js/script.js"></script>
+	<link rel="icon" href="/project03/images/favicon.ico">
 </head>
 <body>
 	<%@ include file="../main/headerLogin.jsp" %>

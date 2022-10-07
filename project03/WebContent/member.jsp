@@ -11,6 +11,7 @@
 </style>
 <meta charset="UTF-8">
 <title>회원 정보 출력창</title>
+<link rel="icon" href="/project03/images/favicon.ico">
 </head>
 <body>
 	<h1>회원 정보 출력</h1>

@@ -16,7 +16,7 @@
 	<meta name="Keywords" content="남상권, namsangkwon, 포트폴리오, 남상권 포트폴리오, portfolio, SanKwon's portfolio, 프로젝트, Project, 남 상권, 남 상 권, 상권 남, 상권, HTML5, CSS3, jQuery, 프로젝트, Portfolio, Project, 반응형웹, 반응형웹 포트폴리오, 학생 포트폴리오"/>
 	<meta name="Description" content="남상권의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />
 	<!-- <meta http-equiv="refresh" content="5; url=sub03/sub03.jsp"> -->
-	<link rel="icon" href="images/favicon.ico">
+	<link rel="icon" href="/project03/images/favicon.ico">
 	<title>농협은행 메인페이지</title>
 	<!--[if gte IE 9]>
 	<style>

@@ -16,6 +16,7 @@
 	<script src="/project03/sub03/js/script.js"></script>
    <meta charset="UTF-8">
    <title>회원 가입창</title>
+   <link rel="icon" href="/project03/images/favicon.ico">
 </head>
 <body>
 <form method="post" action="${contextPath}/member/addMember.do" style="width:350px; margin: 0 auto;">

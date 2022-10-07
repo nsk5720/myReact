@@ -16,7 +16,7 @@
 	<meta name="Author" content="남상권"/>
 	<meta name="Keywords" content="남상권, namsangkwon, 포트폴리오, 남상권 포트폴리오, portfolio, SanKwon's portfolio, 프로젝트, Project, 남 상권, 남 상 권, 상권 남, 상권, HTML5, CSS3, jQuery, 프로젝트, Portfolio, Project, 반응형웹, 반응형웹 포트폴리오, 학생 포트폴리오"/>
 	<meta name="Description" content="남상권의 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다." />
-	<link rel="icon" href="images/favicon.ico">
+	<link rel="icon" href="/project03/images/favicon.ico">
 	<title>농협은행 게시판</title>
 	<!--[if gte IE 9]>
 	<style>
@@ -130,7 +130,7 @@
 							<div  height="10">
 								<div colspan="4">
 									<p align="center">
-										<b><span style="font-size:9pt;">등록된 글이 없습니다.</span></b>
+										<b><span style="font-size:9pt;">로그인 후 게시판을 사용해주세요.</span></b>
 									</p>
 								</div>  
 							</div>
@@ -161,7 +161,7 @@
 						</c:when>
 					</c:choose>	
 					</div>
-					<a  class="cls1"  href="${contextPath}/project03/board/articleForm.do"><p class="cls2">글쓰기</p></a>
+					<%-- <a  class="cls1"  href="${contextPath}/project03/board/articleForm.do"><p class="cls2">글쓰기</p></a> --%>
 					
 					
 					<div class="pageNum">
