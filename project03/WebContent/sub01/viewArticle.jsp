@@ -39,7 +39,7 @@
 	 function fn_enable(obj){
 		 document.getElementById("i_title").disabled=false;
 		 document.getElementById("i_content").disabled=false;
-		 document.getElementById("i_imageFileName").disabled=false;
+		 /* document.getElementById("i_imageFileName").disabled=false; */
 		 document.getElementById("tr_btn_modify").style.display="block";
 		 document.getElementById("tr_btn").style.display="none";
 	 }

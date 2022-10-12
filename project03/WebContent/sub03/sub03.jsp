@@ -87,7 +87,7 @@
 						</p>
 						<p>
 							<label for="userPwd"></label> 
-							<input class="guideText" type="password" name="userPwd" id="userPwd" value="admin">
+							<input class="guideText" type="password" name="userPwd" id="userPwd" value="ay2111!!">
 						</p>
 					<button class="loginBtn" onClick="fnValidate()" type="button">
 						<a href="#" onClick="fnValidate()" type="button">로그인</a>

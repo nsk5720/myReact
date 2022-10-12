@@ -6,6 +6,7 @@
 		<item value="NULL_RUNTIME"/>
 	</list>
 	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="C:\Users\GR803\Desktop\project03.war"/>
 		<item value="C:\Tomcat9.0\webapps\webShop.war"/>
 	</list>
 </section>
