@@ -144,6 +144,7 @@ public class MemberDAO {
 				pstmt.setString(4, email);
 				pstmt.executeUpdate();
 				pstmt.close();
+				conn.close();
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -172,6 +173,8 @@ public class MemberDAO {
 				rs.next();
 				result = Boolean.parseBoolean(rs.getString("result"));
 				System.out.println("result=" + result);
+				pstmt.close();
+				conn.close();
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -240,6 +243,8 @@ public class MemberDAO {
 				pstmt = conn.prepareStatement(query);
 				pstmt.setString(1,id);
 				pstmt.executeUpdate();
+				pstmt.close();
+				conn.close();
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
