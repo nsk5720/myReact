@@ -18,10 +18,10 @@ import login.MemberVO;
 /*import sec02.ex01.MemberBean;*/
 			
 public class MemberDAO {
-	private static final String driver = "oracle.jdbc.driver.OracleDriver";
+/*	private static final String driver = "oracle.jdbc.driver.OracleDriver";
 	private static final String url = "jdbc:oracle:thin:@localhost:1521:XE";
 	private static final String user = "scott";
-	private static final String pwd = "tiger";
+	private static final String pwd = "tiger";*/
 	private Connection conn;
 	private PreparedStatement pstmt;
 	private DataSource dataFactory;
@@ -38,7 +38,7 @@ public class MemberDAO {
 		}
 	}
 	
-	private void connDB() {		//실행요소를 가지는 클래스(변수)
+	/*private void connDB() {		//실행요소를 가지는 클래스(변수)
 		try {
 			Class.forName(driver);	//WebContent.WEB-INF.lib에 들어간 2개의 jar파일이 드라이버파일임
 			System.out.println("Oracle 드라이버 로딩 성공");
@@ -49,7 +49,7 @@ public class MemberDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}		
-	}
+	}*/
 	
 	
 	public List<MemberVO> listMembers() {
