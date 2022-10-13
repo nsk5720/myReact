@@ -7759,3 +7759,6 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 
 !ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-10-13 16:26:24.933
 !MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.jst.server.core 4 0 2022-10-13 16:40:09.133
+!MESSAGE Could not launch in profiling mode because no profilers are configured.
