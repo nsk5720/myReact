@@ -173,6 +173,7 @@ public class MemberDAO {
 				rs.next();
 				result = Boolean.parseBoolean(rs.getString("result"));
 				System.out.println("result=" + result);
+				rs.close();
 				pstmt.close();
 				conn.close();
 			} catch (Exception e) {
