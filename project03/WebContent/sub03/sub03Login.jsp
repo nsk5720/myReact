@@ -79,7 +79,7 @@
 						<li class="idPw "><a class="showTooltip" href="/project03/sub02/sub02Login.jsp" tabindex="260" title="ID/비밀번호">ID/비밀번호</a></li>
 						
 					</ul>
-					<div class="member" style="width: 1035px; margin: 105px auto 0px auto; text-align: center;"><span>[2차 보안]</span><br>관리자페이지 이동을 위해 아이디와 패스워드를 한 번 더 입력해주세요.</div>
+					<div class="member" style="width: 1035px; margin: 105px auto 0px auto; text-align: center;"><span>[ 관리자전용 회원정보 2차 보안 ]</span><br>관리자페이지 이동을 위해 아이디와 패스워드를 한 번 더 입력해주세요.</div>
 					<form method="post" action="login" name="login">
 						<p>
 							<label for="userId"></label>   
