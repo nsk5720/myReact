@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Map;
 
 import javax.servlet.RequestDispatcher;
-import javax.servlet.Servlet;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,6 +21,8 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.commons.io.FileUtils;
+
+import login.MemberVO;
 
 @WebServlet("/board/*")
 public class BoardController extends HttpServlet {
@@ -46,7 +47,7 @@ public class BoardController extends HttpServlet {
 		String nextPage = "";
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html; charset=utf-8");
-		HttpSession session;
+		HttpSession session = request.getSession();
 		String action = request.getPathInfo();
 		System.out.println("action:" + action);
 		try {
@@ -85,9 +86,11 @@ public class BoardController extends HttpServlet {
 				String title = articleMap.get("title");
 				String content = articleMap.get("content");
 				String imageFileName = articleMap.get("imageFileName");
-
+				
+				String id = (String) session.getAttribute("login.id");
+				
 				articleVO.setParentNO(0);
-				articleVO.setId("hong");
+				articleVO.setId(id);
 				articleVO.setTitle(title);
 				articleVO.setContent(content);
 				articleVO.setImageFileName(imageFileName);
@@ -164,7 +167,7 @@ public class BoardController extends HttpServlet {
 				String content = articleMap.get("content");
 				String imageFileName = articleMap.get("imageFileName");
 				articleVO.setParentNO(parentNO);
-				articleVO.setId("lee");
+				articleVO.setId("admin");
 				articleVO.setTitle(title);
 				articleVO.setContent(content);
 				articleVO.setImageFileName(imageFileName);

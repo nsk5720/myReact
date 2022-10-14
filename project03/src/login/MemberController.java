@@ -50,10 +50,11 @@ public class MemberController extends HttpServlet{
 		if(result) {
 				//어드민 로그인 후 멤버리스트로 이동
 				if(user_id .equals("admin")) {
-			HttpSession session = request.getSession();
-			session.setAttribute("isLogon", true);
-			session.setAttribute("login.id", user_id);
-			session.setAttribute("login.pwd", user_pwd);
+					HttpSession session = request.getSession();
+					session.setAttribute("isLogon", true);
+					session.setAttribute("login.id", user_id);
+			
+			
 			
 			//회원정보창으로 넘기기
 			List<MemberVO> membersList = memberDAO.listMembers();
@@ -61,6 +62,9 @@ public class MemberController extends HttpServlet{
 			RequestDispatcher dispatch = request.getRequestDispatcher("sub03/listMembers.jsp");
 			dispatch.forward(request, response);
 				} else {	//일반 로그인 후 보낼 페이지(로그인 된 페이지) 적기
+					HttpSession session = request.getSession();
+					session.setAttribute("isLogon", true);
+					session.setAttribute("login.id", user_id);
 					response.sendRedirect("/project03/main/index.jsp");
 				}
 		} else {		//로그인 실패 시

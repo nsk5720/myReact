@@ -90,9 +90,19 @@ public class BoardDAO {
 		List articlesList = new ArrayList();
 		try {
 			conn = dataFactory.getConnection();
-			String query = "SELECT LEVEL,articleNO,parentNO,title,content,id,writeDate" + " from t_board"
-					+ " START WITH  parentNO=0" + " CONNECT BY PRIOR articleNO=parentNO"
-					+ " ORDER SIBLINGS BY articleNO DESC";
+			String query = "WITH RECURSIVE par AS (\r\n" + 
+					"SELECT\r\n" + 
+					" articleNO,parentNO,title,content,id,writeDate, 1 LEVEL, CAST(LPAD(p.articleNO,12,'0') AS CHAR(100)) as sort\r\n" + 
+					"FROM t_board p\r\n" + 
+					"WHERE parentNO = 0 UNION ALL\r\n" + 
+					"SELECT\r\n" + 
+					" a.articleNO,a.parentNO,a.title,a.content,a.id,a.writeDate, 1+ LEVEL LEVEL, CONCAT(par.sort, '-',LPAD(A.articleNO,12,'0')) as sort\r\n" + 
+					"FROM t_board a\r\n" + 
+					"INNER JOIN par ON a.parentNO = par.articleNO\r\n" + 
+					")\r\n" + 
+					"SELECT *\r\n" + 
+					"FROM par\r\n" + 
+					"ORDER BY sort;";
 			System.out.println(query);
 			pstmt = conn.prepareStatement(query);
 			ResultSet rs = pstmt.executeQuery();

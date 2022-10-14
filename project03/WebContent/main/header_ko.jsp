@@ -55,8 +55,8 @@
 				</select>
 			</div>
 			<div id="login">
-				<div class="login showTooltip fl" title="로그인">로그인</div>
-				<div class="security showTooltip fl" title="인증센터">인증센터</div>
+				<div class="login showTooltip fl" title="로그인"><a href="/project03/sub03/sub03.jsp" style="color:#333333">로그인</a></div>
+				<div class="security showTooltip fl" title="인증센터"><a href="/project03/sub03/sub03.jsp" style="color:#333333">인증센터</a></div>
 				<c:if test="${not empty param.userID}">
 				<c:if test="${param.userID == 'admin' }">
 				<div style="width:120px; height: 50px; float: left; margin: 10px 0px 0px 15px; font-size: 20px; color: blue; font-weight: bold;"><a style="color: red;"href="member.jsp">관리자 모드</a></div>

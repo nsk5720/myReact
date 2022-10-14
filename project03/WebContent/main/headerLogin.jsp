@@ -5,6 +5,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <% 
 	request.setCharacterEncoding("UTF-8");
+	String id = (String) session.getAttribute("login.id");
 %>
 <!DOCTYPE html>
 <html>
@@ -33,8 +34,8 @@
 				</ul>
 			</div>
 			<div class="fl" style="position: relative; top: 60px; right: 75px;">
-				[${memInfo.id}환영합니다.]<br>
-				<a href="/project03/" style="position: relative; left: 13px;">로그아웃</a>
+				[<%=id %>님 환영합니다.]<br>
+				<a href="/project03/" style="position: relative; left: 30px;">로그아웃</a>
 			</div>
 			<div id="btn">
 				<a href="/project03/board/listArticles.do" tabindex="6"><img src="/project03/images/ico_favorite_off.gif" class="showTooltip favorite" title="즐겨찾기" alt="favorite"/></a>
@@ -59,8 +60,8 @@
 				</select>
 			</div>
 			<div id="login">
-				<div class="login showTooltip fl" title="로그인">로그인</div>
-				<div class="security showTooltip fl" title="인증센터">인증센터</div>
+				<div class="login showTooltip fl" title="로그인"><a href="/project03/sub03/sub03Login.jsp" style="color:#333333">로그인</a></div>
+				<div class="security showTooltip fl" title="인증센터"><a href="/project03/sub03/sub03Login.jsp" style="color:#333333">인증센터</a></div>
 				<c:if test="${not empty param.userID}">
 				<c:if test="${param.userID == 'admin' }">
 				<div style="width:120px; height: 50px; float: left; margin: 10px 0px 0px 15px; font-size: 20px; color: blue; font-weight: bold;"><a style="color: red;"href="member.jsp">관리자 모드</a></div>

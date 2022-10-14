@@ -42,6 +42,7 @@
 		 /* document.getElementById("i_imageFileName").disabled=false; */
 		 document.getElementById("tr_btn_modify").style.display="block";
 		 document.getElementById("tr_btn").style.display="none";
+		 
 	 }
 	 
 	 function fn_modify_article(obj){
