@@ -5,7 +5,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <% 
 	request.setCharacterEncoding("UTF-8");
-	String id = (String) session.getAttribute("login.id");
 %>
 <!DOCTYPE html>
 <html>
@@ -34,7 +33,7 @@
 				</ul>
 			</div>
 			<div class="fl" style="position: relative; top: 60px; right: 75px;">
-				[<%=id %>님 환영합니다.]<br>
+				[<%=session.getAttribute("login.id") %>님 환영합니다.]<br>
 				<a href="/project03/" style="position: relative; left: 30px;">로그아웃</a>
 			</div>
 			<div id="btn">
