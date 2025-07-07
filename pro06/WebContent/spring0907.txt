@@ -1,6 +1,0 @@
-HTML로 전송 시 : text/html
-일반 텍스트로 전송 시 : text/plain
-XML 데이터로 전송 시 : application/xml
-
-8005/8090
-regedit  
